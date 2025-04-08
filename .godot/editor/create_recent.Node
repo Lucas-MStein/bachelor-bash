@@ -1,9 +1,9 @@
-AnimationPlayer
-Panel
-TextureRect
-Button
-VBoxContainer
 Label
+Panel
+VBoxContainer
+Button
+AnimationPlayer
+TextureRect
 Control
 TileMap
 Node
