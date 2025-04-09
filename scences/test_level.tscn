@@ -1,10 +1,10 @@
 [gd_scene load_steps=5 format=3 uid="uid://bl61fcom5opta"]
 
-[ext_resource type="Texture2D" uid="uid://b2bkq5uq5lyub" path="res://Green.png" id="1_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://b4uf8qno22l3" path="res://Terrain (16x16).png" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://b2bkq5uq5lyub" path="res://assets/elements/Green.png" id="1_tulko"]
+[ext_resource type="Texture2D" uid="uid://b4uf8qno22l3" path="res://assets/elements/Terrain (16x16).png" id="2_riv1g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
-texture = ExtResource("2_h2yge")
+texture = ExtResource("2_riv1g")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -164,7 +164,7 @@ offset_left = -2.0
 offset_right = -2.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_0xm2m")
+texture = ExtResource("1_tulko")
 stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="."]
