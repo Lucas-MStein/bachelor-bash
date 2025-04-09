@@ -1,9 +1,1 @@
-res://main.tscn
-res://scences/main_menu.tscn
-res://scences/main.tscn
-res://scences/test_level.tscn
-res://scences/main_menu.gd
-res://scences/main_classroom.tscn
-res://scences/game.tscn
-res://scences/player_CodeMaster.tscn
-res://scences/Level_1.tscn
+res://main_menu.gd
