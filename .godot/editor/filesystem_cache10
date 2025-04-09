@@ -1,22 +1,29 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744184530
-empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp::CompressedTexture2D/CompressedTexture2D::1658057082205384273::1744184512::1744184308::1::::<><><>0<>0<>40ba2ebc48703b8760dd6252108afec8<>res://.godot/imported/empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp-fe20a2c8300172425a3f9cd5c23c86a2.ctex::
-GrapeSoda.ttf::FontFile/FontFile::6245572972721141197::1744184512::1744184308::1::::<><><>0<>0<>bd57b2fa71925aff67940ab2173911c5<>res://.godot/imported/GrapeSoda.ttf-a60e5536869277fe3c2b54b08673a197.fontdata::
-Green.png::CompressedTexture2D/CompressedTexture2D::4284221189668288449::1744098309::1744098309::1::::<><><>0<>0<>681e184ba2db37f89ffe692ace056d9e<>res://.godot/imported/Green.png-a73a03d0a1febdb864b00265fc9002a0.ctex::
+::res://::1744197591
+empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp::CompressedTexture2D/CompressedTexture2D::2437436573970323790::1744197443::1744197592::1::::<><><>0<>0<>1202c2cb9d7db1ec21018856d63d0cb9<>res://.godot/imported/empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp-fe20a2c8300172425a3f9cd5c23c86a2.ctex::
+GrapeSoda.ttf::FontFile/FontFile::6766133607043811968::1744197443::1744197592::1::::<><><>0<>0<>4769281e3a9def729e29f6afffb5f10f<>res://.godot/imported/GrapeSoda.ttf-a60e5536869277fe3c2b54b08673a197.fontdata::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6284568425558919809::1744098309::1744098309::1::::<><><>0<>0<>7242f5b4f35e78e139e11fe56b1a1db5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.tscn::PackedScene::3224081372128608402::1744100903::0::1::::<><><>0<>0<><>::uid://b2bkq5uq5lyub::::res://Green.png<>uid://b4uf8qno22l3::::res://Terrain (16x16).png
-MainMenu.tscn::PackedScene::-1::1744184530::0::1::::<><><>0<>0<><>::
-main_menu.gd::GDScript::7515366855196952302::1744184512::0::1::::<>Control<><>0<>0<><>::
-main_menu.tscn::PackedScene::6633133357086014465::1744184512::0::1::::<><><>0<>0<><>::uid://ctppw15unnn1m::::res://empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp<>uid://dfcq82f7u3fdu::::res://main_menu.gd<>uid://dfb7qq3y6l80k::::res://GrapeSoda.ttf
-readme.md::TextFile::-1::1744098309::0::1::::<><><>0<>0<><>::
-Terrain (16x16).png::CompressedTexture2D/CompressedTexture2D::131280825928507094::1744098309::1744098309::1::::<><><>0<>0<>efbc5ef02fe0c9b7d14f38ca22ff550b<>res://.godot/imported/Terrain (16x16).png-f072e8a5f99e915c05031c83401c87a9.ctex::
-::res://assets/::1744184530
-248259.png::CompressedTexture2D::4454352841525014634::1744184530::1744184600::1::::<><><>0<>0<>2ca549af8f5e409870f054211a970164<>res://.godot/imported/248259.png-556affdc6628f31303a6790eac23c8fd.ctex::
-::res://assets/fonts/::1744139405
+main_menu.tscn::PackedScene::6633133357086014465::1744197443::0::1::::<><><>0<>0<><>::uid://ctppw15unnn1m::::res://empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp<>uid://dfcq82f7u3fdu::::res://main_menu.gd<>uid://dfb7qq3y6l80k::::res://GrapeSoda.ttf
+readme.md::TextFile/TextFile::-1::1744098309::0::1::::<><><>0<>0<><>::
+::res://assets/::1744185164
+::res://assets/classroom/::1744197526
+empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp::CompressedTexture2D::1658057082205384273::1744185164::1744197592::1::::<><><>0<>0<>8d57291de3aa751ddf9816d9ff527f4d<>res://.godot/imported/empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp-13d4e40f52472fddadb29a8a52fec77d.ctex::
+::res://assets/elements/::1744185164
+Green.png::CompressedTexture2D::4284221189668288449::1744185164::1744197592::1::::<><><>0<>0<>c79f9955d35614258665ff4e428db25e<>res://.godot/imported/Green.png-d8cc526603866064e1c3b57f13ab4cbd.ctex::
+Terrain (16x16).png::CompressedTexture2D::131280825928507094::1744185164::1744197592::1::::<><><>0<>0<>719bf976e58d9dddcf88719b40909c0e<>res://.godot/imported/Terrain (16x16).png-89466cbc7b5a79dadc62971aafeb49bc.ctex::
+::res://assets/fonts/::1744185164
+GrapeSoda.ttf::FontFile::6245572972721141197::1744185164::1744197592::1::::<><><>0<>0<>f947f6065c02ee5618a089a22944a00d<>res://.godot/imported/GrapeSoda.ttf-816af616f4fc937beccca478580c6aca.fontdata::
 ::res://assets/music/::1744139414
-::res://assets/player/::1744139420
-::res://scences/::1744184530
-game.tscn::PackedScene::-1::1744184530::0::1::::<><><>0<>0<><>::
-test_player.tscn::PackedScene::-1::1744184530::0::1::::<><><>0<>0<><>::
-::res://scences/player_code bracke/::1744139504
-::res://skripts/::1744139209
+::res://assets/player/::1744197443
+01_Spreadsheet_CodeMaster.png::CompressedTexture2D::5537550588321389876::1744189402::1744197592::1::::<><><>0<>0<>b57441b79342230aff0d40a86c1742db<>res://.godot/imported/01_Spreadsheet_CodeMaster.png-d0fa4504ef490e4cae8709f1b894bce2.ctex::
+02_Spreadsheet_Projektmanager.png::CompressedTexture2D::6783739857487393863::1744189417::1744197592::1::::<><><>0<>0<>6ff4ab6bf5d93f2272f93e0d78643207<>res://.godot/imported/02_Spreadsheet_Projektmanager.png-a0f5fdc8634ecc096e4a38207ea2ed51.ctex::
+03_Spreadsheet_Web-Designer.png::CompressedTexture2D::4569957915061118310::1744189406::1744197592::1::::<><><>0<>0<>86d27723054fdd44f6983491ad56f7b8<>res://.godot/imported/03_Spreadsheet_Web-Designer.png-071efa89146cd6a1f310f03d3cacbbf1.ctex::
+04_Spreadsheet_CodeMaster.png::CompressedTexture2D::2314131099619052280::1744197443::1744197593::1::::<><><>0<>0<>18630ac2c467fc606382f5ded7ba6562<>res://.godot/imported/04_Spreadsheet_CodeMaster.png-828d7cb4a9a11ca8eebdd93213f1472d.ctex::
+Zeichenfläche 6.png::CompressedTexture2D::2605169994346934558::1744190879::1744197592::1::::<><><>0<>0<>344aba6233835b5592bcd9049e59e0f9<>res://.godot/imported/Zeichenfläche 6.png-4ef95f28343988a6d3e1ce4d84cc458a.ctex::
+::res://scences/::1744191558
+Level_1.tscn::PackedScene::5236222310607130767::1744191558::0::1::::<><><>0<>0<><>::uid://b88jwlt54mlsy::::res://scences/player_CodeMaster.tscn
+main_classroom.tscn::PackedScene::6633133357086014465::1744189592::0::1::::<><><>0<>0<><>::uid://cmmkifm1bqx3w::::res://skripts/main_menu.gd<>uid://xvf7tlit6boj::::res://assets/classroom/empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp<>uid://cu8nw6tqmh1uf::::res://assets/fonts/GrapeSoda.ttf
+player_CodeMaster.tscn::PackedScene::4771363338543385176::1744191361::0::1::::<><><>0<>0<><>::uid://bdd71fgeaexe1::::res://assets/player/Zeichenfläche 6.png
+test_level.tscn::PackedScene::3224081372128608402::1744185164::0::1::::<><><>0<>0<><>::uid://b2bkq5uq5lyub::::res://assets/elements/Green.png<>uid://b4uf8qno22l3::::res://assets/elements/Terrain (16x16).png
+::res://skripts/::1744197443
+main_menu.gd::GDScript::7515366855196952302::1744197443::0::1::::<>Control<><>0<>0<><>::

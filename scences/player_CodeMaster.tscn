@@ -1,26 +1,30 @@
-[gd_scene load_steps=9 format=3 uid="uid://b88jwlt54mlsy"]
+[gd_scene load_steps=10 format=3 uid="uid://b88jwlt54mlsy"]
 
-[ext_resource type="Texture2D" uid="uid://bdd71fgeaexe1" path="res://assets/player/Zeichenfläche 6.png" id="1_mybtg"]
+[ext_resource type="Texture2D" uid="uid://778nvxkldrdg" path="res://assets/player/04_Spreadsheet_CodeMaster.png" id="1_mybtg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h5h0o"]
 atlas = ExtResource("1_mybtg")
-region = Rect2(32, 0, 32, 32)
+region = Rect2(0, 0, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8l7j8"]
 atlas = ExtResource("1_mybtg")
-region = Rect2(64, 0, 32, 32)
+region = Rect2(437, 0, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_skk26"]
 atlas = ExtResource("1_mybtg")
-region = Rect2(0, 32, 32, 32)
+region = Rect2(874, 0, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3t5w7"]
 atlas = ExtResource("1_mybtg")
-region = Rect2(32, 32, 32, 32)
+region = Rect2(0, 438, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m7kfa"]
 atlas = ExtResource("1_mybtg")
-region = Rect2(64, 32, 32, 32)
+region = Rect2(437, 438, 437, 438)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vhsox"]
+atlas = ExtResource("1_mybtg")
+region = Rect2(874, 438, 437, 438)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vhsox"]
 animations = [{
@@ -39,6 +43,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m7kfa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vhsox")
 }],
 "loop": true,
 "name": &"default",
@@ -46,15 +53,18 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sj2ms"]
-radius = 29.0
+radius = 56.0
 height = 238.0
 
 [node name="player_CodeMaster" type="CharacterBody2D"]
+position = Vector2(43, 32)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(10, 10)
+position = Vector2(292, 277)
 sprite_frames = SubResource("SpriteFrames_vhsox")
-frame_progress = 0.118625
+frame = 2
+frame_progress = 0.266616
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(277, 296)
 shape = SubResource("CapsuleShape2D_sj2ms")
