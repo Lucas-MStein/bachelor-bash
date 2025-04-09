@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://::1744183077
 facundo-fernandez-zuccarelli-r1.jpg::CompressedTexture2D/CompressedTexture2D::6228993224764834567::1744098309::1744098309::1::::<><><>0<>0<>dccbb6847fb8b57fe3a9733cc772413a<>res://.godot/imported/facundo-fernandez-zuccarelli-r1.jpg-8b4cb36cd83e9c37184f8447e315b62c.ctex::
 Green.png::CompressedTexture2D/CompressedTexture2D::4284221189668288449::1744098309::1744098309::1::::<><><>0<>0<>681e184ba2db37f89ffe692ace056d9e<>res://.godot/imported/Green.png-a73a03d0a1febdb864b00265fc9002a0.ctex::
@@ -35,4 +36,27 @@ Terrain (16x16).png::CompressedTexture2D/CompressedTexture2D::131280825928507094
 ::res://scences/::1744184086
 >>>>>>> Stashed changes
 ::res://scences/player_code bracke/::1744139504
+=======
+::res://::1744185010
+icon.svg::CompressedTexture2D/CompressedTexture2D::6284568425558919809::1744098309::1744098309::1::::<><><>0<>0<>7242f5b4f35e78e139e11fe56b1a1db5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+readme.md::TextFile/TextFile::-1::1744098309::0::1::::<><><>0<>0<><>::
+::res://assets/::1744184933
+::res://assets/classroom/::1744184857
+empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp::CompressedTexture2D/CompressedTexture2D::1658057082205384273::1744184512::1744184857::1::::<><><>0<>0<>8d57291de3aa751ddf9816d9ff527f4d<>res://.godot/imported/empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp-13d4e40f52472fddadb29a8a52fec77d.ctex::
+::res://assets/elements/::1744184933
+Green.png::CompressedTexture2D/CompressedTexture2D::4284221189668288449::1744098309::1744184933::1::::<><><>0<>0<>c79f9955d35614258665ff4e428db25e<>res://.godot/imported/Green.png-d8cc526603866064e1c3b57f13ab4cbd.ctex::
+Terrain (16x16).png::CompressedTexture2D/CompressedTexture2D::131280825928507094::1744098309::1744184931::1::::<><><>0<>0<>719bf976e58d9dddcf88719b40909c0e<>res://.godot/imported/Terrain (16x16).png-89466cbc7b5a79dadc62971aafeb49bc.ctex::
+::res://assets/fonts/::1744184864
+GrapeSoda.ttf::FontFile/FontFile::6245572972721141197::1744184512::1744184864::1::::<><><>0<>0<>f947f6065c02ee5618a089a22944a00d<>res://.godot/imported/GrapeSoda.ttf-816af616f4fc937beccca478580c6aca.fontdata::
+::res://assets/music/::1744139414
+::res://assets/player/::1744184827
+248259.png::CompressedTexture2D/CompressedTexture2D::4454352841525014634::1744184530::1744184827::1::::<><><>0<>0<>832e48ca13be79535bcf82b4e499ac2b<>res://.godot/imported/248259.png-268f864363e980e6a52f1c5b4df1b4a4.ctex::
+::res://scences/::1744185016
+main_menu.gd::GDScript::7515366855196952302::1744184512::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::6633133357086014465::1744185016::0::1::::<><><>0<>0<><>::uid://dfcq82f7u3fdu::::res://scences/main_menu.gd<>uid://xvf7tlit6boj::::res://assets/classroom/empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp<>uid://cu8nw6tqmh1uf::::res://assets/fonts/GrapeSoda.ttf
+test_level.tscn::PackedScene::3224081372128608402::1744185016::0::1::::<><><>0<>0<><>::uid://b2bkq5uq5lyub::::res://assets/elements/Green.png<>uid://b4uf8qno22l3::::res://assets/elements/Terrain (16x16).png
+::res://scences/test player/::1744184954
+game.tscn::PackedScene/PackedScene::-1::1744184530::0::1::::<><><>0<>0<><>::
+test_player.tscn::PackedScene/PackedScene::-1::1744184530::0::1::::<><><>0<>0<><>::
+>>>>>>> Stashed changes
 ::res://skripts/::1744139209
