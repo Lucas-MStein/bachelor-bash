@@ -1,3 +1,7 @@
 res://scences/game.tscn
 res://scences/test_player.tscn
 res://MainMenu.tscn
+<<<<<<< Updated upstream
+=======
+res://main_menu.gd
+>>>>>>> Stashed changes

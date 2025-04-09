@@ -1,6 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=2 format=3 uid="uid://cvdsnho1bjbax"]
 
 [ext_resource type="PackedScene" uid="uid://cq4akl6hcj1oo" path="res://scences/test_player.tscn" id="1_lbs7c"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://ditxqwmvq86q1"]
+
+[ext_resource type="PackedScene" uid="uid://b7f12oyio41iy" path="res://scences/test_player.tscn" id="1_lbs7c"]
+
+[sub_resource type="TileSet" id="TileSet_lbs7c"]
+>>>>>>> Stashed changes
 
 [node name="Game" type="Node2D"]
 
@@ -9,3 +17,11 @@ position = Vector2(-16, 242)
 scale = Vector2(0.5, 0.5)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+<<<<<<< Updated upstream
+=======
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_lbs7c")
+rendering_quadrant_size = 26
+format = 2
+>>>>>>> Stashed changes

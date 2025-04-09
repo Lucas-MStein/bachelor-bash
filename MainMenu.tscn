@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://o7dpe1nic6sk"]
 
 [ext_resource type="Script" uid="uid://cmmkifm1bqx3w" path="res://main_menu.gd" id="1_i26rj"]
 [ext_resource type="Texture2D" uid="uid://cu0muxim02j80" path="res://facundo-fernandez-zuccarelli-r1.jpg" id="2_eiy7p"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://qi2p14olsglt"]
+
+[ext_resource type="Script" uid="uid://dfcq82f7u3fdu" path="res://main_menu.gd" id="1_i26rj"]
+[ext_resource type="Texture2D" path="res://facundo-fernandez-zuccarelli-r1.jpg" id="2_eiy7p"]
+>>>>>>> Stashed changes
 
 [node name="Control" type="Control"]
 layout_mode = 3

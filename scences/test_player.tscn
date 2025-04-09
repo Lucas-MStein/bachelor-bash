@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=8 format=3 uid="uid://cq4akl6hcj1oo"]
+=======
+[gd_scene load_steps=8 format=3 uid="uid://b7f12oyio41iy"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://b4pysm3icnb4e" path="res://assets/248259.png" id="1_lwpcu"]
 
