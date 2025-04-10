@@ -1,52 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://b88jwlt54mlsy"]
-
-[ext_resource type="Texture2D" uid="uid://778nvxkldrdg" path="res://assets/player/04_Spreadsheet_CodeMaster.png" id="1_mybtg"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h5h0o"]
-atlas = ExtResource("1_mybtg")
-region = Rect2(0, 0, 437, 438)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8l7j8"]
-atlas = ExtResource("1_mybtg")
-region = Rect2(437, 0, 437, 438)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_skk26"]
-atlas = ExtResource("1_mybtg")
-region = Rect2(874, 0, 437, 438)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3t5w7"]
-atlas = ExtResource("1_mybtg")
-region = Rect2(0, 438, 437, 438)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_m7kfa"]
-atlas = ExtResource("1_mybtg")
-region = Rect2(437, 438, 437, 438)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vhsox"]
-atlas = ExtResource("1_mybtg")
-region = Rect2(874, 438, 437, 438)
+[gd_scene load_steps=3 format=3 uid="uid://b88jwlt54mlsy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vhsox"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_h5h0o")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8l7j8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_skk26")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3t5w7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_m7kfa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vhsox")
-}],
+"frames": [],
 "loop": true,
 "name": &"default",
 "speed": 6.0
@@ -62,8 +18,7 @@ position = Vector2(43, 32)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(292, 277)
 sprite_frames = SubResource("SpriteFrames_vhsox")
-frame = 2
-frame_progress = 0.266616
+frame_progress = 0.279762
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(277, 296)
