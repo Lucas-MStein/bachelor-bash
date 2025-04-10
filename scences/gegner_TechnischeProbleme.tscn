@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://76346h62wika"]
+
+[ext_resource type="Texture2D" uid="uid://cljj1g4irrjk4" path="res://assets/player/11_Spritesheet_GEGNER_Tech.Probl..png" id="1_4ra8s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdtpx"]
+atlas = ExtResource("1_4ra8s")
+region = Rect2(0, 0, 438, 438)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfleg"]
+atlas = ExtResource("1_4ra8s")
+region = Rect2(438, 0, 438, 438)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5xvg"]
+atlas = ExtResource("1_4ra8s")
+region = Rect2(0, 438, 438, 438)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5x17"]
+atlas = ExtResource("1_4ra8s")
+region = Rect2(438, 438, 438, 438)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vhsox"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdtpx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfleg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5xvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5x17")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sj2ms"]
+radius = 56.0
+height = 238.0
+
+[node name="player_CodeMaster" type="CharacterBody2D"]
+position = Vector2(43, 32)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(292, 277)
+sprite_frames = SubResource("SpriteFrames_vhsox")
+frame_progress = 0.914798
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(797, 44)
+shape = SubResource("CapsuleShape2D_sj2ms")

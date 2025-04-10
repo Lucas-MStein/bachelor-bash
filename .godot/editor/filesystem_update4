@@ -1,4 +1,2 @@
-res://scences/player_WebDesign.tscn
-res://scences/player_CodeMaster.tscn
-res://scences/Level_1.tscn
-res://skripts/main_menu.gd
+res://scences/gegner_TechnischeProbleme.tscn
+res://scences/main_classroom.tscn
