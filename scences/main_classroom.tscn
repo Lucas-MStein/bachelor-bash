@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://c1re0cj8r6r7v"]
 
-[ext_resource type="Script" uid="uid://dfcq82f7u3fdu" path="res://scences/main_menu.gd" id="1_8v7x5"]
+[ext_resource type="Script" uid="uid://cmmkifm1bqx3w" path="res://skripts/main_menu.gd" id="1_8v7x5"]
 [ext_resource type="Texture2D" uid="uid://xvf7tlit6boj" path="res://assets/classroom/empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp" id="2_b4yld"]
 [ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="3_43s8q"]
 
