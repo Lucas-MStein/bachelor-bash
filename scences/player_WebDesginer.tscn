@@ -1,29 +1,29 @@
-[gd_scene load_steps=10 format=3 uid="uid://cjonwlj0sbav5"]
+[gd_scene load_steps=10 format=3 uid="uid://dcej4j3rl0l0p"]
 
-[ext_resource type="Texture2D" uid="uid://en47ggta0i6r" path="res://assets/player/02_Spritesheet_Projektmanager.png" id="1_cp7p5"]
+[ext_resource type="Texture2D" uid="uid://cyl7wrhkr16c5" path="res://assets/player/03_Spritesheet_Web-Designer.png" id="1_li8oh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_req4m"]
-atlas = ExtResource("1_cp7p5")
+atlas = ExtResource("1_li8oh")
 region = Rect2(0, 0, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cw8sg"]
-atlas = ExtResource("1_cp7p5")
+atlas = ExtResource("1_li8oh")
 region = Rect2(437, 0, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vor3d"]
-atlas = ExtResource("1_cp7p5")
+atlas = ExtResource("1_li8oh")
 region = Rect2(874, 0, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mdmxb"]
-atlas = ExtResource("1_cp7p5")
+atlas = ExtResource("1_li8oh")
 region = Rect2(0, 438, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aymxs"]
-atlas = ExtResource("1_cp7p5")
+atlas = ExtResource("1_li8oh")
 region = Rect2(437, 438, 437, 438)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mc8m1"]
-atlas = ExtResource("1_cp7p5")
+atlas = ExtResource("1_li8oh")
 region = Rect2(874, 438, 437, 438)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vhsox"]
@@ -54,16 +54,17 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sj2ms"]
 radius = 56.0
-height = 238.0
+height = 336.0
 
 [node name="player_WebDesign" type="CharacterBody2D"]
 position = Vector2(43, 32)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(292, 277)
+position = Vector2(-43, -224)
 sprite_frames = SubResource("SpriteFrames_vhsox")
-frame_progress = 0.61965
+frame = 2
+frame_progress = 0.477078
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(277, 296)
+position = Vector2(-43, -200)
 shape = SubResource("CapsuleShape2D_sj2ms")

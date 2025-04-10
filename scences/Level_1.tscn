@@ -1,8 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://cgup202ehbbj8"]
+[gd_scene load_steps=3 format=3 uid="uid://cgup202ehbbj8"]
 
-[ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scences/player_CodeMaster.tscn" id="1_8t6v3"]
+[ext_resource type="PackedScene" uid="uid://cjonwlj0sbav5" path="res://scences/player_ProjektManager.tscn" id="1_8t6v3"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8t6v3"]
 
 [node name="Level_1" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_8t6v3")]
-position = Vector2(216, 133)
+[node name="player_WebDesign" parent="." instance=ExtResource("1_8t6v3")]
+position = Vector2(318, 509)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(267, 291)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(369, 395)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-98, 139)
+scale = Vector2(5, 5)
+shape = SubResource("WorldBoundaryShape2D_8t6v3")

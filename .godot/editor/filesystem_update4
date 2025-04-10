@@ -1,2 +1,8 @@
 res://scences/gegner_TechnischeProbleme.tscn
 res://scences/main_classroom.tscn
+res://scences/player_WebDesign.tscn
+res://scences/player_ProjektManager.tscn
+res://scences/player_CodeMaster.tscn
+res://scences/player_WebDesginer.tscn
+res://scences/Level_1.tscn
+res://scences/test_level.tscn

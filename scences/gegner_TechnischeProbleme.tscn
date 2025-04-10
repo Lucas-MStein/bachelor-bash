@@ -48,7 +48,7 @@ position = Vector2(43, 32)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(292, 277)
 sprite_frames = SubResource("SpriteFrames_vhsox")
-frame_progress = 0.914798
+frame_progress = 0.0975315
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(797, 44)
