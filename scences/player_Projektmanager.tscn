@@ -54,18 +54,20 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sj2ms"]
-radius = 56.0
-height = 296.0
+radius = 16.0
+height = 96.0
 
 [node name="player_WebDesign" type="CharacterBody2D"]
 position = Vector2(43, 32)
 script = ExtResource("1_qa8um")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-43, -224)
+position = Vector2(-43, -88)
+scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_vhsox")
-frame_progress = 0.829554
+autoplay = "default"
+frame_progress = 0.74766
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-42, -183)
+position = Vector2(-43, -88)
 shape = SubResource("CapsuleShape2D_sj2ms")

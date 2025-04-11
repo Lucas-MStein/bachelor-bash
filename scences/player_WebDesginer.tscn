@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://dcej4j3rl0l0p"]
+[gd_scene load_steps=11 format=3 uid="uid://dcej4j3rl0l0p"]
 
 [ext_resource type="Texture2D" uid="uid://cyl7wrhkr16c5" path="res://assets/player/03_Spritesheet_Web-Designer.png" id="1_li8oh"]
+[ext_resource type="Script" uid="uid://itw3jfqhs77i" path="res://skripts/player_web_desginer.gd" id="1_ofe7k"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_req4m"]
 atlas = ExtResource("1_li8oh")
@@ -53,18 +54,21 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sj2ms"]
-radius = 56.0
-height = 336.0
+radius = 16.0
+height = 96.0
 
 [node name="player_WebDesign" type="CharacterBody2D"]
 position = Vector2(43, 32)
+script = ExtResource("1_ofe7k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-43, -224)
+position = Vector2(-43, -88)
+scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_vhsox")
+autoplay = "default"
 frame = 2
 frame_progress = 0.477078
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-43, -200)
+position = Vector2(-43, -88)
 shape = SubResource("CapsuleShape2D_sj2ms")
