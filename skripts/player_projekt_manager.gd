@@ -15,7 +15,7 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
+	# Jump
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			velocity.y = JUMP_VELOCITY
@@ -25,7 +25,8 @@ func _physics_process(delta: float) -> void:
 	
 	if is_on_floor():
 		double_jump_used = false
-
+	
+	
 	# Get the input direction and handle the movement/deceleration.
 	# Get the input direction: -1, 0, 1
 	var direction := Input.get_axis("move_left", "move_right")
@@ -35,6 +36,8 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.flip_h =false
 	elif direction < 0:
 		animated_sprite.flip_h = true
+	
+	# To do - Play animation down
 	
 	# Play animation
 	if is_on_floor():
