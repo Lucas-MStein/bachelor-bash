@@ -1,7 +1,10 @@
 res://scences/Level_1.tscn
-res://scences/main_classroom.tscn
-res://scences/gegner_TechnischeProbleme.tscn
-res://scences/player_CodeMaster.tscn
+res://scences/player_Projektmanager.tscn
+res://skripts/player_projekt_manager.gd
+res://skripts/player_code_master.gd
+res://skripts/player_web_desginer.gd
 res://scences/player_ProjektManager.tscn
 res://scences/player_WebDesginer.tscn
-res://skripts/player_projekt_manager.gd
+res://scences/gegner_TechnischeProbleme.tscn
+res://scences/test_level.tscn
+res://scences/player_CodeMaster.tscn
