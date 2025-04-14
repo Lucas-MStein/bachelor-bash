@@ -73,20 +73,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 10
 
-[node name="Button" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/focus = SubResource("StyleBoxEmpty_glbon")
-theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
-theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
-text = "Abenteuer beginnen!"
-
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -101,7 +87,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
 text = "Charakterauswahl"
 
-[node name="Button3" type="Button" parent="VBoxContainer"]
+[node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -113,7 +99,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_glbon")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
-text = "Optionen"
+text = "Abenteuer beginnen!"
 
 [node name="Button4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -150,8 +136,9 @@ text = "Bachelor Bash"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_character_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_exit_pressed"]
