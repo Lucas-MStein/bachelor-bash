@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 400.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -500.0
 
 var double_jump_used = false;
 

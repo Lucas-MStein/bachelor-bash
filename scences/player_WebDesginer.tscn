@@ -103,7 +103,7 @@ position = Vector2(43, 32)
 script = ExtResource("1_ofe7k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-43, -96)
+position = Vector2(-43, -93)
 sprite_frames = SubResource("SpriteFrames_vhsox")
 animation = &"idle"
 autoplay = "idle"
