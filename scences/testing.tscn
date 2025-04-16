@@ -2,14 +2,14 @@
 
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="3_hny51"]
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scences/player_CodeMaster.tscn" id="4_0win4"]
-[ext_resource type="PackedScene" uid="uid://dbjocpen05erj" path="res://scences/player_ProjektManager.tscn" id="4_hny51"]
+[ext_resource type="PackedScene" uid="uid://bpm5bc8cvsdt" path="res://scences/player_ProjektManager.tscn" id="4_hny51"]
 [ext_resource type="Texture2D" uid="uid://cyxp5a5ryuenb" path="res://assets/elements/01_Terrain_Test.png" id="6_m73wp"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pxpcy"]
 texture = ExtResource("6_m73wp")
-texture_region_size = Vector2i(58, 58)
+texture_region_size = Vector2i(59, 59)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
 1:0/0 = 0
@@ -57,7 +57,7 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_vdqiu")
 sources/1 = SubResource("TileSetAtlasSource_pxpcy")
 
-[node name="testing" type="Node2D"]
+[node name="testing2" type="Node2D"]
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4epbf")

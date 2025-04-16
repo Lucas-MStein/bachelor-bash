@@ -1,10 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://dwdhyjlkv5axw"]
+[gd_scene load_steps=13 format=3 uid="uid://cooubdkasekoy"]
 
 [ext_resource type="Texture2D" uid="uid://ccqfvgyyl2laq" path="res://assets/elements/Background_elements.png" id="1_wt1y1"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="2_4aglu"]
 [ext_resource type="Texture2D" uid="uid://dgwv0hb13yvpa" path="res://assets/elements/Bausteine.png" id="2_ergy7"]
 [ext_resource type="Texture2D" uid="uid://dsa2xb4dgg0ic" path="res://assets/elements/Wall_elements_Frontend.png" id="3_prvlw"]
-[ext_resource type="PackedScene" uid="uid://flh2rmj7vgmp" path="res://scences/credit_point.tscn" id="4_4aglu"]
+[ext_resource type="PackedScene" path="res://scences/credit_point.tscn" id="4_4aglu"]
 [ext_resource type="Texture2D" uid="uid://cljkd7wxgsa7a" path="res://assets/Hintergrund_Fenster_Welt 2_test.png" id="4_eyfe2"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
@@ -13,6 +13,7 @@
 texture = ExtResource("1_wt1y1")
 margins = Vector2i(1, 1)
 texture_region_size = Vector2i(58, 58)
+use_texture_padding = false
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -653,7 +654,7 @@ texture_region_size = Vector2i(58, 58)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_17bo3"]
 texture = ExtResource("4_eyfe2")
-texture_region_size = Vector2i(61, 61)
+texture_region_size = Vector2i(58, 58)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -712,7 +713,6 @@ tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 
 [node name="player_WebDesigner" parent="." instance=ExtResource("2_4aglu")]
-visible = false
 position = Vector2(72, 488)
 
 [node name="Camera2D" type="Camera2D" parent="player_WebDesigner"]

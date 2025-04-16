@@ -5,3 +5,6 @@ res://scences/player_ProjektManager.tscn
 res://scences/Level_1.tscn
 res://scences/credit_point.tscn
 res://scences/Show.tscn
+res://skripts/player_code_master.gd
+res://skripts/player_projekt_manager.gd
+res://skripts/player_web_desginer.gd
