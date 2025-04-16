@@ -155,7 +155,7 @@ text = "Survive the Semester"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]
 [connection signal="pressed" from="Beenden" to="." method="_on_exit_pressed"]

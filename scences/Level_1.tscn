@@ -416,7 +416,7 @@ use_texture_padding = false
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qlnsb"]
 texture = ExtResource("2_ergy7")
-texture_region_size = Vector2i(59, 59)
+texture_region_size = Vector2i(58, 58)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
 1:0/0 = 0

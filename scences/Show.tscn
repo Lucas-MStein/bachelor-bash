@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://ct420sqq742i4"]
+[gd_scene load_steps=6 format=4 uid="uid://42wbhmv7m1se"]
 
 [ext_resource type="Texture2D" uid="uid://cyxp5a5ryuenb" path="res://assets/elements/01_Terrain_Test.png" id="1_ptra2"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="2_235bj"]
