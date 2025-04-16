@@ -1,0 +1,5 @@
+res://scences/Show.tscn
+res://skripts/player_code_master.gd
+res://skripts/player_projekt_manager.gd
+res://skripts/player_web_desginer.gd
+res://main_menu.tscn
