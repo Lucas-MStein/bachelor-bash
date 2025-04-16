@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dfcq82f7u3fdu" path="res://skripts/main_menu.gd" id="1_fu7sn"]
 [ext_resource type="FontFile" uid="uid://c3nth5fdg48ie" path="res://GrapeSoda.ttf" id="2_fu7sn"]
 [ext_resource type="Texture2D" uid="uid://dhvged44by05j" path="res://assets/classroom/Startbildschirm.svg" id="2_jix8l"]
-[ext_resource type="Texture2D" uid="uid://bcn4lb0vgd6h8" path="res://assets/player/play_circle_400dp_FFEC7D_FILL0_wght400_GRAD0_opsz48.png" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://ghhxtf2vss2q" path="res://assets/classroom/Play Button.png" id="3_glbon"]
 [ext_resource type="Texture2D" uid="uid://wjf4tuuawkd4" path="res://assets/logout_50dp_EA3323_FILL0_wght400_GRAD0_opsz48.png" id="3_jix8l"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
@@ -76,10 +76,10 @@ theme_override_constants/separation = 10
 
 [node name="Abendteuer beginnen" type="Button" parent="."]
 layout_mode = 2
-offset_left = 840.0
-offset_top = 520.0
-offset_right = 1040.0
-offset_bottom = 696.0
+offset_left = 792.0
+offset_top = 472.0
+offset_right = 1088.0
+offset_bottom = 728.0
 size_flags_vertical = 3
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -148,7 +148,7 @@ offset_bottom = -46.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_offset_y = 6
 theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 91
 text = "Survive the Semester"
