@@ -1,12 +1,12 @@
+Button
+Panel
 TileMap
 TileMapLayer
 CollisionShape2D
 StaticBody2D
 Camera2D
 Label
-Panel
 VBoxContainer
-Button
 AnimationPlayer
 TextureRect
 Control

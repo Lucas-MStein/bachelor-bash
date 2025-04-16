@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=4 uid="uid://cgup202ehbbj8"]
+[gd_scene load_steps=15 format=4 uid="uid://cgup202ehbbj8"]
 
 [ext_resource type="Texture2D" uid="uid://o042xk5m51wy" path="res://assets/elements/Test Blöcke.png" id="1_0win4"]
 [ext_resource type="PackedScene" uid="uid://cjonwlj0sbav5" path="res://scences/player_Projektmanager.tscn" id="1_vdqiu"]
 [ext_resource type="Texture2D" uid="uid://b4uf8qno22l3" path="res://assets/elements/Terrain (16x16).png" id="2_pxpcy"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="3_hny51"]
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scences/player_CodeMaster.tscn" id="4_0win4"]
+[ext_resource type="Texture2D" uid="uid://vj7a7py40r6p" path="res://Test_Hintergrund.png" id="6_4epbf"]
 [ext_resource type="Texture2D" uid="uid://cyxp5a5ryuenb" path="res://Test_vier.png" id="6_m73wp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m73wp"]
@@ -176,6 +177,46 @@ tile_size = Vector2i(24, 24)
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_4epbf")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3mbag"]
+texture = ExtResource("6_4epbf")
+separation = Vector2i(1, 1)
+texture_region_size = Vector2i(58, 58)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dcndb"]
 texture = ExtResource("6_m73wp")
 texture_region_size = Vector2i(58, 58)
@@ -209,6 +250,7 @@ texture_region_size = Vector2i(58, 58)
 tile_size = Vector2i(58, 58)
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_dcndb")
+sources/0 = SubResource("TileSetAtlasSource_3mbag")
 
 [node name="testing" type="Node2D"]
 
@@ -252,4 +294,4 @@ position = Vector2(76, 468)
 [node name="TileMap3" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_3mbag")
 format = 2
-layer_0/tile_data = PackedInt32Array(655359, 2, 0, 589824, 2, 0, 589825, 2, 0, 589826, 2, 0, 589827, 2, 0, 589828, 2, 1, 589829, 2, 1, 458757, 262146, 1, 524293, 262146, 1, 589830, 2, 1, 589831, 2, 1, 589832, 2, 1, 589833, 2, 1, 589834, 2, 1, 589835, 2, 1, 524288, 2, 0, 524289, 2, 0, 524290, 2, 0, 524291, 2, 0, 589823, 2, 0, 589822, 2, 0, 524286, 2, 0, 524287, 2, 0, 458756, 262146, 1, 393220, 262146, 1, 393221, 262146, 1, 393222, 262146, 1, 458758, 262146, 1, 524294, 262146, 1, 458750, 2, 0, 458751, 2, 0, 393216, 2, 0, 327680, 2, 0, 393215, 2, 0, 393214, 2, 0, 262142, 2, 0, 262143, 2, 0, 196608, 2, 0, 196609, 2, 0, 196610, 2, 0, 524295, 65538, 4, 524296, 65538, 4, 524297, 65538, 4, 524298, 65538, 4, 524299, 65538, 4, 524300, 65538, 4, 589836, 65538, 4, 589837, 65538, 4, 589838, 65538, 4, 589839, 65538, 4, 589840, 65538, 4, 589841, 65538, 4, 589842, 65538, 4, 589843, 65538, 4, 589844, 65538, 4, 589845, 65538, 4, 589846, 65538, 4, 589847, 65538, 4, 655358, 2, 0, 655357, 2, 0, 655356, 2, 0, 655355, 2, 0, 655354, 2, 0, 655353, 2, 0, 655352, 2, 0, 655351, 2, 0, 655350, 2, 0, 655349, 2, 0, 524292, 262146, 1)
+layer_0/tile_data = PackedInt32Array(655359, 2, 0, 589824, 2, 0, 589825, 2, 0, 589826, 2, 0, 589827, 2, 0, 589828, 2, 1, 589829, 2, 1, 458757, 0, 3, 524293, 262146, 1, 589830, 2, 1, 589831, 2, 1, 589832, 2, 1, 589833, 2, 1, 589834, 2, 1, 589835, 2, 1, 524288, 2, 0, 524289, 2, 0, 524290, 2, 0, 524291, 2, 0, 589823, 2, 0, 589822, 2, 0, 524286, 0, 3, 524287, 0, 3, 458756, 0, 3, 393220, 0, 3, 393221, 0, 3, 393222, 0, 3, 458758, 0, 3, 524294, 262146, 1, 458750, 2, 0, 458751, 2, 0, 393216, 2, 0, 327680, 2, 0, 393215, 2, 0, 393214, 2, 0, 262142, 2, 0, 262143, 2, 0, 196608, 2, 0, 196609, 2, 0, 196610, 2, 0, 524295, 65538, 4, 524296, 65538, 4, 524297, 65538, 4, 524298, 65538, 4, 524299, 65538, 4, 524300, 65538, 4, 589836, 65538, 4, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 65538, 4, 589843, 65538, 4, 589844, 65538, 4, 589845, 65538, 4, 589846, 65538, 4, 589847, 65538, 4, 655358, 2, 0, 655357, 2, 0, 655356, 2, 0, 655355, 2, 0, 655354, 2, 0, 655353, 2, 0, 655352, 2, 0, 655351, 2, 0, 655350, 2, 0, 655349, 2, 0, 524292, 262146, 1, 458759, 0, 3, 458760, 0, 3, 327683, 196610, 4, 327684, 0, 3, 327685, 0, 3, 327686, 0, 3, 393223, 0, 3, 393224, 196610, 4, 524283, 2, 0, 524284, 0, 3, 524285, 0, 3, 458752, 0, 3, 458749, 65538, 0, 458748, 65538, 0, 458747, 65538, 0, 589821, 131074, 0, 589820, 131074, 0, 589819, 65538, 0, 458753, 0, 3, 458754, 0, 3, 458755, 0, 3, 393219, 0, 3, 327687, 0, 3, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 524301, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0)
