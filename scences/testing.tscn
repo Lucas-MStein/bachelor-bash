@@ -1,11 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://cgup202ehbbj8"]
 
-[ext_resource type="Texture2D" uid="uid://o042xk5m51wy" path="res://assets/elements/Test Blöcke.png" id="1_0win4"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="3_hny51"]
-[ext_resource type="Texture2D" uid="uid://cyxp5a5ryuenb" path="res://Test_vier.png" id="6_m73wp"]
+[ext_resource type="Texture2D" uid="uid://cyxp5a5ryuenb" path="res://assets/elements/011_Terrain_Test.png" id="6_m73wp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vdqiu"]
+load_path = "res://.godot/imported/Test Blöcke.png-90fb1c79cdd56ce62bc0d674589980e3.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m73wp"]
-texture = ExtResource("1_0win4")
+texture = SubResource("CompressedTexture2D_vdqiu")
 margins = Vector2i(32, 199)
 texture_region_size = Vector2i(58, 58)
 5:16/0 = 0
