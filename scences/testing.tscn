@@ -1,73 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cgup202ehbbj8"]
+[gd_scene load_steps=8 format=4 uid="uid://cgup202ehbbj8"]
 
-[ext_resource type="PackedScene" uid="uid://bfuc0wa78jrkv" path="res://scences/player_Projektmanager.tscn" id="1_vdqiu"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="3_hny51"]
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scences/player_CodeMaster.tscn" id="4_0win4"]
+[ext_resource type="PackedScene" uid="uid://dbjocpen05erj" path="res://scences/player_ProjektManager.tscn" id="4_hny51"]
 [ext_resource type="Texture2D" uid="uid://cyxp5a5ryuenb" path="res://assets/elements/01_Terrain_Test.png" id="6_m73wp"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vdqiu"]
-load_path = "res://.godot/imported/Test Blöcke.png-90fb1c79cdd56ce62bc0d674589980e3.ctex"
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m73wp"]
-texture = SubResource("CompressedTexture2D_vdqiu")
-margins = Vector2i(32, 199)
-texture_region_size = Vector2i(58, 58)
-5:16/0 = 0
-6:16/0 = 0
-7:16/0 = 0
-8:16/0 = 0
-9:16/0 = 0
-10:16/0 = 0
-11:16/0 = 0
-12:16/0 = 0
-13:16/0 = 0
-14:16/0 = 0
-15:16/0 = 0
-16:16/0 = 0
-5:17/0 = 0
-6:17/0 = 0
-7:17/0 = 0
-8:17/0 = 0
-9:17/0 = 0
-10:17/0 = 0
-11:17/0 = 0
-12:17/0 = 0
-13:17/0 = 0
-14:17/0 = 0
-15:17/0 = 0
-16:17/0 = 0
-5:18/0 = 0
-6:18/0 = 0
-7:18/0 = 0
-8:18/0 = 0
-9:18/0 = 0
-10:18/0 = 0
-11:18/0 = 0
-12:18/0 = 0
-13:18/0 = 0
-14:18/0 = 0
-15:18/0 = 0
-16:18/0 = 0
-5:19/0 = 0
-6:19/0 = 0
-7:19/0 = 0
-8:19/0 = 0
-9:19/0 = 0
-10:19/0 = 0
-11:19/0 = 0
-12:19/0 = 0
-13:19/0 = 0
-14:19/0 = 0
-15:19/0 = 0
-16:19/0 = 0
-1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29.5, -29.5, 29.5, -29.5, 29.5, 29.5, -29.5, 29.5)
-2:1/0 = 0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29.5, -29.5, 29.5, -29.5, 29.5, 29.5, -29.5, 29.5)
-3:1/0 = 0
-3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29.5, -29.5, 29.5, -29.5, 29.5, 29.5, -29.5, 29.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pxpcy"]
 texture = ExtResource("6_m73wp")
@@ -117,7 +55,6 @@ texture_region_size = Vector2i(58, 58)
 tile_size = Vector2i(58, 58)
 physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_vdqiu")
-sources/0 = SubResource("TileSetAtlasSource_m73wp")
 sources/1 = SubResource("TileSetAtlasSource_pxpcy")
 
 [node name="testing" type="Node2D"]
@@ -126,7 +63,12 @@ sources/1 = SubResource("TileSetAtlasSource_pxpcy")
 tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 format = 2
-layer_0/tile_data = PackedInt32Array(589826, 65537, 0, 589827, 65537, 0, 524292, 65537, 0, 589828, 65537, 0, 458756, 65537, 0, 458757, 65537, 0, 524293, 65537, 0, 589829, 65537, 0, 393221, 65537, 0, 327685, 65537, 0, 327686, 65537, 0, 393222, 65537, 0, 458759, 65537, 0, 458758, 65537, 0, 524294, 65537, 0, 524295, 65537, 0, 524296, 65537, 0, 524297, 65537, 0, 589830, 65537, 0, 589831, 65537, 0, 589832, 65537, 0, 589833, 65537, 0, 655358, 65537, 0, 655359, 65537, 0, 589824, 65537, 0, 589825, 65537, 0, 458760, 65537, 0, 393223, 65537, 0, 393224, 65537, 0, 589834, 65537, 0, 589835, 65537, 0, 589836, 65537, 0, 589837, 65537, 0, 589838, 65537, 0, 655356, 65537, 0, 655357, 65537, 0, 262151, 65537, 0, 327687, 65537, 0, 262152, 65537, 0, 327688, 65537, 0, 262153, 65537, 0, 327689, 65537, 0, 393225, 65537, 0, 458761, 65537, 0, 393226, 65537, 0, 458762, 65537, 0, 524298, 65537, 0, 393227, 65537, 0, 458763, 65537, 0, 524299, 65537, 0, 393228, 65537, 0, 393229, 65537, 0, 393230, 65537, 0, 393231, 65537, 0, 393232, 65537, 0, 589839, 65537, 0, 589840, 65537, 0, 589841, 65537, 0, 589842, 65537, 0, 589843, 65537, 0, 589844, 65537, 0, 589845, 65537, 0, 589846, 65537, 0, 589847, 65537, 0, 589848, 65537, 0, 589849, 65536, 1, 589850, 65536, 1, 655386, 65536, 1, 655387, 65536, 1, 655388, 65536, 1, 655389, 65536, 1, 655390, 65536, 1, 655391, 65536, 1, 655392, 65536, 1, 655393, 65536, 1, 131089, 1, 0, 131090, 1, 0, 131091, 1, 0, 65556, 1, 0, 65557, 1, 0, 65558, 1, 0, 65559, 1, 0, 65560, 1, 0, 131095, 1, 0, 131094, 1, 0, 131093, 1, 0, 131092, 1, 0, 131096, 1, 0, 655350, 1, 0, 655351, 1, 0, 655352, 1, 0, 655353, 1, 0, 655354, 1, 0, 655355, 1, 0, 131064, 1, 0, 131065, 1, 0, 131066, 1, 0, 131067, 1, 0, 131068, 1, 0, 131069, 1, 0, 131070, 1, 0, 196604, 1, 0, 196605, 1, 0, 262141, 1, 0, 262140, 1, 0, 262142, 1, 0, 196606, 1, 0)
+
+[node name="Layer1" type="TileMapLayer" parent="TileMap2"]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAACAAkAAQABAAAAAAADAAkAAQABAAAAAAAEAAgAAQABAAAAAAAEAAkAAQABAAAAAAAEAAcAAQABAAAAAAAFAAcAAQABAAAAAAAFAAgAAQABAAAAAAAFAAkAAQABAAAAAAAFAAYAAQABAAAAAAAFAAUAAQABAAAAAAAGAAUAAQABAAAAAAAGAAYAAQABAAAAAAAHAAcAAQABAAAAAAAGAAcAAQABAAAAAAAGAAgAAQABAAAAAAAHAAgAAQABAAAAAAAIAAgAAQABAAAAAAAJAAgAAQABAAAAAAAGAAkAAQABAAAAAAAHAAkAAQABAAAAAAAIAAkAAQABAAAAAAAJAAkAAQABAAAAAAD+/wkAAQABAAAAAAD//wkAAQABAAAAAAAAAAkAAQABAAAAAAABAAkAAQABAAAAAAAIAAcAAQABAAAAAAAHAAYAAQABAAAAAAAIAAYAAQABAAAAAAAKAAkAAQABAAAAAAALAAkAAQABAAAAAAAMAAkAAQABAAAAAAANAAkAAQABAAAAAAAOAAkAAQABAAAAAAD8/wkAAQABAAAAAAD9/wkAAQABAAAAAAAHAAQAAQABAAAAAAAHAAUAAQABAAAAAAAIAAQAAQABAAAAAAAIAAUAAQABAAAAAAAJAAQAAQABAAAAAAAJAAUAAQABAAAAAAAJAAYAAQABAAAAAAAJAAcAAQABAAAAAAAKAAYAAQABAAAAAAAKAAcAAQABAAAAAAAKAAgAAQABAAAAAAALAAYAAQABAAAAAAALAAcAAQABAAAAAAALAAgAAQABAAAAAAAMAAYAAQABAAAAAAANAAYAAQABAAAAAAAOAAYAAQABAAAAAAAPAAYAAQABAAAAAAAQAAYAAQABAAAAAAAPAAkAAQABAAAAAAAQAAkAAQABAAAAAAARAAkAAQABAAAAAAASAAkAAQABAAAAAAATAAkAAQABAAAAAAAUAAkAAQABAAAAAAAVAAkAAQABAAAAAAAWAAkAAQABAAAAAAAXAAkAAQABAAAAAAAYAAkAAQABAAAAAAARAAIAAQAAAAAAAAASAAIAAQAAAAAAAAATAAIAAQAAAAAAAAAUAAEAAQAAAAAAAAAVAAEAAQAAAAAAAAAWAAEAAQAAAAAAAAAXAAEAAQAAAAAAAAAYAAEAAQAAAAAAAAAXAAIAAQAAAAAAAAAWAAIAAQAAAAAAAAAVAAIAAQAAAAAAAAAUAAIAAQAAAAAAAAAYAAIAAQAAAAAAAAD2/wkAAQAAAAAAAAD3/wkAAQAAAAAAAAD4/wkAAQAAAAAAAAD5/wkAAQAAAAAAAAD6/wkAAQAAAAAAAAD7/wkAAQAAAAAAAAD4/wEAAQAAAAAAAAD5/wEAAQAAAAAAAAD6/wEAAQAAAAAAAAD7/wEAAQAAAAAAAAD8/wEAAQAAAAAAAAD9/wEAAQAAAAAAAAD+/wEAAQAAAAAAAAD8/wIAAQAAAAAAAAD9/wIAAQAAAAAAAAD9/wMAAQAAAAAAAAD8/wMAAQAAAAAAAAD+/wMAAQAAAAAAAAD+/wIAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_4epbf")
+rendering_quadrant_size = 49
 
 [node name="player_WebDesigner" parent="." instance=ExtResource("3_hny51")]
 position = Vector2(72, 488)
@@ -138,5 +80,5 @@ position_smoothing_enabled = true
 [node name="player_CodeMaster" parent="." instance=ExtResource("4_0win4")]
 position = Vector2(-48, 512)
 
-[node name="player_ProjektManager" parent="." instance=ExtResource("1_vdqiu")]
-position = Vector2(-168, 504)
+[node name="player_ProjektManager" parent="." instance=ExtResource("4_hny51")]
+position = Vector2(-280, 492)
