@@ -55,7 +55,7 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_vdqiu")
 sources/1 = SubResource("TileSetAtlasSource_pxpcy")
 
-[node name="testing" type="Node2D"]
+[node name="Show" type="Node2D"]
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4epbf")
