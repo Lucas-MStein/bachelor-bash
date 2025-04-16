@@ -9,3 +9,4 @@ res://scences/player_ProjektManager.tscn
 res://ressources/player_idel_CollisionShape.tres
 res://skripts/player_projekt_manager.gd
 res://skripts/player_code_master.gd
+res://ressources/player_Slide_CollisionShape.tres
