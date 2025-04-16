@@ -1,14 +1,19 @@
 extends CharacterBody2D
 
+@onready var animated_sprite = $AnimatedSprite2D
+@onready var cShape = $CollisionShape2D
 
 const SPEED = 400.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -500.0
 
 var double_jump_used = false;
+var is_sliding = false;
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-@onready var animated_sprite = $AnimatedSprite2D
+var standing_cShape = preload("res://ressources/player_idel_CollisionShape.tres")
+var sliding_cShape = preload("res://ressources/player_Slide_CollisionShape.tres")
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -26,28 +31,13 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		double_jump_used = false
 	
-	
-	# Get the input direction and handle the movement/deceleration.
 	# Get the input direction: -1, 0, 1
 	var direction := Input.get_axis("move_left", "move_right")
 	
-	# Flip the Sprite
-	if direction > 0:
-		animated_sprite.flip_h =false
-	elif direction < 0:
-		animated_sprite.flip_h = true
-	
-	# To do - Play animation down
-	
-	# Play animation
-	if is_on_floor():
-		if direction == 0:
-			animated_sprite.play("idle")
-		else:
-			animated_sprite.play("run")
-	else:
-		animated_sprite.play("jump")
-	
+	if Input.is_action_just_pressed("down"):
+		slide()
+	elif Input.is_action_just_released("down"):
+		stand()
 	
 	# Apply movement
 	if direction:
@@ -56,3 +46,44 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+	update_animation(direction)
+	
+	switch_direction(direction)
+
+# Play animation
+func update_animation(direction):
+	if is_on_floor():
+		if direction == 0:
+			if is_sliding:
+				animated_sprite.play("down")
+			else:
+				animated_sprite.play("idle")
+		else:
+			if is_sliding:
+				animated_sprite.play("slide")
+			else:
+				animated_sprite.play("run")
+	else:
+		animated_sprite.play("jump")
+
+# Flip the Sprite
+func switch_direction(direction):
+	if direction > 0:
+		animated_sprite.flip_h =false
+	elif direction < 0:
+		animated_sprite.flip_h = true
+		
+func slide():
+	if  is_sliding:
+		return
+	is_sliding = true
+	cShape.shape = sliding_cShape
+	cShape.position.y = -75
+	
+func stand():
+	if  is_sliding == false:
+		return
+	is_sliding = false
+	cShape.shape = standing_cShape
+	cShape.position.y = -88
