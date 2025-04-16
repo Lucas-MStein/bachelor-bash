@@ -4,3 +4,5 @@ res://scences/player_Projektmanager.tscn
 res://scences/player_WebDesginer.tscn
 res://skripts/player_web_desginer.gd
 res://skripts/main_menu.gd
+res://scences/player_CodeMaster.tscn
+res://scences/player_ProjektManager.tscn
