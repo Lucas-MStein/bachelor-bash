@@ -1,7 +1,8 @@
-[gd_scene load_steps=16 format=3 uid="uid://cjonwlj0sbav5"]
+[gd_scene load_steps=14 format=3 uid="uid://bfuc0wa78jrkv"]
 
 [ext_resource type="Script" uid="uid://tmsvaskjvsup" path="res://skripts/player_projekt_manager.gd" id="1_qa8um"]
 [ext_resource type="Texture2D" uid="uid://cq8d1ywgx13kg" path="res://assets/figures/01_Player_ProjektManager.png" id="2_ifdv4"]
+[ext_resource type="Shape2D" uid="uid://l8xgun1bff8g" path="res://ressources/player_idel_CollisionShape.tres" id="3_87rao"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_87rao"]
 atlas = ExtResource("2_ifdv4")
@@ -35,17 +36,9 @@ region = Rect2(139, 141, 139, 141)
 atlas = ExtResource("2_ifdv4")
 region = Rect2(278, 141, 139, 141)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_r575m"]
-atlas = ExtResource("2_ifdv4")
-region = Rect2(0, 423, 139, 141)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6rua"]
 atlas = ExtResource("2_ifdv4")
 region = Rect2(139, 423, 139, 141)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jivb1"]
-atlas = ExtResource("2_ifdv4")
-region = Rect2(278, 423, 139, 141)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vhsox"]
 animations = [{
@@ -95,33 +88,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_r575m")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_q6rua")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jivb1")
 }],
 "loop": true,
 "name": &"slide",
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sj2ms"]
-radius = 16.0
-height = 68.0
-
 [node name="player_ProjektManager" type="CharacterBody2D"]
 position = Vector2(43, 32)
 script = ExtResource("1_qa8um")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-43, -96)
+position = Vector2(-43, -93)
 sprite_frames = SubResource("SpriteFrames_vhsox")
-animation = &"down"
+animation = &"slide"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-44, -67)
-shape = SubResource("CapsuleShape2D_sj2ms")
+position = Vector2(-43, -88)
+shape = ExtResource("3_87rao")
