@@ -3,8 +3,8 @@ extends CharacterBody2D
 @onready var animated_sprite = $AnimatedSprite2D
 @onready var cShape = $CollisionShape2D
 
-const SPEED = 400.0
-const JUMP_VELOCITY = -500.0
+const SPEED = 500.0
+const JUMP_VELOCITY = -600.0
 
 var double_jump_used = false;
 var is_sliding = false;
@@ -79,11 +79,11 @@ func slide():
 		return
 	is_sliding = true
 	cShape.shape = sliding_cShape
-	cShape.position.y = -75
+	cShape.position.y = -88
 	
 func stand():
 	if  is_sliding == false:
 		return
 	is_sliding = false
 	cShape.shape = standing_cShape
-	cShape.position.y = -88
+	cShape.position.y = -112

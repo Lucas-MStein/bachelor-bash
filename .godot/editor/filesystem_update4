@@ -1,1 +1,10 @@
+res://scences/testing.tscn
+res://scences/player_WebDesginer.tscn
+res://scences/player_CodeMaster.tscn
+res://scences/Level_1.tscn
 res://scences/review.tscn
+res://ressources/player_Slide_CollisionShape.tres
+res://skripts/player_web_desginer.gd
+res://scences/player_ProjektManager.tscn
+res://skripts/player_projekt_manager.gd
+res://skripts/player_code_master.gd
