@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cooubdkasekoy"]
+[gd_scene load_steps=6 format=3 uid="uid://cooubdkasekoy"]
 
-[ext_resource type="Texture2D" uid="uid://nhtu5p1jpex0" path="res://assets/elements/04_Bausteine_Boden.png" id="1_wt1y1"]
+[ext_resource type="Texture2D" path="res://assets/elements/04_Bausteine_Boden.png" id="1_wt1y1"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="2_4aglu"]
-[ext_resource type="Texture2D" uid="uid://c2oyncow2xopf" path="res://assets/elements/04_Bausteine_Deko.png" id="2_bbiwm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -19,6 +18,8 @@ texture_region_size = Vector2i(58, 58)
 6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
 0:2/0 = 0
 0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
 4:2/0 = 0
 4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
 6:2/0 = 0
@@ -39,25 +40,12 @@ texture_region_size = Vector2i(58, 58)
 3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
 4:6/0 = 0
 4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
-2:2/0 = 0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-29, -29, 29, -29, 29, 29, -29, 29)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p7ac8"]
-texture = ExtResource("2_bbiwm")
-margins = Vector2i(0, 2)
-texture_region_size = Vector2i(58, 58)
-0:0/0 = 0
-2:0/0 = 0
-4:0/0 = 0
-6:0/0 = 0
-6:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_4epbf"]
 tile_size = Vector2i(58, 58)
 physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_vdqiu")
 sources/2 = SubResource("TileSetAtlasSource_bbiwm")
-sources/3 = SubResource("TileSetAtlasSource_p7ac8")
 
 [node name="Level 1" type="Node2D"]
 
@@ -68,7 +56,6 @@ format = 2
 
 [node name="Layer1" type="TileMapLayer" parent="TileMap2"]
 use_parent_material = true
-tile_map_data = PackedByteArray(0, 0, 4, 0, 11, 0, 2, 0, 2, 0, 2, 0, 0, 0)
 tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 
