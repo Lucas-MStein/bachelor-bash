@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cooubdkasekoy"]
 
-[ext_resource type="Texture2D" uid="uid://nhtu5p1jpex0" path="res://assets/elements/04_Bausteine_Final.png" id="1_wt1y1"]
+[ext_resource type="Texture2D" path="res://assets/elements/04_Bausteine_Boden.png" id="1_wt1y1"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="2_4aglu"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
