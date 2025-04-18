@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bpm5bc8cvsdt"]
+[gd_scene load_steps=14 format=3 uid="uid://bgvfoy3yx5rlj"]
 
 [ext_resource type="Script" uid="uid://tmsvaskjvsup" path="res://skripts/player_projekt_manager.gd" id="1_qa8um"]
 [ext_resource type="Texture2D" uid="uid://2fes2vtxiuy" path="res://assets/figures/01_Player_ProjektManager.svg" id="2_ifdv4"]
