@@ -97,6 +97,7 @@ animations = [{
 
 [node name="player_WebDesigner" type="CharacterBody2D"]
 position = Vector2(43, 32)
+collision_layer = 2
 script = ExtResource("1_ofe7k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
