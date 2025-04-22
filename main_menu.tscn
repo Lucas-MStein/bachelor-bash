@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://c1re0cj8r6r7v"]
+[gd_scene load_steps=11 format=3 uid="uid://c1re0cj8r6r7v"]
 
-[ext_resource type="Texture2D" uid="uid://ctppw15unnn1m" path="res://empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp" id="1_7vrkn"]
 [ext_resource type="Script" uid="uid://dfcq82f7u3fdu" path="res://main_menu.gd" id="1_fu7sn"]
 [ext_resource type="FontFile" uid="uid://dfb7qq3y6l80k" path="res://GrapeSoda.ttf" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://wdugyfmdcd13" path="res://Startbildschirm.svg" id="3_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://bwhb6fmybvx4r" path="res://harmonica.png" id="4_glbon"]
+[ext_resource type="Texture2D" uid="uid://cxux1reau8pe4" path="res://mute.png" id="5_nlkkf"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
-texture = ExtResource("1_7vrkn")
+texture = ExtResource("3_nlkkf")
 modulate_color = Color(0.472025, 0.472025, 0.472025, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_glbon"]
@@ -136,9 +138,26 @@ text = "Bachelor Bash"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="MusicToggleButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -329.0
+offset_right = 172.0
+offset_bottom = 183.0
+grow_horizontal = 0
+grow_vertical = 0
+toggle_mode = true
+texture_normal = ExtResource("4_glbon")
+texture_pressed = ExtResource("5_nlkkf")
+stretch_mode = 0
 
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_character_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_exit_pressed"]

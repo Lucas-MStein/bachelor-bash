@@ -1,25 +1,33 @@
 extends Control
 
-@onready var label_node: Label = get_node("Label")
+@onready var music_player = get_node("/root/MusicPlayer")  # Globale Musik-Instanz
+@onready var music_toggle = $MusicToggleButton              # Button für Musik an/aus
+@onready var label_node: Label = get_node("Label")          # Begrüßungstext
 
 func _ready() -> void:
-	# Entwickler-Test: Spielstand nur beim ersten Start in Debug löschen
+	# Musikstatus initial setzen
+	music_toggle.button_pressed = !music_player.music_enabled
+
+	# Toggle-Button verbinden
+	music_toggle.pressed.connect(_on_music_toggle_pressed)
+
+	# Entwickler-Test: Speicherstand löschen beim ersten Start (Debug-Modus)
 	if OS.is_debug_build() and Global.first_run:
 		Global.character = ""
 		Global.level = 1
 		var dir := DirAccess.open("user://")
 		if dir.file_exists("savegame.save"):
 			dir.remove("savegame.save")
-		Global.first_run = false  # Wichtig: Nur einmal löschen
+		Global.first_run = false
 
-	# Savegame laden (falls vorhanden)
+	# Spielstand laden
 	Global.load_game()
 
-	# Begrüßungstext setzen
+	# Begrüßungstext
 	if Global.character != "":
-		$Label.text = "Willkommen zurück, " + Global.character + "!"
+		label_node.text = "Willkommen zurück, " + Global.character + "!"
 	else:
-		$Label.text = "Bachelor Bash"
+		label_node.text = "Bachelor Bash"
 
 func _on_start_pressed() -> void:
 	if Global.character == "":
@@ -28,8 +36,13 @@ func _on_start_pressed() -> void:
 		Global.save_game()
 		get_tree().change_scene_to_file("res://Level1.tscn")
 
-func _on_character_pressed() -> void:
-	get_tree().change_scene_to_file("res://character_select_menu.tscn")
+func _on_character_pressed():
+	var char_select = load("res://character_select_menu.tscn").instantiate()
+	add_child(char_select)
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
+
+func _on_music_toggle_pressed():
+	music_player.toggle_music()
+	music_toggle.button_pressed = !music_player.music_enabled

@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://b2ng3cpc3xuxr"]
+[gd_scene load_steps=10 format=3 uid="uid://b2ng3cpc3xuxr"]
 
 [ext_resource type="Script" uid="uid://bwusdvkbxle81" path="res://character_select_menu.gd" id="1_dk3gk"]
-[ext_resource type="Texture2D" uid="uid://ctppw15unnn1m" path="res://empty-classroom-background-cartoon-style-class-room-colorful-empty-classroom-background-cartoon-style-class-room-colorful-121805895.webp" id="2_dk3gk"]
+[ext_resource type="Texture2D" uid="uid://wdugyfmdcd13" path="res://Startbildschirm.svg" id="2_dk3gk"]
 [ext_resource type="Texture2D" uid="uid://c7t025g5vhfw1" path="res://Business.png" id="3_ohli5"]
 [ext_resource type="Texture2D" uid="uid://q4hqd072irn6" path="res://Lotz.png" id="4_bcgy4"]
 [ext_resource type="Texture2D" uid="uid://d2rvy0q1old5y" path="res://CodeMaster.png" id="5_pl54s"]
 [ext_resource type="FontFile" uid="uid://dfb7qq3y6l80k" path="res://GrapeSoda.ttf" id="6_mr67m"]
+[ext_resource type="Texture2D" uid="uid://bwhb6fmybvx4r" path="res://harmonica.png" id="7_ohli5"]
+[ext_resource type="Texture2D" uid="uid://cxux1reau8pe4" path="res://mute.png" id="8_bcgy4"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ruflx"]
 texture = ExtResource("2_dk3gk")
@@ -37,9 +39,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -205.0
-offset_top = -94.0
+offset_top = -85.0
 offset_right = 205.0
-offset_bottom = 94.0
+offset_bottom = 115.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 10
@@ -77,9 +79,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -228.0
-offset_top = -210.0
+offset_top = -201.0
 offset_right = 228.0
-offset_bottom = -127.0
+offset_bottom = -118.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
@@ -89,3 +91,22 @@ theme_override_font_sizes/font_size = 82
 text = "Bachelor Bash"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="MusicToggleButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -340.0
+offset_top = -329.0
+offset_right = 172.0
+offset_bottom = 183.0
+grow_horizontal = 0
+grow_vertical = 0
+toggle_mode = true
+texture_normal = ExtResource("7_ohli5")
+texture_pressed = ExtResource("8_bcgy4")
+stretch_mode = 0
