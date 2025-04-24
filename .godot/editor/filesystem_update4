@@ -1,1 +1,5 @@
-res://main_menu.tscn
+res://scences/review-kopie.tscn
+res://scences/review.tscn
+res://scences/testing.tscn
+res://scences/killzone.tscn
+res://skripts/main_menu.gd

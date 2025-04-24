@@ -1,8 +1,8 @@
+TileMapLayer
 Timer
 Area2D
 CollisionShape2D
 AnimatedSprite2D
-TileMapLayer
 Sprite2D
 Button
 Panel
@@ -12,4 +12,3 @@ Camera2D
 Label
 VBoxContainer
 AnimationPlayer
-TextureRect
