@@ -97,6 +97,7 @@ animations = [{
 
 [node name="player_CodeMaster" type="CharacterBody2D"]
 position = Vector2(43, 32)
+collision_layer = 2
 script = ExtResource("1_h5h0o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

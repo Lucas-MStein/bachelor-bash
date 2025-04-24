@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://76346h62wika"]
 
-[ext_resource type="Texture2D" uid="uid://cljj1g4irrjk4" path="res://assets/figures/02_Enemy_TechischesProblem.png" id="1_4ra8s"]
+[ext_resource type="Texture2D" uid="uid://cljj1g4irrjk4" path="res://assets/extra/02_Enemy_TechischesProblem.png" id="1_4ra8s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mdtpx"]
 atlas = ExtResource("1_4ra8s")
@@ -50,7 +50,7 @@ position = Vector2(-43, -88)
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_vhsox")
 autoplay = "default"
-frame_progress = 0.686833
+frame_progress = 0.773056
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-43, -80)
