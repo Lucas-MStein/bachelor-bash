@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 TileMapLayer
 Sprite2D
+=======
+AudioStreamPlayer
+Label
+Panel
+VBoxContainer
+>>>>>>> f3e2dc6 (menu and character select)
 Button
 Panel
 TileMap
