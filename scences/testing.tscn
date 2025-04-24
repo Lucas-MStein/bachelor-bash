@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="3_hny51"]
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scences/player_CodeMaster.tscn" id="4_0win4"]
-[ext_resource type="PackedScene" uid="uid://bpm5bc8cvsdt" path="res://scences/player_ProjektManager.tscn" id="4_hny51"]
-[ext_resource type="Texture2D" uid="uid://cyxp5a5ryuenb" path="res://assets/elements/01_Terrain_Test.png" id="6_m73wp"]
+[ext_resource type="PackedScene" uid="uid://bpm5bc8cvsdt" path="res://scences/player_Projektmanager.tscn" id="4_hny51"]
+[ext_resource type="Texture2D" uid="uid://ceeli5vkctkbp" path="res://assets/elements/01_Terrain_Test.png" id="6_m73wp"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
