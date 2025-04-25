@@ -1,0 +1,5 @@
+res://scences/enemy_abgabestress.tscn
+res://scences/pickup_CreditPoint.tscn
+res://scences/killzone.tscn
+res://scences/enemy_FieseKlausuren.tscn
+res://skripts/player_projekt_manager.gd
