@@ -1,14 +1,14 @@
 [gd_scene load_steps=7 format=3 uid="uid://bvilh1qfrl14j"]
 
-[ext_resource type="Texture2D" uid="uid://cn31uwdgo2vcn" path="res://assets/figures/02_Enemy_Fiese Klausuren.svg" id="1_rn6fs"]
-[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scences/killzone.tscn" id="2_fdcsh"]
+[ext_resource type="Texture2D" uid="uid://cn31uwdgo2vcn" path="res://assets/figures/02_Enemy_Fiese Klausuren.svg" id="1_e0idc"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scences/killzone.tscn" id="2_fm0lx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdcsh"]
-atlas = ExtResource("1_rn6fs")
+atlas = ExtResource("1_e0idc")
 region = Rect2(0, 0, 200, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q5tas"]
-atlas = ExtResource("1_rn6fs")
+atlas = ExtResource("1_e0idc")
 region = Rect2(200, 0, 200, 200)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v83ml"]
@@ -28,14 +28,14 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q5tas"]
 size = Vector2(144, 176)
 
-[node name="fieseKlausuren" type="Node2D"]
+[node name="FieseKlausuren" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -88)
 sprite_frames = SubResource("SpriteFrames_v83ml")
 frame_progress = 0.31829
 
-[node name="Killzone" parent="." instance=ExtResource("2_fdcsh")]
+[node name="Killzone" parent="." instance=ExtResource("2_fm0lx")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(8, -88)
