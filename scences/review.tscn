@@ -1,8 +1,6 @@
-[gd_scene load_steps=10 format=4 uid="uid://ncc78tk877ry"]
+[gd_scene load_steps=10 format=4 uid="uid://cb8jmoi7pscpg"]
 
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="2_235bj"]
-[ext_resource type="Texture2D" uid="uid://dic231hygscy0" path="res://assets/elements/01_Elemente_Plattform.svg" id="2_g83ua"]
-[ext_resource type="Texture2D" uid="uid://boy61hrjq8klo" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="3_6wjtu"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -11,8 +9,11 @@ tile_size = Vector2i(58, 58)
 physics_layer_0/collision_layer = 1
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_vdqiu")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_02jji"]
+load_path = "res://.godot/imported/01_Elemente_Plattform.svg-001454cd8ec34e143b268b837b756165.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_86a8m"]
-texture = ExtResource("2_g83ua")
+texture = SubResource("CompressedTexture2D_02jji")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
@@ -56,8 +57,11 @@ tile_size = Vector2i(100, 100)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_86a8m")
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_up14l"]
+load_path = "res://.godot/imported/02_Elemente_Hintergrund_Deko.svg-a193df190f4f5268284108612f02c49c.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lqkta"]
-texture = ExtResource("3_6wjtu")
+texture = SubResource("CompressedTexture2D_up14l")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
