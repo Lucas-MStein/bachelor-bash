@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://l7fdh40emq30"]
 
 [ext_resource type="Texture2D" uid="uid://0de814qyhkn8" path="res://assets/figures/02_Enemy_Abgabestress_1.svg" id="1_nc48m"]
-[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scences/killzone.tscn" id="2_1gxs7"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_1gxs7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_28xcr"]
 atlas = ExtResource("1_nc48m")

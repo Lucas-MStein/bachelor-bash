@@ -1,14 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://l3jb7v5q7myd"]
+[gd_scene load_steps=7 format=3 uid="uid://bq2asvtnebc5w"]
 
-[ext_resource type="Texture2D" uid="uid://0de814qyhkn8" path="res://assets/figures/02_Enemy_Abgabestress_1.svg" id="1_2dril"]
-[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scences/killzone.tscn" id="2_28xcr"]
+[ext_resource type="Texture2D" uid="uid://0de814qyhkn8" path="res://assets/figures/02_Enemy_Abgabestress_1.svg" id="1_p6pt5"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_g8ord"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_28xcr"]
-atlas = ExtResource("1_2dril")
+atlas = ExtResource("1_p6pt5")
 region = Rect2(0, 0, 140, 140)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cumfk"]
-atlas = ExtResource("1_2dril")
+atlas = ExtResource("1_p6pt5")
 region = Rect2(140, 0, 140, 140)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v83ml"]
@@ -35,7 +35,7 @@ position = Vector2(0, -88)
 sprite_frames = SubResource("SpriteFrames_v83ml")
 frame_progress = 0.988192
 
-[node name="Killzone" parent="." instance=ExtResource("2_28xcr")]
+[node name="Killzone" parent="." instance=ExtResource("2_g8ord")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(8, -88)

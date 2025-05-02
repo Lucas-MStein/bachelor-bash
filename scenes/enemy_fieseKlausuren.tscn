@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bc117e3x76c6y"]
 
 [ext_resource type="Texture2D" uid="uid://cn31uwdgo2vcn" path="res://assets/figures/02_Enemy_Fiese Klausuren.svg" id="1_e0idc"]
-[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scences/killzone.tscn" id="2_fm0lx"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_fm0lx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdcsh"]
 atlas = ExtResource("1_e0idc")
