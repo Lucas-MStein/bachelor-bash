@@ -1,14 +1,13 @@
 extends Control
 
-@onready var music_toggle = $MusicToggleButton  # Verweist auf den Button im SceneTree
+@onready var music_toggle = $MusicToggleButton 
+@onready var music_player = get_node("/root/MusicPlayer") 
 
 func _ready():
-	# Buttons mit Charakteren verbinden
-	$VBoxContainer/HBoxContainer/Char1Button.pressed.connect(func(): _select_character("Projekt-Manager"))
-	$VBoxContainer/HBoxContainer/Char2Button.pressed.connect(func(): _select_character("Web-Designer"))
-	$VBoxContainer/HBoxContainer/Char3Button.pressed.connect(func(): _select_character("Code-Master"))
+	$VBoxContainer/HBoxContainer/Char1Button.pressed.connect(func(): _select_character("Codemaster"))
+	$VBoxContainer/HBoxContainer/Char2Button.pressed.connect(func(): _select_character("Projektmanager"))
+	$VBoxContainer/HBoxContainer/Char3Button.pressed.connect(func(): _select_character("Webdesigner"))
 
-	# Musik-Button initialisieren
 	music_toggle.button_pressed = false
 	music_toggle.pressed.connect(_on_music_toggle_pressed)
 
@@ -21,5 +20,8 @@ func _select_character(name: String):
 	get_tree().change_scene_to_file("res://main_menu.tscn")
 
 func _on_music_toggle_pressed():
-	var music_player = get_node("/root/MusicPlayer")  # Passe den Pfad ggf. an!
+	var music_player = get_node("/root/MusicPlayer")
 	music_player.toggle_music()
+	
+func _on_exit_pressed() -> void:
+	get_tree().quit()

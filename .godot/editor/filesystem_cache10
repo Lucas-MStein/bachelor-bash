@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746187828
+::res://::1746188182
 02_Elemente_Welt_2_Deko.svg::CompressedTexture2D/CompressedTexture2D::5661878252413021368::1746037049::1746037080::1::::<><><>0<>0<>17d4e7b361e4270aaaca06392d807c83<>res://.godot/imported/02_Elemente_Welt_2_Deko.svg-a204d7cb24b0836f92fd1ae46e6a2d35.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6284568425558919809::1744098309::1744098309::1::::<><><>0<>0<>7242f5b4f35e78e139e11fe56b1a1db5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main_menu.tscn::PackedScene::6633133357086014465::1746187828::0::1::::<><><>0<>0<><>::uid://dfcq82f7u3fdu::::res://skripts/main_menu.gd<>uid://c3nth5fdg48ie::::res://assets/fonts/GrapeSoda (2).ttf<>uid://4s6m58tcqavo::::res://assets/classroom/02_Background_Classroom_Final.png<>uid://ghhxtf2vss2q::::res://assets/classroom/01_Button_Play.png<>uid://bwtuy4j2yc1ck::::res://assets/classroom/01_Button_Exit.png<>uid://bry6obonqbtdg::::res://assets/classroom/mute.png
+main_menu.tscn::PackedScene::6633133357086014465::1746188182::0::1::::<><><>0<>0<><>::uid://dfcq82f7u3fdu::::res://skripts/main_menu.gd<>uid://c3nth5fdg48ie::::res://assets/fonts/GrapeSoda (2).ttf<>uid://4s6m58tcqavo::::res://assets/classroom/02_Background_Classroom_Final.png<>uid://ghhxtf2vss2q::::res://assets/classroom/01_Button_Play.png<>uid://bwtuy4j2yc1ck::::res://assets/classroom/01_Button_Exit.png<>uid://bry6obonqbtdg::::res://assets/classroom/mute.png
 readme.md::TextFile/TextFile::-1::1744098309::0::1::::<><><>0<>0<><>::
 ::res://assets/::1744829150
 ::res://assets/classroom/::1746183570
@@ -11,7 +11,7 @@ readme.md::TextFile/TextFile::-1::1744098309::0::1::::<><><>0<>0<><>::
 02_Background_Classroom.svg::CompressedTexture2D/CompressedTexture2D::7694307538202318873::1745487891::1744823425::1::::<><><>0<>0<>14d6a9d889a270d75527ca863e501c25<>res://.godot/imported/02_Background_Classroom.svg-f39ef9dc5239fd60b5e7865e778483fd.ctex::
 02_Background_Classroom_Final.png::CompressedTexture2D/CompressedTexture2D::2074540548924259608::1745487891::1744823425::1::::<><><>0<>0<>7cd287a0b1aa8f7b9122f050d9dea045<>res://.godot/imported/02_Background_Classroom_Final.png-bdbd6ac73d418146a7c898d6b46b4cb6.ctex::
 mute.png::CompressedTexture2D/CompressedTexture2D::3631083394290230368::1745448504::1746183570::1::::<><><>0<>0<>29940c490ea0ae8e00b0d0edd9899573<>res://.godot/imported/mute.png-cf743595090127b342f67d0f771b4c5b.ctex::
-::res://assets/elements/::1746037414
+::res://assets/elements/::1746196860
 01_Elemente_Plattform.svg::CompressedTexture2D/CompressedTexture2D::1987763353465185815::1746037389::1744884971::1::::<><><>0<>0<>f35c32b7b3ea9b712199a7966a6f5b34<>res://.godot/imported/01_Elemente_Plattform.svg-001454cd8ec34e143b268b837b756165.ctex::
 02_Elemente_Hintergrund_ Deko_Welt_1.svg::CompressedTexture2D/CompressedTexture2D::8485094295210236419::1746037389::1746037414::1::::<><><>0<>0<>88b8e7e89908e22f80c8ed8444f8181a<>res://.godot/imported/02_Elemente_Hintergrund_ Deko_Welt_1.svg-b04d2f2f9dbc7feb12c439a0d60fd55f.ctex::
 02_Elemente_Hintergrund_Deko.svg::CompressedTexture2D/CompressedTexture2D::3552401422952114855::1746037389::1744881908::1::::<><><>0<>0<>e7ebc5ec7030b41a3dcc568a53b824f9<>res://.godot/imported/02_Elemente_Hintergrund_Deko.svg-a193df190f4f5268284108612f02c49c.ctex::
@@ -19,6 +19,7 @@ mute.png::CompressedTexture2D/CompressedTexture2D::3631083394290230368::17454485
 02_Elemente_Welt_2_Hintergrund.svg::CompressedTexture2D/CompressedTexture2D::7178210339407296846::1746037049::1746037080::1::::<><><>0<>0<>d66a6203b8cd6c66573fc7d846e87b68<>res://.godot/imported/02_Elemente_Welt_2_Hintergrund.svg-b06e6632e7096f4db0326333f96e1b86.ctex::
 03_Elements_CreditPoint.svg::CompressedTexture2D/CompressedTexture2D::986003176177847113::1745487891::1744884621::1::::<><><>0<>0<>95ead347fc5e2fca6a9d1cd0f511c5b1<>res://.godot/imported/03_Elements_CreditPoint.svg-b533a2726ed9d10e0f9f24b6198d12d5.ctex::
 04_Obstacles_Giftwolke.svg::CompressedTexture2D/CompressedTexture2D::7549324302790805433::1745487891::1745487245::1::::<><><>0<>0<>4a97d0a9c82a99464b2e8ec4bb00b01d<>res://.godot/imported/04_Obstacles_Giftwolke.svg-a0d926792e8edcb50556a9f36afb286d.ctex::
+04_Obstacles_Starke Windböhe.svg::CompressedTexture2D::116272173063804459::1746196860::1746196876::1::::<><><>0<>0<>bf5e15888a6288f9dd9ed2ef4656ae6e<>res://.godot/imported/04_Obstacles_Starke Windböhe.svg-7c9cc732fe5431f3eb9ff944309b5aee.ctex::
 ::res://assets/extra/::1745487891
 01_Player_all.png::CompressedTexture2D/CompressedTexture2D::1642800105155331534::1745487891::1745002238::1::::<><><>0<>0<>255081a974cffd489293f546db9619ce<>res://.godot/imported/01_Player_all.png-b103d57541fecc87d1c67b5f410ff9a8.ctex::
 01_Player_CodeMaster.png::CompressedTexture2D/CompressedTexture2D::8973946908151279588::1745487891::1745002232::1::::<><><>0<>0<>f7aaf3988ba453388d60424645e71e7d<>res://.godot/imported/01_Player_CodeMaster.png-b0953c9f2cc5d3382eb5e2033b08d4e4.ctex::
@@ -29,10 +30,13 @@ mute.png::CompressedTexture2D/CompressedTexture2D::3631083394290230368::17454485
 03_Elements_Creditpoint.png::CompressedTexture2D/CompressedTexture2D::4039584202715353187::1745487891::1745002222::1::::<><><>0<>0<>fc58be3aba6ba07be33e0eaecbe764f3<>res://.godot/imported/03_Elements_Creditpoint.png-b38d0a69c6baff24f40fdb610ce8b3e8.ctex::
 03_Support_ChatGPT.png::CompressedTexture2D/CompressedTexture2D::2840704826958187147::1745487891::1745002249::1::::<><><>0<>0<>05c8614df6b527cfed28d34eafc2a149<>res://.godot/imported/03_Support_ChatGPT.png-74b852bc874d74e991f50f86adc406ce.ctex::
 Wall_elements_Frontend.png::CompressedTexture2D/CompressedTexture2D::8424341766095660710::1745487891::1744823951::1::::<><><>0<>0<>b293273db0e6583e3e9fc7ba017902e9<>res://.godot/imported/Wall_elements_Frontend.png-7d8a830c6562ce502eaf92f5c375e086.ctex::
-::res://assets/figures/::1745487891
+::res://assets/figures/::1746196860
 01_Player_CodeMaster.svg::CompressedTexture2D/CompressedTexture2D::446693834810714183::1745487891::1744882257::1::::<><><>0<>0<>4248ac4ade2bfdb91d3f6bc9588bfdd1<>res://.godot/imported/01_Player_CodeMaster.svg-ad20f42a16ffcb8f1909a3e279506481.ctex::
+01_Player_CodeMaster_stehen.svg::CompressedTexture2D::1850128772329415047::1746196860::1746196876::1::::<><><>0<>0<>227d8055f6667a37e13960c80ec4f51b<>res://.godot/imported/01_Player_CodeMaster_stehen.svg-082adbf0659c7881335e16209b7426d5.ctex::
 01_Player_ProjektManager.svg::CompressedTexture2D/CompressedTexture2D::56049915609535912::1745487891::1744882257::1::::<><><>0<>0<>bf5a8ea8a4870602e6ea57dcf3eef98f<>res://.godot/imported/01_Player_ProjektManager.svg-f1257daf142b1488b3ee4dfa2f845586.ctex::
+01_Player_ProjektManager_stehen.svg::CompressedTexture2D::4879160151721781171::1746196860::1746196876::1::::<><><>0<>0<>6264907239ae14eeb1adb1fc8efbf25d<>res://.godot/imported/01_Player_ProjektManager_stehen.svg-350053cf4a2247491d268ccf0f18ab9b.ctex::
 01_Player_WebDesigner.svg::CompressedTexture2D/CompressedTexture2D::1824843559173385284::1745487891::1744882257::1::::<><><>0<>0<>f4511cbf4b3ec6d22dd80d5baa8838f5<>res://.godot/imported/01_Player_WebDesigner.svg-cfe913717d09f3c2f8f33024bb08b081.ctex::
+01_Player_WebDesigner_stehen.svg::CompressedTexture2D::2449525460357537575::1746196860::1746196876::1::::<><><>0<>0<>67c6494a10677ff4dcb570cc99c41694<>res://.godot/imported/01_Player_WebDesigner_stehen.svg-481312b341d4ffc0283eefa062ed0598.ctex::
 02_Enemy_Abgabestress.svg::CompressedTexture2D/CompressedTexture2D::7722105449652338772::1745487891::1745487245::1::::<><><>0<>0<>22d3b42ed19c8f478dd127e4b81f3526<>res://.godot/imported/02_Enemy_Abgabestress.svg-72c3b9044a5a11555a24b3bf02a699a6.ctex::
 02_Enemy_Abgabestress_1.svg::CompressedTexture2D/CompressedTexture2D::1761217434548674171::1745487891::1745487245::1::::<><><>0<>0<>57627454df6aa1d41b7346de84232473<>res://.godot/imported/02_Enemy_Abgabestress_1.svg-d84c0528976bf51c32536d9748284a02.ctex::
 02_Enemy_Abgabestress_2.svg::CompressedTexture2D/CompressedTexture2D::5809925013912114742::1745487891::1745487245::1::::<><><>0<>0<>4e6b2beec335c160eef510a11f4d92f4<>res://.godot/imported/02_Enemy_Abgabestress_2.svg-1f0cdb3e94940ccedec68b71d6440905.ctex::
@@ -48,28 +52,28 @@ level-ix-211054.mp3::AudioStreamMP3/AudioStreamMP3::2482151509166470567::1745448
 ::res://ressources/::1745487891
 player_idel_CollisionShape.tres::RectangleShape2D/RectangleShape2D::841610023231707956::1745487891::0::1::::<><><>0<>0<><>::
 player_Slide_CollisionShape.tres::RectangleShape2D/RectangleShape2D::6105426434357992440::1745487891::0::1::::<><><>0<>0<><>::
-::res://scences/::1746187828
-character_select_menu.tscn::PackedScene/PackedScene::-1::1746182987::0::1::::<><><>0<>0<><>::
-enemy_Abgabestress.tscn::PackedScene/PackedScene::830429810434646883::1745924638::0::1::::<><><>0<>0<><>::uid://0de814qyhkn8::::res://assets/figures/02_Enemy_Abgabestress_1.svg<>uid://dfpudtaxf044r::::res://scences/killzone.tscn
-enemy_Aufgabenberg.tscn::PackedScene/PackedScene::838446724098317201::1745924638::0::1::::<><><>0<>0<><>::uid://0de814qyhkn8::::res://assets/figures/02_Enemy_Abgabestress_1.svg<>uid://dfpudtaxf044r::::res://scences/killzone.tscn
-enemy_fieseKlausuren.tscn::PackedScene/PackedScene::2582108234228528278::1745924918::0::1::::<><><>0<>0<><>::uid://cn31uwdgo2vcn::::res://assets/figures/02_Enemy_Fiese Klausuren.svg<>uid://dfpudtaxf044r::::res://scences/killzone.tscn
-enemy_TechnischesProblem.tscn::PackedScene/PackedScene::3565213658489206722::1745924638::0::1::::<><><>0<>0<><>::uid://0de814qyhkn8::::res://assets/figures/02_Enemy_Abgabestress_1.svg<>uid://dfpudtaxf044r::::res://scences/killzone.tscn
-killzone.tscn::PackedScene/PackedScene::7542392631813771991::1746037389::0::1::::<><><>0<>0<><>::uid://cnggbbyb4ebys::::res://skripts/killzone.gd
-Level_1.tscn::PackedScene::5785602765567044444::1746188058::0::1::::<><><>0<>0<><>::uid://3k5f33511fcp::::res://assets/elements/01_Elemente_Plattform.svg<>uid://dcej4j3rl0l0p::::res://scences/player_WebDesginer.tscn<>uid://ds5ii7o44iu88::::res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg<>uid://tppiqsfqcc5j::::res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg<>uid://bqu2sdqm6s7mp::::res://assets/elements/02_Elemente_Hintergrund_Deko.svg
-main_classroom.tscn::PackedScene/PackedScene::6633133357086014465::1745487891::0::1::::<><><>0<>0<><>::uid://dfcq82f7u3fdu::::res://skripts/main_menu.gd<>uid://cu8nw6tqmh1uf::::res://assets/fonts/GrapeSoda.ttf
-music_player.tscn::PackedScene::6148268803085281046::1746187828::0::1::::<><><>0<>0<><>::uid://bbmmw4wfnc5mx::::res://assets/music/level-ix-211054.mp3<>uid://baw5l8gvs0gmc::::res://skripts/music_player.gd
-pickup_CreditPoint.tscn::PackedScene/PackedScene::6238687436557763380::1745924638::0::1::::<><><>0<>0<><>::uid://ddhpefmk2rvko::::res://skripts/pickup_credit_point.gd<>uid://obvlfpyxhfrl::::res://assets/elements/03_Elements_CreditPoint.svg
-player_CodeMaster.tscn::PackedScene/PackedScene::4771363338543385176::1745487891::0::1::::<><><>0<>0<><>::uid://cekbfqkkcdcaw::::res://skripts/player_code_master.gd<>uid://gmm8noiuskrn::::res://assets/figures/01_Player_CodeMaster.svg<>uid://l8xgun1bff8g::::res://ressources/player_idel_CollisionShape.tres
-player_Projektmanager.tscn::PackedScene/PackedScene::5974658697402167541::1745487891::0::1::::<><><>0<>0<><>::uid://tmsvaskjvsup::::res://skripts/player_projekt_manager.gd<>uid://2fes2vtxiuy::::res://assets/figures/01_Player_ProjektManager.svg<>uid://l8xgun1bff8g::::res://ressources/player_idel_CollisionShape.tres
-player_WebDesginer.tscn::PackedScene/PackedScene::7308496007082520229::1745487891::0::1::::<><><>0<>0<><>::uid://itw3jfqhs77i::::res://skripts/player_web_desginer.gd<>uid://08753jekt4gm::::res://assets/figures/01_Player_WebDesigner.svg<>uid://l8xgun1bff8g::::res://ressources/player_idel_CollisionShape.tres
-review-kopie.tscn::PackedScene/PackedScene::311751607907661782::1746037389::0::1::::<><><>0<>0<><>::uid://dcej4j3rl0l0p::::res://scences/player_WebDesginer.tscn
-review.tscn::PackedScene/PackedScene::916764065314617450::1746037389::0::1::::<><><>0<>0<><>::uid://dcej4j3rl0l0p::::res://scences/player_WebDesginer.tscn<>uid://dic231hygscy0::::res://assets/elements/01_Elemente_Plattform.svg<>uid://boy61hrjq8klo::::res://assets/elements/02_Elemente_Hintergrund_Deko.svg
-testing.tscn::PackedScene/PackedScene::5236222310607130767::1746037389::0::1::::<><><>0<>0<><>::uid://dcej4j3rl0l0p::::res://scences/player_WebDesginer.tscn<>uid://dic231hygscy0::::res://assets/elements/01_Elemente_Plattform.svg<>uid://b88jwlt54mlsy::::res://scences/player_CodeMaster.tscn<>uid://cref0x0pci8wf::::res://scences/player_Projektmanager.tscn
-::res://skripts/::1746187477
+::res://scenes/::1746195933
+character_select_menu.tscn::PackedScene::4308770805256671079::1746195933::0::1::::<><><>0<>0<><>::uid://4s6m58tcqavo::::res://assets/classroom/02_Background_Classroom_Final.png<>uid://cu8nw6tqmh1uf::::res://assets/fonts/GrapeSoda.ttf<>uid://bwtuy4j2yc1ck::::res://assets/classroom/01_Button_Exit.png<>uid://bry6obonqbtdg::::res://assets/classroom/mute.png
+enemy_Abgabestress.tscn::PackedScene::830429810434646883::1746188058::0::1::::<><><>0<>0<><>::uid://0de814qyhkn8::::res://assets/figures/02_Enemy_Abgabestress_1.svg<>uid://dfpudtaxf044r::::res://scenes/killzone.tscn
+enemy_Aufgabenberg.tscn::PackedScene::838446724098317201::1746188058::0::1::::<><><>0<>0<><>::uid://0de814qyhkn8::::res://assets/figures/02_Enemy_Abgabestress_1.svg<>uid://dfpudtaxf044r::::res://scenes/killzone.tscn
+enemy_fieseKlausuren.tscn::PackedScene::2582108234228528278::1746188058::0::1::::<><><>0<>0<><>::uid://cn31uwdgo2vcn::::res://assets/figures/02_Enemy_Fiese Klausuren.svg<>uid://dfpudtaxf044r::::res://scenes/killzone.tscn
+enemy_TechnischesProblem.tscn::PackedScene::3565213658489206722::1746188058::0::1::::<><><>0<>0<><>::uid://0de814qyhkn8::::res://assets/figures/02_Enemy_Abgabestress_1.svg<>uid://dfpudtaxf044r::::res://scenes/killzone.tscn
+killzone.tscn::PackedScene::7542392631813771991::1746037389::0::1::::<><><>0<>0<><>::res://skripts/killzone.gd
+Level_1.tscn::PackedScene::5785602765567044444::1746188182::0::1::::<><><>0<>0<><>::uid://3k5f33511fcp::::res://assets/elements/01_Elemente_Plattform.svg<>uid://dcej4j3rl0l0p::::res://scenes/player_WebDesginer.tscn<>uid://ds5ii7o44iu88::::res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg<>uid://tppiqsfqcc5j::::res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg<>uid://bqu2sdqm6s7mp::::res://assets/elements/02_Elemente_Hintergrund_Deko.svg
+main_classroom.tscn::PackedScene::6633133357086014465::1745487891::0::1::::<><><>0<>0<><>::uid://dfcq82f7u3fdu::::res://skripts/main_menu.gd<>uid://cu8nw6tqmh1uf::::res://assets/fonts/GrapeSoda.ttf
+music_player.tscn::PackedScene::6148268803085281046::1746188182::0::1::::<><><>0<>0<><>::uid://baw5l8gvs0gmc::::res://skripts/music_player.gd<>uid://bbmmw4wfnc5mx::::res://assets/music/level-ix-211054.mp3
+pickup_CreditPoint.tscn::PackedScene::6238687436557763380::1745924638::0::1::::<><><>0<>0<><>::uid://ddhpefmk2rvko::::res://skripts/pickup_credit_point.gd<>uid://obvlfpyxhfrl::::res://assets/elements/03_Elements_CreditPoint.svg
+player_CodeMaster.tscn::PackedScene::4771363338543385176::1745487891::0::1::::<><><>0<>0<><>::uid://cekbfqkkcdcaw::::res://skripts/player_code_master.gd<>uid://gmm8noiuskrn::::res://assets/figures/01_Player_CodeMaster.svg<>uid://l8xgun1bff8g::::res://ressources/player_idel_CollisionShape.tres
+player_Projektmanager.tscn::PackedScene::5974658697402167541::1745487891::0::1::::<><><>0<>0<><>::uid://tmsvaskjvsup::::res://skripts/player_projekt_manager.gd<>uid://2fes2vtxiuy::::res://assets/figures/01_Player_ProjektManager.svg<>uid://l8xgun1bff8g::::res://ressources/player_idel_CollisionShape.tres
+player_WebDesginer.tscn::PackedScene::7308496007082520229::1745487891::0::1::::<><><>0<>0<><>::uid://itw3jfqhs77i::::res://skripts/player_web_desginer.gd<>uid://08753jekt4gm::::res://assets/figures/01_Player_WebDesigner.svg<>uid://l8xgun1bff8g::::res://ressources/player_idel_CollisionShape.tres
+review-kopie.tscn::PackedScene::311751607907661782::1746188058::0::1::::<><><>0<>0<><>::uid://dcej4j3rl0l0p::::res://scenes/player_WebDesginer.tscn
+review.tscn::PackedScene::4911723308529990284::1746188058::0::1::::<><><>0<>0<><>::uid://dcej4j3rl0l0p::::res://scenes/player_WebDesginer.tscn
+testing.tscn::PackedScene::5236222310607130767::1746188058::0::1::::<><><>0<>0<><>::uid://dcej4j3rl0l0p::::res://scenes/player_WebDesginer.tscn<>uid://b88jwlt54mlsy::::res://scenes/player_CodeMaster.tscn<>uid://cref0x0pci8wf::::res://scenes/player_Projektmanager.tscn
+::res://skripts/::1746188091
 character_select_menu.gd::GDScript/GDScript::-1::1745448504::0::1::::<>Control<><>0<>0<><>::
 global.gd::GDScript/GDScript::4976954078322558670::1745448504::0::1::::<>Node<><>0<>0<><>::
 killzone.gd::GDScript/GDScript::5698048778638489942::1745924638::0::1::::<>Area2D<><>0<>0<><>::
-main_menu.gd::GDScript::7515366855196952302::1746187477::0::1::::<>Control<><>0<>0<><>::
+main_menu.gd::GDScript::7515366855196952302::1746188091::0::1::::<>Control<><>0<>0<><>::
 music_player.gd::GDScript/GDScript::2433679891316933050::1746186680::0::1::::<>Node<><>0<>0<><>::
 pickup_credit_point.gd::GDScript/GDScript::7385197405984467118::1745924638::0::1::::<>Area2D<><>0<>0<><>::
 player_code_master.gd::GDScript/GDScript::5074311021720013974::1745487891::0::1::::<>CharacterBody2D<><>0<>0<><>::

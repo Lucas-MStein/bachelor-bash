@@ -22,9 +22,8 @@ func _ready() -> void:
 
 	# Begrüßungstext
 	if Global.character != "":
-		label_node.text = "Willkommen zurück, " + Global.character + "!"
-	else:
-		label_node.text = "Survive the Semester"
+		$Label2.text = "Ausgewählt: " + Global.character + "!"
+	
 
 func _on_start_pressed() -> void:
 	if Global.character == "":
