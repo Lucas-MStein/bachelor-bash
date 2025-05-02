@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=4 uid="uid://cooubdkasekoy"]
 
-[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_wt1y1"]
-[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="2_4aglu"]
-[ext_resource type="Texture2D" uid="uid://ce8evqvg1jydu" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_ergy7"]
-[ext_resource type="Texture2D" uid="uid://dhrk7tkh1fu5f" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_prvlw"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_eyfe2"]
+[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_wt1y1"]
+[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="2_4aglu"]
+[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_ergy7"]
+[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_prvlw"]
+[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_eyfe2"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 

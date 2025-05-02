@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=4 uid="uid://cgup202ehbbj8"]
 
-[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="3_hny51"]
-[ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scences/player_CodeMaster.tscn" id="4_0win4"]
-[ext_resource type="PackedScene" uid="uid://cref0x0pci8wf" path="res://scences/player_Projektmanager.tscn" id="4_hny51"]
+[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="3_hny51"]
+[ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="4_0win4"]
+[ext_resource type="PackedScene" uid="uid://cref0x0pci8wf" path="res://scenes/player_Projektmanager.tscn" id="4_hny51"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
