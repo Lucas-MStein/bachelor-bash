@@ -1,5 +1,11 @@
+res://scenes/review-kopie.tscn
 res://scenes/Level_1.tscn
+res://scenes/Level_2.tscn
 res://main_menu.tscn
-res://scenes/music_player.tscn
-res://scenes/character_select_menu.tscn
-res://scenes/level_1.gd
+res://skripts/main_menu.gd
+res://scenes/Level_2_WebDesigner.tscn
+res://scenes/Level_1_CodeMaster.tscn
+res://scenes/Level_1_ProjektManager.tscn
+res://scenes/Level_1_WebDesigner.tscn
+res://scenes/Level_2_ProjektManager.tscn
+res://scenes/player_CodeMaster.tscn
