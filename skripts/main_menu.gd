@@ -27,10 +27,12 @@ func _ready() -> void:
 
 func _on_start_pressed() -> void:
 	if Global.character == "":
-		label_node.text = "Bitte wähle zuerst einen Charakter!"
+		$Label2.text = "Bitte wähle zuerst einen Charakter!"
 	else:
 		Global.save_game()
 		get_tree().change_scene_to_file("res://scenes/Level_1.tscn")
+		if MusicPlayer.music_enabled:
+			MusicPlayer.toggle_music()
 
 
 func _on_character_pressed() -> void:

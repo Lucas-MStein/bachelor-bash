@@ -3,3 +3,4 @@ res://main_menu.tscn
 res://scenes/music_player.tscn
 res://scenes/character_select_menu.tscn
 res://scenes/level_1.gd
+res://skripts/main_menu.gd
