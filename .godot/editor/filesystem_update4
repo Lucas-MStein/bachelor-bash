@@ -1,4 +1,5 @@
-res://scences/Level_1.tscn
-res://scences/review-kopie.tscn
-res://scences/Level_2.tscn
-res://skripts/main_menu.gd
+res://scenes/Level_1.tscn
+res://main_menu.tscn
+res://scenes/music_player.tscn
+res://scenes/character_select_menu.tscn
+res://scenes/level_1.gd

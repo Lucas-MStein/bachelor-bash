@@ -1,4 +1,6 @@
+CanvasLayer
 AudioStreamPlayer
+AudioStreamPlayer2D
 TextureButton
 TileMapLayer
 Timer
@@ -11,4 +13,3 @@ Panel
 TileMap
 StaticBody2D
 Camera2D
-Label

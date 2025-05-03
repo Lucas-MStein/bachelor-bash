@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b2ng3cpc3xuxr"]
+[gd_scene load_steps=17 format=3 uid="uid://b2ng3cpc3xuxr"]
 
 [ext_resource type="Script" uid="uid://bwusdvkbxle81" path="res://skripts/character_select_menu.gd" id="1_v7jbk"]
 [ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_y5b6p"]
@@ -7,7 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://bwtuy4j2yc1ck" path="res://assets/classroom/01_Button_Exit.png" id="4_lik1d"]
 [ext_resource type="Texture2D" uid="uid://cbrrb4nu4njp0" path="res://assets/figures/01_Player_ProjektManager_stehen.svg" id="4_v7jbk"]
 [ext_resource type="Texture2D" uid="uid://ba5tldm4qkssl" path="res://assets/figures/01_Player_WebDesigner_stehen.svg" id="5_olnq5"]
-[ext_resource type="Texture2D" uid="uid://bry6obonqbtdg" path="res://assets/classroom/mute.png" id="8_bcgy4"]
+[ext_resource type="Texture2D" uid="uid://b1ckwwpep4njq" path="res://assets/classroom/01_Button_Volume_on.svg" id="7_olnq5"]
+[ext_resource type="Texture2D" uid="uid://ctf4a5be7hhdq" path="res://assets/classroom/01_Button_Volume_off.svg" id="8_d1jb2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ruflx"]
 texture = ExtResource("1_y5b6p")
@@ -142,20 +143,17 @@ vertical_alignment = 1
 [node name="MusicToggleButton" type="TextureButton" parent="."]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.937
-anchor_top = 0.074
-anchor_right = 0.937
-anchor_bottom = 0.074
-offset_left = -263.04
-offset_top = -255.92
-offset_right = 248.96
-offset_bottom = 256.08
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -168.0
+offset_top = 128.0
+offset_right = -63.0
+offset_bottom = 233.0
 grow_horizontal = 0
-grow_vertical = 0
 toggle_mode = true
-texture_normal = ExtResource("8_bcgy4")
-texture_pressed = ExtResource("8_bcgy4")
+texture_normal = ExtResource("7_olnq5")
+texture_pressed = ExtResource("8_d1jb2")
 stretch_mode = 0
 
 [node name="Beenden" type="Button" parent="."]
