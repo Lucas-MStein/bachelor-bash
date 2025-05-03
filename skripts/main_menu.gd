@@ -1,7 +1,7 @@
 extends Control
 
 @onready var music_player = get_node("/root/MusicPlayer")  # Globale Musik-Instanz
-@onready var music_toggle = $MusicToggleButton              # Button für Musik an/aus
+@onready var music_toggle = get_node("CanvasLayer/MusicToggleButton")             # Button für Musik an/aus
 @onready var label_node: Label = get_node("Label")  
 
 func _ready() -> void:
@@ -30,9 +30,15 @@ func _on_start_pressed() -> void:
 		$Label2.text = "Bitte wähle zuerst einen Charakter!"
 	else:
 		Global.save_game()
-		get_tree().change_scene_to_file("res://scenes/Level_1.tscn")
+		if Global.character == "Codemaster":
+			get_tree().change_scene_to_file("res://scenes/Level_1_CodeMaster.tscn")
+		if Global.character == "Projektmanager":
+			get_tree().change_scene_to_file("res://scenes/Level_1_ProjektManager.tscn")
+		if Global.character == "Webdesigner":
+			get_tree().change_scene_to_file("res://scenes/Level_1_WebDesigner.tscn")
+		
 		if MusicPlayer.music_enabled:
-			MusicPlayer.toggle_music()
+			MusicPlayer.player.stop()
 
 
 func _on_character_pressed() -> void:

@@ -1,14 +1,12 @@
-[gd_scene load_steps=17 format=3 uid="uid://b2ng3cpc3xuxr"]
+[gd_scene load_steps=11 format=3 uid="uid://b2ng3cpc3xuxr"]
 
 [ext_resource type="Script" uid="uid://bwusdvkbxle81" path="res://skripts/character_select_menu.gd" id="1_v7jbk"]
 [ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_y5b6p"]
 [ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="2_peq0e"]
 [ext_resource type="Texture2D" uid="uid://1mhl6i6obaux" path="res://assets/figures/01_Player_CodeMaster_stehen.svg" id="3_6ckjq"]
-[ext_resource type="Texture2D" uid="uid://bwtuy4j2yc1ck" path="res://assets/classroom/01_Button_Exit.png" id="4_lik1d"]
 [ext_resource type="Texture2D" uid="uid://cbrrb4nu4njp0" path="res://assets/figures/01_Player_ProjektManager_stehen.svg" id="4_v7jbk"]
 [ext_resource type="Texture2D" uid="uid://ba5tldm4qkssl" path="res://assets/figures/01_Player_WebDesigner_stehen.svg" id="5_olnq5"]
-[ext_resource type="Texture2D" uid="uid://b1ckwwpep4njq" path="res://assets/classroom/01_Button_Volume_on.svg" id="7_olnq5"]
-[ext_resource type="Texture2D" uid="uid://ctf4a5be7hhdq" path="res://assets/classroom/01_Button_Volume_off.svg" id="8_d1jb2"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="7_6ckjq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ruflx"]
 texture = ExtResource("1_y5b6p")
@@ -22,38 +20,6 @@ shadow_color = Color(0, 0, 0, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_v7jbk"]
 font = ExtResource("2_peq0e")
 font_size = 26
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_olnq5"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d1jb2"]
-bg_color = Color(0.74978, 0.74978, 0.74978, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0, 0, 0, 0.203922)
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_30gfh"]
-bg_color = Color(0.603248, 0.603248, 0.603248, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0, 0, 0, 0.203922)
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b37o1"]
-bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_color = Color(0, 0, 0, 0.203922)
-shadow_size = 5
-shadow_offset = Vector2(0, 3.41)
 
 [node name="CharacterSelect" type="Control"]
 layout_mode = 3
@@ -140,42 +106,4 @@ text = "Bachelor Bash"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MusicToggleButton" type="TextureButton" parent="."]
-custom_minimum_size = Vector2(32, 32)
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -168.0
-offset_top = 128.0
-offset_right = -63.0
-offset_bottom = 233.0
-grow_horizontal = 0
-toggle_mode = true
-texture_normal = ExtResource("7_olnq5")
-texture_pressed = ExtResource("8_d1jb2")
-stretch_mode = 0
-
-[node name="Beenden" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-offset_left = 1736.0
-offset_top = 968.0
-offset_right = 1936.0
-offset_bottom = 1074.0
-size_flags_vertical = 3
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/focus = SubResource("StyleBoxEmpty_olnq5")
-theme_override_styles/hover = SubResource("StyleBoxFlat_d1jb2")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_30gfh")
-theme_override_styles/normal = SubResource("StyleBoxFlat_b37o1")
-icon = ExtResource("4_lik1d")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
-[connection signal="pressed" from="Beenden" to="." method="_on_exit_pressed"]
+[node name="CanvasLayer" parent="." instance=ExtResource("7_6ckjq")]
