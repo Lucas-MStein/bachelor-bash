@@ -1,15 +1,15 @@
-[gd_scene load_steps=12 format=4 uid="uid://bjjn5ag64s2qj"]
+[gd_scene load_steps=12 format=4 uid="uid://b85rsae880pqx"]
 
-[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_diiin"]
-[ext_resource type="Texture2D" uid="uid://ce8evqvg1jydu" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_putjo"]
-[ext_resource type="Texture2D" uid="uid://dhrk7tkh1fu5f" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_lo287"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_kb5eg"]
-[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scences/player_WebDesginer.tscn" id="5_58qye"]
+[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_can7x"]
+[ext_resource type="Texture2D" uid="uid://ce8evqvg1jydu" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_3mwpf"]
+[ext_resource type="Texture2D" uid="uid://dhrk7tkh1fu5f" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_n5d8k"]
+[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_d88sx"]
+[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="5_g8tqi"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bbiwm"]
-texture = ExtResource("1_diiin")
+texture = ExtResource("1_can7x")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
@@ -59,7 +59,7 @@ texture_region_size = Vector2i(100, 100)
 5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qlnsb"]
-texture = ExtResource("2_putjo")
+texture = ExtResource("2_3mwpf")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -129,7 +129,7 @@ texture_region_size = Vector2i(100, 100)
 5:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_enp17"]
-texture = ExtResource("3_lo287")
+texture = ExtResource("3_n5d8k")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -222,7 +222,7 @@ texture_region_size = Vector2i(100, 100)
 7:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_17bo3"]
-texture = ExtResource("4_kb5eg")
+texture = ExtResource("4_d88sx")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -284,7 +284,7 @@ tile_map_data = PackedByteArray("AAADAP3/AgAIAAQAAAADAP7/AgAIAAUAAAADAP//AgAIAAY
 tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 
-[node name="player_WebDesigner" parent="." instance=ExtResource("5_58qye")]
+[node name="player_WebDesigner" parent="." instance=ExtResource("5_g8tqi")]
 position = Vector2(933, -764)
 
 [node name="Camera2D" type="Camera2D" parent="player_WebDesigner"]
