@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cfoeqc16lj5a8"]
 
-[ext_resource type="Texture2D" uid="uid://bwk8rqcd6ie2" path="res://assets/elements/04_Obstacles_Starke Windböhe.svg" id="1_y33tp"]
+[ext_resource type="Texture2D" uid="uid://0any6j3dgymb" path="res://assets/elements/04_Obstacles_Starke Windböhe.svg" id="1_y33tp"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_dvuu5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dvuu5"]

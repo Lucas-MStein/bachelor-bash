@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cuigc82wpdlc5"]
 
-[ext_resource type="Texture2D" uid="uid://dfs7jefe1roa0" path="res://assets/elements/04_Obstacles_Giftwolke.svg" id="1_3oohx"]
+[ext_resource type="Texture2D" uid="uid://bny7uqyfnrjc6" path="res://assets/elements/04_Obstacles_Giftwolke.svg" id="1_3oohx"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_ajb8f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n1ayo"]

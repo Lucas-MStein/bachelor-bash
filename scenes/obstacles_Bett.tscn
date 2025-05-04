@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://nuqv8gshcuv"]
 
-[ext_resource type="Texture2D" uid="uid://b3b53wx4tgh0r" path="res://assets/elements/04_Obstacles_Bett.svg" id="1_1sk85"]
+[ext_resource type="Texture2D" uid="uid://bafiip60h6ymr" path="res://assets/elements/04_Obstacles_Bett.svg" id="1_1sk85"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_n2npi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mn17q"]
