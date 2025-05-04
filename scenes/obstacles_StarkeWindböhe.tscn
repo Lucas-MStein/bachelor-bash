@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://cfoeqc16lj5a8"]
+
+[ext_resource type="Texture2D" uid="uid://bwk8rqcd6ie2" path="res://assets/elements/04_Obstacles_Starke Windböhe.svg" id="1_y33tp"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_dvuu5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dvuu5"]
+atlas = ExtResource("1_y33tp")
+region = Rect2(0, 0, 105, 105)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0556f"]
+atlas = ExtResource("1_y33tp")
+region = Rect2(105, 0, 105, 105)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v83ml"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dvuu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0556f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ftgob"]
+radius = 40.0
+
+[node name="obstacles_StarkeWindböhe" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -48)
+sprite_frames = SubResource("SpriteFrames_v83ml")
+frame_progress = 0.988192
+
+[node name="Killzone" parent="." instance=ExtResource("2_dvuu5")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0, -40)
+shape = SubResource("CircleShape2D_ftgob")

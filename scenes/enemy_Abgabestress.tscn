@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://0de814qyhkn8" path="res://assets/figures/02_Enemy_Abgabestress_1.svg" id="1_2dril"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_28xcr"]
+[ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="3_w8lcs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_28xcr"]
 atlas = ExtResource("1_2dril")
@@ -25,18 +26,15 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5tas"]
-size = Vector2(144, 176)
-
 [node name="abgabestress" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -88)
+position = Vector2(0, -64)
 sprite_frames = SubResource("SpriteFrames_v83ml")
 frame_progress = 0.988192
 
 [node name="Killzone" parent="." instance=ExtResource("2_28xcr")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(8, -88)
-shape = SubResource("RectangleShape2D_q5tas")
+position = Vector2(0, -64)
+shape = ExtResource("3_w8lcs")
