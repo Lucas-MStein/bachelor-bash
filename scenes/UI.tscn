@@ -48,6 +48,8 @@ offset_right = 1881.0
 offset_bottom = 145.0
 size_flags_vertical = 0
 toggle_mode = true
+shortcut_feedback = false
+shortcut_in_tooltip = false
 texture_normal = ExtResource("1_ro3t7")
 texture_pressed = ExtResource("2_5en4g")
 

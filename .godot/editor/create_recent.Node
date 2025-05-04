@@ -1,3 +1,5 @@
+RayCast2D
+CollisionShape2D
 CanvasLayer
 Label
 AudioStreamPlayer
@@ -6,7 +8,6 @@ TextureButton
 TileMapLayer
 Timer
 Area2D
-CollisionShape2D
 AnimatedSprite2D
 Sprite2D
 Button
