@@ -1,13 +1,11 @@
-[gd_scene load_steps=15 format=3 uid="uid://c1re0cj8r6r7v"]
+[gd_scene load_steps=13 format=3 uid="uid://c1re0cj8r6r7v"]
 
 [ext_resource type="Script" uid="uid://dfcq82f7u3fdu" path="res://skripts/main_menu.gd" id="1_fu7sn"]
-[ext_resource type="FontFile" uid="uid://bukmtdd58nutq" path="res://assets/fonts/GrapeSoda (2).ttf" id="2_fu7sn"]
-[ext_resource type="Texture2D" uid="uid://cqwywxngi0bxd" path="res://assets/classroom/02_Background_Classroom_Final.png" id="2_glbon"]
-[ext_resource type="Texture2D" uid="uid://ceavfwp0tbpqc" path="res://assets/classroom/01_Button_Play.png" id="3_glbon"]
-[ext_resource type="Texture2D" uid="uid://bg6ypvt6bw35m" path="res://assets/classroom/01_Button_Exit.png" id="4_glbon"]
-[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="6_qe12f"]
-[ext_resource type="Texture2D" uid="uid://djo7bt076utfa" path="res://assets/classroom/01_Button_Volume_on.svg" id="7_8qtwp"]
-[ext_resource type="Texture2D" uid="uid://dknnhbt3l0ofb" path="res://assets/classroom/01_Button_Volume_off.svg" id="8_dy7ct"]
+[ext_resource type="FontFile" uid="uid://c3nth5fdg48ie" path="res://assets/fonts/GrapeSoda (2).ttf" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="2_glbon"]
+[ext_resource type="Texture2D" uid="uid://ghhxtf2vss2q" path="res://assets/classroom/01_Button_Play.png" id="3_glbon"]
+[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="6_qe12f"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="9_dy7ct"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
 texture = ExtResource("2_glbon")
@@ -127,32 +125,6 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
 theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
 text = "Charakterauswahl"
 
-[node name="Beenden" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -200.0
-offset_top = -106.0
-grow_horizontal = 0
-grow_vertical = 0
-size_flags_vertical = 3
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-theme_override_styles/focus = SubResource("StyleBoxEmpty_glbon")
-theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
-theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
-icon = ExtResource("4_glbon")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -195,20 +167,8 @@ label_settings = SubResource("LabelSettings_8qtwp")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MusicToggleButton" type="TextureButton" parent="."]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -168.0
-offset_top = 120.0
-offset_right = -63.0
-offset_bottom = 225.0
-grow_horizontal = 0
-texture_normal = ExtResource("7_8qtwp")
-texture_pressed = ExtResource("8_dy7ct")
+[node name="CanvasLayer" parent="." instance=ExtResource("9_dy7ct")]
 
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]
-[connection signal="pressed" from="Beenden" to="." method="_on_exit_pressed"]

@@ -1,42 +1,40 @@
 [gd_scene load_steps=7 format=3 uid="uid://l7fdh40emq30"]
 
-[ext_resource type="Texture2D" uid="uid://0de814qyhkn8" path="res://assets/figures/02_Enemy_Abgabestress_1.svg" id="1_nc48m"]
+[ext_resource type="Texture2D" uid="uid://w8ybjjnlkl8q" path="res://assets/figures/02_Enemy_Aufgabenberg.svg" id="1_7iwpy"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_1gxs7"]
+[ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="3_6m5yd"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_28xcr"]
-atlas = ExtResource("1_nc48m")
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahwik"]
+atlas = ExtResource("1_7iwpy")
 region = Rect2(0, 0, 140, 140)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cumfk"]
-atlas = ExtResource("1_nc48m")
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1yp2"]
+atlas = ExtResource("1_7iwpy")
 region = Rect2(140, 0, 140, 140)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v83ml"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_28xcr")
+"texture": SubResource("AtlasTexture_ahwik")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cumfk")
+"texture": SubResource("AtlasTexture_k1yp2")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5tas"]
-size = Vector2(144, 176)
-
-[node name="abgabestress" type="Node2D"]
+[node name="enemy_Aufgabenberg" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -88)
+position = Vector2(0, -64)
 sprite_frames = SubResource("SpriteFrames_v83ml")
 frame_progress = 0.988192
 
 [node name="Killzone" parent="." instance=ExtResource("2_1gxs7")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(8, -88)
-shape = SubResource("RectangleShape2D_q5tas")
+position = Vector2(0, -64)
+shape = ExtResource("3_6m5yd")

@@ -1,7 +1,7 @@
 extends Control
 
-@onready var music_toggle = $MusicToggleButton 
-@onready var music_player = get_node("/root/MusicPlayer") 
+@onready var music_toggle = get_node("CanvasLayer/MusicToggleButton")
+@onready var music_player = get_node("/root/MusicPlayer")
 
 func _ready():
 	$VBoxContainer/HBoxContainer/Char1Button.pressed.connect(func(): _select_character("Codemaster"))

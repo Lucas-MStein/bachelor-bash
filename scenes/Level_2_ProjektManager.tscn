@@ -1,10 +1,12 @@
-[gd_scene load_steps=12 format=4 uid="uid://b85rsae880pqx"]
+[gd_scene load_steps=14 format=4 uid="uid://b85rsae880pqx"]
 
-[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_can7x"]
-[ext_resource type="Texture2D" uid="uid://ce8evqvg1jydu" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_3mwpf"]
-[ext_resource type="Texture2D" uid="uid://dhrk7tkh1fu5f" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_n5d8k"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_d88sx"]
+[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_can7x"]
+[ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_n5d8k"]
+[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_3mwpf"]
+[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_n5d8k"]
+[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_d88sx"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="5_g8tqi"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="6_3mwpf"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -256,7 +258,8 @@ sources/1 = SubResource("TileSetAtlasSource_qlnsb")
 sources/2 = SubResource("TileSetAtlasSource_enp17")
 sources/4 = SubResource("TileSetAtlasSource_17bo3")
 
-[node name="Level 1" type="Node2D"]
+[node name="Level_2_ProjektManager" type="Node2D"]
+script = ExtResource("1_n5d8k")
 metadata/_edit_vertical_guides_ = [45005.0]
 
 [node name="TileMap2" type="TileMap" parent="."]
@@ -290,3 +293,5 @@ position = Vector2(933, -764)
 [node name="Camera2D" type="Camera2D" parent="player_WebDesigner"]
 position = Vector2(-43, -88)
 position_smoothing_enabled = true
+
+[node name="CanvasLayer" parent="." instance=ExtResource("6_3mwpf")]
