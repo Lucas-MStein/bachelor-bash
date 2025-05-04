@@ -9,3 +9,6 @@ res://scenes/Level_1_ProjektManager.tscn
 res://scenes/Level_1_WebDesigner.tscn
 res://scenes/Level_2_ProjektManager.tscn
 res://scenes/player_CodeMaster.tscn
+res://skripts/level_1_CodeMaster.gd
+res://skripts/level_1_ProjektManager.gd
+res://skripts/level_1_WebDesigner.gd
