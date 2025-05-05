@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://cooubdkasekoy"]
+[gd_scene load_steps=27 format=4 uid="uid://cooubdkasekoy"]
 
 [ext_resource type="Script" uid="uid://ddbdwah2li5b3" path="res://skripts/level_1.gd" id="1_r2hmd"]
 [ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_wt1y1"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="13_me6ay"]
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="14_7v7yl"]
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="15_me6ay"]
+[ext_resource type="PackedScene" uid="uid://cq2utdrloc62v" path="res://scenes/game_manager.tscn" id="18_xnahm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -359,3 +360,6 @@ scale = Vector2(0.75, 0.75)
 
 [node name="enemy_Aufgabenberg" parent="." instance=ExtResource("15_me6ay")]
 position = Vector2(44367, -8)
+
+[node name="GameManager" parent="." instance=ExtResource("18_xnahm")]
+position = Vector2(-1, 1)
