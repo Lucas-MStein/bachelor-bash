@@ -1,0 +1,76 @@
+[gd_scene load_steps=9 format=3 uid="uid://c35jtwc5jeeof"]
+
+[ext_resource type="Texture2D" uid="uid://djo7bt076utfa" path="res://assets/classroom/01_Button_Volume_on.svg" id="1_ro3t7"]
+[ext_resource type="Script" uid="uid://dsncm4bamf23l" path="res://skripts/ui.gd" id="1_ua6yw"]
+[ext_resource type="Texture2D" uid="uid://dknnhbt3l0ofb" path="res://assets/classroom/01_Button_Volume_off.svg" id="2_5en4g"]
+[ext_resource type="Texture2D" uid="uid://bg6ypvt6bw35m" path="res://assets/classroom/01_Button_Exit.png" id="3_5en4g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ua6yw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_75u2n"]
+bg_color = Color(0.74978, 0.74978, 0.74978, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3wlde"]
+bg_color = Color(0.603248, 0.603248, 0.603248, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xpksx"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_ua6yw")
+
+[node name="MusicToggleButton" type="TextureButton" parent="."]
+top_level = true
+offset_left = 1776.0
+offset_top = 40.0
+offset_right = 1881.0
+offset_bottom = 145.0
+size_flags_vertical = 0
+toggle_mode = true
+shortcut_feedback = false
+shortcut_in_tooltip = false
+texture_normal = ExtResource("1_ro3t7")
+texture_pressed = ExtResource("2_5en4g")
+
+[node name="Beenden" type="Button" parent="."]
+offset_left = 1736.0
+offset_top = 968.0
+offset_right = 1936.0
+offset_bottom = 1074.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ua6yw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_75u2n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3wlde")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xpksx")
+icon = ExtResource("3_5en4g")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="Beenden" to="." method="_on_exit_pressed"]

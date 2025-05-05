@@ -1,17 +1,18 @@
-[gd_scene load_steps=11 format=3 uid="uid://c1re0cj8r6r7v"]
+[gd_scene load_steps=13 format=3 uid="uid://c1re0cj8r6r7v"]
 
-[ext_resource type="Script" path="res://skripts/main_menu.gd" id=1]
-[ext_resource type="FontFile" path="res://assets/fonts/GrapeSoda (2).ttf" id=2]
-[ext_resource type="Texture2D" path="res://assets/classroom/02_Background_Classroom_Final.png" id=3]
-[ext_resource type="Texture2D" path="res://assets/classroom/01_Button_Play.png" id=4]
-[ext_resource type="Texture2D" path="res://assets/classroom/01_Button_Exit.png" id=5]
+[ext_resource type="Script" uid="uid://dfcq82f7u3fdu" path="res://skripts/main_menu.gd" id="1_fu7sn"]
+[ext_resource type="FontFile" uid="uid://bukmtdd58nutq" path="res://assets/fonts/GrapeSoda (2).ttf" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://cqwywxngi0bxd" path="res://assets/classroom/02_Background_Classroom_Final.png" id="2_glbon"]
+[ext_resource type="Texture2D" uid="uid://ceavfwp0tbpqc" path="res://assets/classroom/01_Button_Play.png" id="3_glbon"]
+[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="6_qe12f"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="9_dy7ct"]
 
-[sub_resource type="StyleBoxTexture" id=1]
-texture = ExtResource(3)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
+texture = ExtResource("2_glbon")
 
-[sub_resource type="StyleBoxEmpty" id=2]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_glbon"]
 
-[sub_resource type="StyleBoxFlat" id=3]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nlkkf"]
 bg_color = Color(0.74978, 0.74978, 0.74978, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
@@ -21,7 +22,7 @@ shadow_color = Color(0, 0, 0, 0.203922)
 shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
-[sub_resource type="StyleBoxFlat" id=4]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qe12f"]
 bg_color = Color(0.603248, 0.603248, 0.603248, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
@@ -31,7 +32,7 @@ shadow_color = Color(0, 0, 0, 0.203922)
 shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
-[sub_resource type="StyleBoxFlat" id=5]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8qtwp"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
@@ -41,17 +42,31 @@ shadow_color = Color(0, 0, 0, 0.203922)
 shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
+[sub_resource type="LabelSettings" id="LabelSettings_8qtwp"]
+font = ExtResource("6_qe12f")
+font_size = 35
+
 [node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource(1)
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fu7sn")
 
 [node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme_override_styles/panel = SubResource(1)
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_jix8l")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -60,33 +75,59 @@ offset_left = -216.0
 offset_top = -28.0
 offset_right = 201.0
 offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_constants/separation = 10
 
-[node name="StartButton" type="Button" parent="VBoxContainer"]
-text = "Abenteuer beginnen!"
-theme_override_colors/font_color = Color(0, 0, 0)
-theme_override_styles/focus = SubResource(2)
-theme_override_styles/hover = SubResource(3)
-theme_override_styles/pressed = SubResource(4)
-theme_override_styles/normal = SubResource(5)
+[node name="Abendteuer beginnen" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.541
+anchor_right = 0.5
+anchor_bottom = 0.541
+offset_left = -148.0
+offset_top = -128.28
+offset_right = 148.0
+offset_bottom = 127.72
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_glbon")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
+icon = ExtResource("3_glbon")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
-[node name="CharacterButton" type="Button" parent="VBoxContainer"]
+[node name="Charakterauswahl" type="Button" parent="."]
+layout_mode = 2
+offset_left = 728.0
+offset_top = 920.0
+offset_right = 1145.0
+offset_bottom = 984.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_glbon")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
 text = "Charakterauswahl"
-theme_override_colors/font_color = Color(0, 0, 0)
-theme_override_styles/focus = SubResource(2)
-theme_override_styles/hover = SubResource(3)
-theme_override_styles/pressed = SubResource(4)
-theme_override_styles/normal = SubResource(5)
-
-[node name="ExitButton" type="Button" parent="VBoxContainer"]
-text = "Beenden"
-theme_override_colors/font_color = Color(0, 0, 0)
-theme_override_styles/focus = SubResource(2)
-theme_override_styles/hover = SubResource(3)
-theme_override_styles/pressed = SubResource(4)
-theme_override_styles/normal = SubResource(5)
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -95,14 +136,39 @@ offset_left = -392.0
 offset_top = -140.0
 offset_right = 404.0
 offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_y = 6
-theme_override_fonts/font = ExtResource(2)
+theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 91
 text = "Survive the Semester"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/CharacterButton" to="." method="_on_character_pressed"]
-[connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_pressed"]
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -408.0
+offset_top = 124.0
+offset_right = 388.0
+offset_bottom = 218.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 91
+label_settings = SubResource("LabelSettings_8qtwp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CanvasLayer" parent="." instance=ExtResource("9_dy7ct")]
+
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]

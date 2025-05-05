@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://cu5cjg2r2dtb5"]
+
+[ext_resource type="Script" uid="uid://ddhpefmk2rvko" path="res://skripts/pickup_credit_point.gd" id="1_o4rxo"]
+[ext_resource type="Texture2D" uid="uid://obvlfpyxhfrl" path="res://assets/elements/03_Elements_CreditPoint.svg" id="2_71ist"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0tj5"]
+atlas = ExtResource("2_71ist")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6oyq8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0tj5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0gv4x"]
+radius = 40.0
+
+[node name="CreditPoint" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_o4rxo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -48)
+sprite_frames = SubResource("SpriteFrames_6oyq8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -48)
+shape = SubResource("CircleShape2D_0gv4x")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

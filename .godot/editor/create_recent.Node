@@ -1,21 +1,15 @@
-<<<<<<< HEAD
-TileMapLayer
-Sprite2D
-=======
-AudioStreamPlayer
+RayCast2D
+CollisionShape2D
+CanvasLayer
 Label
-Panel
-VBoxContainer
->>>>>>> f3e2dc6 (menu and character select)
+AudioStreamPlayer
+AudioStreamPlayer2D
+TextureButton
+TileMapLayer
+Timer
+Area2D
+AnimatedSprite2D
+Sprite2D
 Button
 Panel
 TileMap
-CollisionShape2D
-StaticBody2D
-Camera2D
-Label
-VBoxContainer
-AnimationPlayer
-TextureRect
-Control
-Node

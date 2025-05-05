@@ -1,0 +1,109 @@
+[gd_scene load_steps=11 format=3 uid="uid://b2ng3cpc3xuxr"]
+
+[ext_resource type="Script" uid="uid://bwusdvkbxle81" path="res://skripts/character_select_menu.gd" id="1_v7jbk"]
+[ext_resource type="Texture2D" uid="uid://cqwywxngi0bxd" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_y5b6p"]
+[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="2_peq0e"]
+[ext_resource type="Texture2D" uid="uid://chewfmb35edxx" path="res://assets/figures/01_Player_CodeMaster_stehen.svg" id="3_6ckjq"]
+[ext_resource type="Texture2D" uid="uid://cskwbb0vsu2au" path="res://assets/figures/01_Player_ProjektManager_stehen.svg" id="4_v7jbk"]
+[ext_resource type="Texture2D" uid="uid://boxsijmsdw0t0" path="res://assets/figures/01_Player_WebDesigner_stehen.svg" id="5_olnq5"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="7_6ckjq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ruflx"]
+texture = ExtResource("1_y5b6p")
+
+[sub_resource type="LabelSettings" id="LabelSettings_6ckjq"]
+font = ExtResource("2_peq0e")
+font_size = 39
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_v7jbk"]
+font = ExtResource("2_peq0e")
+font_size = 26
+
+[node name="CharacterSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v7jbk")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ruflx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -89.0
+offset_right = 251.0
+offset_bottom = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Wähle deinen Charakter!"
+label_settings = SubResource("LabelSettings_6ckjq")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Char1Button" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = ExtResource("3_6ckjq")
+
+[node name="Char2Button" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4_v7jbk")
+
+[node name="Char3Button" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_olnq5")
+
+[node name="InfoLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Klicke auf einen Charakter, um ihn auszuwählen"
+label_settings = SubResource("LabelSettings_v7jbk")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -228.0
+offset_top = -201.0
+offset_right = 228.0
+offset_bottom = -118.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 10
+theme_override_font_sizes/font_size = 82
+text = "Bachelor Bash"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CanvasLayer" parent="." instance=ExtResource("7_6ckjq")]
