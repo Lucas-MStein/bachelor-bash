@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwjqe6pal0pci"]
+
+[ext_resource type="Script" uid="uid://clq3ekkfkb1h8" path="res://scenes/winzone.gd" id="1_jpvp6"]
+
+[node name="winzone" type="Area2D"]
+script = ExtResource("1_jpvp6")

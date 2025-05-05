@@ -23,3 +23,5 @@ func toggle_music():
 func _on_music_toggle_pressed():
 	toggle_music()
 	music_toggle.button_pressed = !music_enabled
+
+	
