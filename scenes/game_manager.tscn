@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cq2utdrloc62v"]
+[gd_scene load_steps=5 format=3 uid="uid://cq2utdrloc62v"]
 
 [ext_resource type="Script" uid="uid://donr4kgv3k60m" path="res://skripts/game_manager.gd" id="1_hwd4i"]
+[ext_resource type="Texture2D" uid="uid://cw6rityk6df0b" path="res://assets/elements/03_Elements_Heart_off.svg" id="3_eaq8r"]
+[ext_resource type="Texture2D" uid="uid://d3cmugjnn2dgq" path="res://assets/elements/03_Elements_Heart_on.svg" id="3_oo155"]
 [ext_resource type="Texture2D" uid="uid://obvlfpyxhfrl" path="res://assets/elements/03_Elements_CreditPoint.svg" id="3_udu3i"]
 
 [node name="GameManager" type="Node2D"]
 script = ExtResource("1_hwd4i")
+active_heart = ExtResource("3_oo155")
+inactive_heart = ExtResource("3_eaq8r")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 2
@@ -31,21 +35,29 @@ visible = false
 layout_mode = 2
 texture = ExtResource("3_udu3i")
 
-[node name="LifeContainer" type="GridContainer" parent="CanvasLayer"]
-offset_left = 24.0
-offset_top = 24.0
-offset_right = 332.0
-offset_bottom = 124.0
+[node name="HeartContainer" type="GridContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -516.0
+offset_right = 163.0
+offset_bottom = -411.0
+grow_horizontal = 2
+grow_vertical = 2
 columns = 3
+metadata/_edit_use_anchors_ = true
 
-[node name="Hearth3" type="TextureRect" parent="CanvasLayer/LifeContainer"]
+[node name="Heart3" type="TextureRect" parent="CanvasLayer/HeartContainer"]
 layout_mode = 2
-texture = ExtResource("3_udu3i")
+texture = ExtResource("3_oo155")
 
-[node name="Heart2" type="TextureRect" parent="CanvasLayer/LifeContainer"]
+[node name="Heart2" type="TextureRect" parent="CanvasLayer/HeartContainer"]
 layout_mode = 2
-texture = ExtResource("3_udu3i")
+texture = ExtResource("3_oo155")
 
-[node name="Heart1" type="TextureRect" parent="CanvasLayer/LifeContainer"]
+[node name="Heart1" type="TextureRect" parent="CanvasLayer/HeartContainer"]
 layout_mode = 2
-texture = ExtResource("3_udu3i")
+texture = ExtResource("3_oo155")
