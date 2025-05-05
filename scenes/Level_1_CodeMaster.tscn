@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cl1ho4pp834wo" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_prvlw"]
 [ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_eyfe2"]
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="6_r2hmd"]
+[ext_resource type="AudioStream" uid="uid://5hdd3l7ad128" path="res://assets/music/level_1.mp3" id="7_me6ay"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="8_x5q1v"]
-[ext_resource type="AudioStream" uid="uid://dss10dw3ycxn1" path="res://assets/music/lady-of-the-80x27s-128379.mp3" id="9_f63rn"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="9_r2hmd"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="10_mfk12"]
 [ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="11_446xa"]
@@ -307,7 +307,7 @@ limit_bottom = 500
 position_smoothing_enabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("9_f63rn")
+stream = ExtResource("7_me6ay")
 volume_db = -35.0
 
 [node name="CanvasLayer" parent="." instance=ExtResource("8_x5q1v")]

@@ -1,12 +1,13 @@
-[gd_scene load_steps=14 format=4 uid="uid://b0xey2ll7kfwp"]
+[gd_scene load_steps=15 format=4 uid="uid://b0xey2ll7kfwp"]
 
 [ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_1wfpv"]
-[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_m8i38"]
-[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_o6ags"]
-[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_1wfpv"]
-[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_4kg2l"]
+[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_m8i38"]
+[ext_resource type="Texture2D" uid="uid://ce8evqvg1jydu" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_o6ags"]
+[ext_resource type="Texture2D" uid="uid://cl1ho4pp834wo" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_1wfpv"]
+[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_4kg2l"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="5_y024u"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="6_o6ags"]
+[ext_resource type="AudioStream" uid="uid://bnentv33mc4fg" path="res://assets/music/level_2.mp3" id="7_4kg2l"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -295,3 +296,6 @@ position = Vector2(-43, -88)
 position_smoothing_enabled = true
 
 [node name="CanvasLayer" parent="." instance=ExtResource("6_o6ags")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_4kg2l")
