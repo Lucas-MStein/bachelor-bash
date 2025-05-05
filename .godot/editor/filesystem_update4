@@ -1,3 +1,13 @@
 res://scenes/Level_1_CodeMaster.tscn
 res://ressources/enemy_CollisionShape.tres
-res://scenes/Level_2_CodeMaster.tscn
+res://scenes/Level_1_WebDesigner.tscn
+res://scenes/Level_1_ProjektManager.tscn
+res://scenes/music_player.tscn
+res://skripts/level_1.gd
+res://scenes/win.tscn
+res://main_menu.tscn
+res://scenes/winzone.gd
+res://scenes/winzone.tscn
+res://scenes/killzone.tscn
+res://scenes/player_WebDesginer.tscn
+res://scenes/player_Projektmanager.tscn
