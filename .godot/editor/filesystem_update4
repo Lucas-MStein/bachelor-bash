@@ -1,5 +1,3 @@
-res://scenes/Level_1_CodeMaster.tscn
-res://ressources/enemy_CollisionShape.tres
 res://scenes/Level_2_CodeMaster.tscn
-res://skripts/level_1.gd
-res://scenes/Level_3_CodeMaster.tscn
+res://ressources/enemy_CollisionShape.tres
+res://scenes/Level_1_CodeMaster.tscn
