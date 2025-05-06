@@ -1,4 +1,4 @@
-# Bachelor Bash
+# Survive The Semester
 
 Ein 2D Jump'n'Run-Spiel, entwickelt mit [Godot Engine 4.4](https://godotengine.org)  
 als studentisches Projekt an der DHBW Mosbach im Studiengang Onlinemedien.
