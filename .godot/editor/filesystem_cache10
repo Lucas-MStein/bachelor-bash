@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746535390
+::res://::1746548203
 icon.svg::CompressedTexture2D/CompressedTexture2D::6284568425558919809::1744874973::1744874973::1::::<><><>0<>0<>7242f5b4f35e78e139e11fe56b1a1db5<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 main_menu.tscn::PackedScene/PackedScene::6633133357086014465::1746449317::0::1::::<><><>0<>0<><>::uid://dfcq82f7u3fdu::::res://skripts/main_menu.gd<>uid://c3nth5fdg48ie::::res://assets/fonts/GrapeSoda (2).ttf<>uid://4s6m58tcqavo::::res://assets/classroom/02_Background_Classroom_Final.png<>uid://ghhxtf2vss2q::::res://assets/classroom/01_Button_Play.png<>uid://cu8nw6tqmh1uf::::res://assets/fonts/GrapeSoda.ttf<>uid://c35jtwc5jeeof::::res://scenes/UI.tscn
 readme.md::TextFile/TextFile::-1::1746518969::0::1::::<><><>0<>0<><>::
-::res://assets/::1746539892
-03_Elements_CreditPoint_Animation.svg::CompressedTexture2D::6103274704060733849::1746539892::1746539904::1::::<><><>0<>0<>e733cb28e075076fbc8de8798cfc7a68<>res://.godot/imported/03_Elements_CreditPoint_Animation.svg-f6e17e0bfe7be4c84c7b53ae08cb8fde.ctex::
+::res://assets/::1746539904
+03_Elements_CreditPoint_Animation.svg::CompressedTexture2D/CompressedTexture2D::6103274704060733849::1746539892::1746539904::1::::<><><>0<>0<>e733cb28e075076fbc8de8798cfc7a68<>res://.godot/imported/03_Elements_CreditPoint_Animation.svg-f6e17e0bfe7be4c84c7b53ae08cb8fde.ctex::
 ::res://assets/classroom/::1746457989
 01_Button_Exit.png::CompressedTexture2D/CompressedTexture2D::2873034584384486488::1744875830::1746457987::1::::<><><>0<>0<>d26071d54ce8ac49ed79ecba36f7326d<>res://.godot/imported/01_Button_Exit.png-ed573c4a6b91d0ab5ee4e4c1d58dc745.ctex::
 01_Button_Play.png::CompressedTexture2D/CompressedTexture2D::5054881907603054454::1744875830::1746457987::1::::<><><>0<>0<>ca96bb0087588675fe5a20457220ec96<>res://.godot/imported/01_Button_Play.png-31ab2f9f9568f4bdee8715bd2845b5a4.ctex::
@@ -118,6 +118,6 @@ level_5.gd::GDScript/GDScript::8757104677506373147::1746361913::0::1::::<>Node2D
 level_6.gd::GDScript/GDScript::5145812608796902013::1746361913::0::1::::<>Node2D<><>0<>0<><>::
 main_menu.gd::GDScript/GDScript::7515366855196952302::1746353582::0::1::::<>Control<><>0<>0<><>::
 music_player.gd::GDScript/GDScript::2433679891316933050::1746212108::0::1::::<>Node<><>0<>0<><>::
-pickup_credit_point.gd::GDScript::7385197405984467118::1746518969::0::1::::<>Area2D<><>0<>0<><>::
+pickup_credit_point.gd::GDScript/GDScript::7385197405984467118::1746518969::0::1::::<>Area2D<><>0<>0<><>::
 player.gd::GDScript/GDScript::5074311021720013974::1746449317::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ui.gd::GDScript/GDScript::8449642535617278167::1746353582::0::1::::<>CanvasLayer<><>0<>0<><>::
