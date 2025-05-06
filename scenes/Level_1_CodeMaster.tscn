@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="13_me6ay"]
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="14_7v7yl"]
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="15_me6ay"]
-[ext_resource type="PackedScene" uid="uid://cq2utdrloc62v" path="res://scenes/game_manager.tscn" id="18_xnahm"]
+[ext_resource type="PackedScene" path="res://scenes/game_manager.tscn" id="18_xnahm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
