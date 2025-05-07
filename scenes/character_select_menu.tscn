@@ -106,4 +106,4 @@ text = "Bachelor Bash"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CanvasLayer" parent="." instance=ExtResource("7_6ckjq")]
+[node name="UI_Button" parent="." instance=ExtResource("7_6ckjq")]

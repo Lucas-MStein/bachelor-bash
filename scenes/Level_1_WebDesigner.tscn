@@ -302,10 +302,10 @@ position_smoothing_enabled = true
 stream = ExtResource("7_20sjq")
 volume_db = -35.0
 
-[node name="CanvasLayer" parent="." instance=ExtResource("8_tc4xc")]
-
 [node name="Killzone" parent="." instance=ExtResource("9_20sjq")]
 position = Vector2(169, 1106)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_lsu44")
+
+[node name="UI_Button" parent="." instance=ExtResource("8_tc4xc")]

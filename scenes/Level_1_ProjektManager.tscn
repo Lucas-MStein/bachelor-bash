@@ -309,3 +309,5 @@ position = Vector2(169, 1106)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_w0cgb")
+
+[node name="UI_Button" parent="." instance=ExtResource("8_6xbp5")]

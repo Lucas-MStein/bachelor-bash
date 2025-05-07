@@ -1,7 +1,7 @@
 extends Control
 
 @onready var music_player = get_node("/root/MusicPlayer")  # Globale Musik-Instanz
-@onready var music_toggle = get_node("CanvasLayer/MusicToggleButton")             # Button für Musik an/aus
+@onready var music_toggle = get_node("UI_Button/MusicToggleButton")             # Button für Musik an/aus
 @onready var label_node: Label = get_node("Label")  
 
 func _ready() -> void:
