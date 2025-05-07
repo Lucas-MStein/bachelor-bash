@@ -1,2 +1,10 @@
 res://scenes/Level_2_CodeMaster.tscn
 res://ressources/enemy_CollisionShape.tres
+res://main_menu.tscn
+res://skripts/main_menu.gd
+res://skripts/level_2.gd
+res://skripts/level_3.gd
+res://skripts/level_4.gd
+res://skripts/level_5.gd
+res://skripts/level_6.gd
+res://skripts/character_select_menu.gd
