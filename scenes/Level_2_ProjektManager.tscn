@@ -294,4 +294,4 @@ position = Vector2(933, -764)
 position = Vector2(-43, -88)
 position_smoothing_enabled = true
 
-[node name="CanvasLayer" parent="." instance=ExtResource("6_3mwpf")]
+[node name="UI_Button" parent="." instance=ExtResource("6_3mwpf")]

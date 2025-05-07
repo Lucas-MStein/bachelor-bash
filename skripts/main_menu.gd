@@ -1,7 +1,7 @@
 extends Control
 
 @onready var music_player = get_node("/root/MusicPlayer")  # Globale Musik-Instanz
-@onready var music_toggle = get_node("CanvasLayer/MusicToggleButton")             # Button für Musik an/aus
+@onready var music_toggle = get_node("UI_Button/MusicToggleButton")             # Button für Musik an/aus
 @onready var label_node: Label = get_node("Label")  
 
 func _ready() -> void:
@@ -9,7 +9,7 @@ func _ready() -> void:
 	GameManager.update_ui_visibility()
 	MusicPlayer.is_active = true
 	
-	music_toggle.focus_mode = Control.FOCUS_NONE
+	#music_toggle.focus_mode = Control.FOCUS_NONE
 	music_toggle.button_pressed = !MusicPlayer.music_enabled
 	music_toggle.pressed.connect(_on_music_toggle_pressed)
 	# Entwickler-Test: Speicherstand löschen beim ersten Start (Debug-Modus)

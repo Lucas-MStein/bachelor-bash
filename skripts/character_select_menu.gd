@@ -1,6 +1,6 @@
 extends Control
 
-@onready var music_toggle = get_node("CanvasLayer/MusicToggleButton")
+@onready var music_toggle = get_node("UI_Button/MusicToggleButton")
 @onready var music_player = get_node("/root/MusicPlayer")
 
 func _ready():
