@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_r022j"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="6_lkgtt"]
 [ext_resource type="AudioStream" uid="uid://bbmmw4wfnc5mx" path="res://assets/music/level_1.mp3" id="7_20sjq"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="8_tc4xc"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="8_tc4xc"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="9_20sjq"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]

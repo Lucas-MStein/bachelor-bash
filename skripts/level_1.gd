@@ -1,10 +1,14 @@
 extends Node2D
 
-@onready var music_toggle = get_node("CanvasLayer/MusicToggleButton")
+@onready var music_toggle = $UI_Button/MusicToggleButton
 @onready var audio_player = $AudioStreamPlayer         
 var music_enabled := true
 
 func _ready() -> void:
+	MusicPlayer.is_active = false
+	
+	GameManager.is_active = true
+	GameManager.update_ui_visibility()
 	music_toggle.focus_mode = Control.FOCUS_NONE
 	music_toggle.button_pressed = !music_enabled
 	music_toggle.pressed.connect(_on_music_toggle_pressed)
