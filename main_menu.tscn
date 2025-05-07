@@ -169,6 +169,6 @@ vertical_alignment = 1
 
 [node name="CanvasLayer" parent="." instance=ExtResource("9_dy7ct")]
 
-[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]
