@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_ce5an"]
 [ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="2_j74nq"]
+[ext_resource type="PackedScene" path="res://scenes/UI_Button.tscn" id="2_thd6p"]
 [ext_resource type="Texture2D" uid="uid://d4da4mdm222yp" path="res://assets/elements/02_Elemente_Welt_2_Deko.svg" id="3_ce5an"]
 [ext_resource type="Texture2D" uid="uid://dj5cvb0o3qsw3" path="res://assets/elements/02_Elemente_Welt_2_Fenster_Türen.svg" id="3_j74nq"]
 [ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_1l44t"]
 [ext_resource type="Texture2D" uid="uid://5yxtpn6ghrk3" path="res://assets/elements/02_Elemente_Welt_2_Hintergrund.svg" id="5_j74nq"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="6_60178"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="7_xgayl"]
 [ext_resource type="AudioStream" uid="uid://xc42seui4bwl" path="res://assets/music/level_3.mp3" id="8_ah0op"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="10_ah0op"]
 [ext_resource type="PackedScene" uid="uid://bq2asvtnebc5w" path="res://scenes/enemy_TechnischesProblem.tscn" id="11_o26au"]
@@ -290,9 +290,11 @@ sources/3 = SubResource("TileSetAtlasSource_o26au")
 sources/5 = SubResource("TileSetAtlasSource_1l44t")
 sources/1 = SubResource("TileSetAtlasSource_ah0op")
 
-[node name="Level_2_CodeMaster" type="Node2D"]
+[node name="Level_2_CodeMaster2" type="Node2D"]
 script = ExtResource("1_ce5an")
 metadata/_edit_vertical_guides_ = [45005.0]
+
+[node name="UI_Button" parent="." instance=ExtResource("2_thd6p")]
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4epbf")
@@ -325,8 +327,6 @@ position = Vector2(485, 33)
 [node name="Camera2D" type="Camera2D" parent="player_WebDesigner"]
 position = Vector2(-43, -88)
 position_smoothing_enabled = true
-
-[node name="CanvasLayer" parent="." instance=ExtResource("7_xgayl")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_ah0op")

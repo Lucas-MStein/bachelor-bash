@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var music_toggle = get_node("CanvasLayer/MusicToggleButton")
+@onready var music_toggle = get_node("UI_Button/MusicToggleButton")
 @onready var audio_player = $AudioStreamPlayer         
 var music_enabled := true
 
