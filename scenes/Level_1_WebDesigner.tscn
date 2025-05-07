@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="4_x2i1b"]
 [ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_r022j"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="6_lkgtt"]
-[ext_resource type="AudioStream" uid="uid://bo6gmpm2hg6bl" path="res://assets/music/lady-of-the-80x27s-128379.mp3" id="7_m4h5f"]
+[ext_resource type="AudioStream" uid="uid://bbmmw4wfnc5mx" path="res://assets/music/level_1.mp3" id="7_20sjq"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="8_tc4xc"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="9_20sjq"]
 
@@ -299,7 +299,8 @@ position = Vector2(124, -46)
 position_smoothing_enabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_m4h5f")
+stream = ExtResource("7_20sjq")
+volume_db = -35.0
 
 [node name="CanvasLayer" parent="." instance=ExtResource("8_tc4xc")]
 

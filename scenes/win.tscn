@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvclp327sdn8j"]
+
+[ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_826fv"]
+[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="2_iiocm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yxbqr"]
+texture = ExtResource("1_826fv")
+
+[sub_resource type="LabelSettings" id="LabelSettings_tylv2"]
+font = ExtResource("2_iiocm")
+font_size = 100
+
+[node name="win" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_yxbqr")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 792.0
+offset_top = 488.0
+offset_right = 1123.0
+offset_bottom = 588.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Du hast gewonnen!"
+label_settings = SubResource("LabelSettings_tylv2")
