@@ -4,6 +4,10 @@ extends Control
 @onready var music_player = get_node("/root/MusicPlayer")
 
 func _ready():
+	GameManager.is_active = false
+	GameManager.update_ui_visibility()
+	MusicPlayer.is_active = true
+	
 	$VBoxContainer/HBoxContainer/Char1Button.pressed.connect(func(): _select_character("Codemaster"))
 	$VBoxContainer/HBoxContainer/Char2Button.pressed.connect(func(): _select_character("Projektmanager"))
 	$VBoxContainer/HBoxContainer/Char3Button.pressed.connect(func(): _select_character("Webdesigner"))

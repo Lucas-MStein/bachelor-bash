@@ -5,7 +5,11 @@ extends Control
 @onready var label_node: Label = get_node("Label")  
 
 func _ready() -> void:
+	GameManager.is_active = false
+	GameManager.update_ui_visibility()
+	MusicPlayer.is_active = true
 	
+	music_toggle.focus_mode = Control.FOCUS_NONE
 	music_toggle.button_pressed = !MusicPlayer.music_enabled
 	music_toggle.pressed.connect(_on_music_toggle_pressed)
 	# Entwickler-Test: Speicherstand löschen beim ersten Start (Debug-Modus)

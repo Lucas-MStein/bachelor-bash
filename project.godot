@@ -19,8 +19,8 @@ config/icon="res://icon.svg"
 
 Global="*res://skripts/global.gd"
 MusicPlayer="*res://scenes/music_player.tscn"
-Ui="*res://scenes/UI.tscn"
-GameManager="*res://skripts/game_manager.gd"
+Ui="*res://scenes/UI_Button.tscn"
+GameManager="*res://scenes/game_manager.tscn"
 
 [display]
 
