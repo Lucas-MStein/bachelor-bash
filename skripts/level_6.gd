@@ -6,7 +6,8 @@ var music_enabled := true
 
 func _ready() -> void:
 	MusicPlayer.is_active = false
-	
+	MusicPlayer.player.stop()
+			
 	GameManager.is_active = true
 	GameManager.update_ui_visibility()
 	music_toggle.focus_mode = Control.FOCUS_NONE

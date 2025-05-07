@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=4 uid="uid://bxmaxa11nqdcy"]
 
 [ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_i7kyy"]
-[ext_resource type="PackedScene" path="res://scenes/UI_Button.tscn" id="2_bmvyf"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_bmvyf"]
 [ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="2_k4381"]
 [ext_resource type="Texture2D" uid="uid://dj5cvb0o3qsw3" path="res://assets/elements/02_Elemente_Welt_2_Fenster_Türen.svg" id="3_bmvyf"]
 [ext_resource type="Texture2D" uid="uid://qtkluyntsdgx" path="res://assets/elements/02_Elemente_Kellerwand.svg" id="4_k4381"]
@@ -297,7 +297,7 @@ sources/5 = SubResource("TileSetAtlasSource_1l44t")
 sources/1 = SubResource("TileSetAtlasSource_ah0op")
 sources/2 = SubResource("TileSetAtlasSource_bmvyf")
 
-[node name="Level_2_CodeMaster" type="Node2D"]
+[node name="Level_4_CodeMaster" type="Node2D"]
 script = ExtResource("1_i7kyy")
 metadata/_edit_vertical_guides_ = [45005.0]
 
