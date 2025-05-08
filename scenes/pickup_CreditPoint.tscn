@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://cu5cjg2r2dtb5"]
 
 [ext_resource type="Script" uid="uid://ddhpefmk2rvko" path="res://skripts/pickup_credit_point.gd" id="1_o4rxo"]
-[ext_resource type="Texture2D" uid="uid://cm2fxa08fp6aj" path="res://assets/elements/03_Elements_CreditPoint_Animation.svg" id="2_w0bx0"]
-[ext_resource type="AudioStream" uid="uid://di03mxfclmgsd" path="res://assets/music/Credit_Points.mp3" id="3_iqdlv"]
+[ext_resource type="Texture2D" uid="uid://bdy30exrjmtcm" path="res://assets/elements/03_Elements_CreditPoint_Animation.svg" id="2_w0bx0"]
+[ext_resource type="AudioStream" uid="uid://c336bjunx5x6k" path="res://assets/music/Credit_Points.mp3" id="3_iqdlv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iqdlv"]
 atlas = ExtResource("2_w0bx0")
