@@ -169,6 +169,6 @@ vertical_alignment = 1
 
 [node name="UI_Button" parent="." instance=ExtResource("6_nlkkf")]
 
-[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]
