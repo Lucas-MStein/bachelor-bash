@@ -14,7 +14,9 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var standing_cShape = preload("res://ressources/player_idel_CollisionShape.tres")
 var sliding_cShape = preload("res://ressources/player_Slide_CollisionShape.tres")
 
-
+func _ready() -> void:
+	add_to_group("player")
+	
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():

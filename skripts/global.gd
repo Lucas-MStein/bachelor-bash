@@ -21,3 +21,6 @@ func load_game():
 
 		character = save_data.get("character", "")
 		level = save_data.get("level", 1)
+
+func set_Level(playerLevel: int):
+	level = playerLevel

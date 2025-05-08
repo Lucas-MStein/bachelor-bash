@@ -6,6 +6,8 @@ extends Node2D
 var coins = 0
 var heart = 3
 
+var total_credits = 3
+
 @export var is_active: bool = true
 
 func _ready() -> void:
@@ -24,7 +26,7 @@ func _ready() -> void:
 		print("Fehler: CoinContainer nicht gefunden!")
 	
 	_reset_level()
-
+	
 func set_is_active(value):
 	is_active = value
 	update_ui_visibility()  # Sichtbarkeit aktualisieren, wenn is_active geändert wird

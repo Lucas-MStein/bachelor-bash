@@ -6,11 +6,12 @@ extends Control
 func _ready():
 	GameManager.is_active = false
 	GameManager.update_ui_visibility()
+	
 	MusicPlayer.is_active = true
 	
-	$VBoxContainer/HBoxContainer/Char1Button.pressed.connect(func(): _select_character("Codemaster"))
-	$VBoxContainer/HBoxContainer/Char2Button.pressed.connect(func(): _select_character("Projektmanager"))
-	$VBoxContainer/HBoxContainer/Char3Button.pressed.connect(func(): _select_character("Webdesigner"))
+	$VBoxContainer/HBoxContainer/Char1Button.pressed.connect(func(): _select_character("CodeMaster"))
+	$VBoxContainer/HBoxContainer/Char2Button.pressed.connect(func(): _select_character("ProjektManager"))
+	$VBoxContainer/HBoxContainer/Char3Button.pressed.connect(func(): _select_character("WebDesigner"))
 
 	music_toggle.button_pressed = false
 	music_toggle.pressed.connect(_on_music_toggle_pressed)

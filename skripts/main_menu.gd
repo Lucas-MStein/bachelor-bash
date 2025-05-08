@@ -1,6 +1,6 @@
 extends Control
 
-@onready var music_player = get_node("/root/MusicPlayer")  # Globale Musik-Instanz
+#@onready var music_player = get_node("/root/MusicPlayer")  # Globale Musik-Instanz
 @onready var music_toggle = get_node("UI_Button/MusicToggleButton")             # Button für Musik an/aus
 @onready var label_node: Label = get_node("Label")  
 
@@ -9,7 +9,7 @@ func _ready() -> void:
 	GameManager.update_ui_visibility()
 	MusicPlayer.is_active = true
 	
-	#music_toggle.focus_mode = Control.FOCUS_NONE
+	music_toggle.focus_mode = Control.FOCUS_NONE
 	music_toggle.button_pressed = !MusicPlayer.music_enabled
 	music_toggle.pressed.connect(_on_music_toggle_pressed)
 	# Entwickler-Test: Speicherstand löschen beim ersten Start (Debug-Modus)
@@ -34,11 +34,11 @@ func _on_start_pressed() -> void:
 		$Label2.text = "Bitte wähle zuerst einen Charakter!"
 	else:
 		Global.save_game()
-		if Global.character == "Codemaster":
+		if Global.character == "CodeMaster":
 			get_tree().change_scene_to_file("res://scenes/Level_1_CodeMaster.tscn")
-		if Global.character == "Projektmanager":
+		if Global.character == "ProjektManager":
 			get_tree().change_scene_to_file("res://scenes/Level_1_ProjektManager.tscn")
-		if Global.character == "Webdesigner":
+		if Global.character == "WebDesigner":
 			get_tree().change_scene_to_file("res://scenes/Level_1_WebDesigner.tscn")
 		
 		if MusicPlayer.music_enabled:
