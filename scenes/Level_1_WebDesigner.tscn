@@ -306,15 +306,3 @@ position = Vector2(169, 1106)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_lsu44")
-
-[node name="UI_Button" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-script = null

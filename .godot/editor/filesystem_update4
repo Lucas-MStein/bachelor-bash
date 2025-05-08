@@ -1,6 +1,5 @@
 res://scenes/Level_2_CodeMaster.tscn
 res://ressources/enemy_CollisionShape.tres
-<<<<<<< HEAD
 res://scenes/Level_1_CodeMaster.tscn
 res://scenes/Level_3_CodeMaster.tscn
 res://scenes/character_select_menu.tscn
@@ -30,10 +29,3 @@ res://skripts/pickup_credit_point.gd
 res://skripts/player.gd
 res://scenes/heart.tscn
 res://scenes/UI_Button.tscn
-=======
-res://scenes/Level_2_CodeMaster.tscn
-res://scenes/Level_3_CodeMaster.tscn
-res://scenes/pickup_CreditPoint.tscn
-res://scenes/Level_Tutorial.tscn
-res://scenes/enemy_fieseKlausuren.tscn
->>>>>>> origin/develop
