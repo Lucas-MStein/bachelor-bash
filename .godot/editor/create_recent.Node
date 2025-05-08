@@ -1,3 +1,4 @@
+Label
 AudioStreamPlayer
 CanvasLayer
 HBoxContainer
@@ -5,7 +6,6 @@ GridContainer
 Panel
 Sprite2D
 TextureRect
-Label
 Area2D
 TileMap
 CollisionShape2D
