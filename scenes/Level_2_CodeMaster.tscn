@@ -1,13 +1,13 @@
-[gd_scene load_steps=22 format=4 uid="uid://b0xey2ll7kfwp"]
+[gd_scene load_steps=24 format=4 uid="uid://b0xey2ll7kfwp"]
 
 [ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_1wfpv"]
-[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_m8i38"]
+[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_m8i38"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_cvudq"]
-[ext_resource type="Texture2D" uid="uid://ce8evqvg1jydu" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_o6ags"]
-[ext_resource type="Texture2D" uid="uid://cl1ho4pp834wo" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_1wfpv"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_4kg2l"]
+[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_o6ags"]
+[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_1wfpv"]
+[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_4kg2l"]
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="6_4kg2l"]
-[ext_resource type="AudioStream" uid="uid://bnentv33mc4fg" path="res://assets/music/level_2.mp3" id="7_4kg2l"]
+[ext_resource type="AudioStream" uid="uid://dn1kmp7g4b5pf" path="res://assets/music/level_2.mp3" id="7_4kg2l"]
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="9_afuk4"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="10_cvudq"]
 [ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="11_bxi35"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="13_7mv8l"]
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="14_pyrsp"]
 [ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="15_cvudq"]
+[ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="16_bxi35"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -266,6 +267,9 @@ sources/1 = SubResource("TileSetAtlasSource_qlnsb")
 sources/2 = SubResource("TileSetAtlasSource_enp17")
 sources/4 = SubResource("TileSetAtlasSource_17bo3")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xoopn"]
+size = Vector2(141, 294.5)
+
 [node name="Level_2_CodeMaster" type="Node2D"]
 script = ExtResource("1_1wfpv")
 metadata/_edit_vertical_guides_ = [45005.0]
@@ -306,7 +310,7 @@ position_smoothing_enabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_4kg2l")
-volume_db = -35.686
+volume_db = -25.0
 
 [node name="obstacles_Giftwolke" parent="." instance=ExtResource("9_afuk4")]
 position = Vector2(4157, -211)
@@ -335,3 +339,13 @@ position = Vector2(26672, -420)
 
 [node name="CreditPoint3" parent="." instance=ExtResource("15_cvudq")]
 position = Vector2(44328, -405)
+
+[node name="winzone" parent="." instance=ExtResource("16_bxi35")]
+collision_layer = 2
+collision_mask = 3
+
+[node name="Tür" type="CollisionShape2D" parent="winzone"]
+light_mask = 3
+visibility_layer = 2
+position = Vector2(44815, -150)
+shape = SubResource("RectangleShape2D_xoopn")

@@ -5,11 +5,14 @@ extends Node2D
 var music_enabled := true
 
 func _ready() -> void:
+	Global.set_Level(5)
+	
 	MusicPlayer.is_active = false
 	MusicPlayer.player.stop()
 	
 	GameManager.is_active = true
 	GameManager.update_ui_visibility()
+	
 	music_toggle.focus_mode = Control.FOCUS_NONE
 	music_toggle.button_pressed = !music_enabled
 	music_toggle.pressed.connect(_on_music_toggle_pressed)
