@@ -1,11 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://c1re0cj8r6r7v"]
+[gd_scene load_steps=14 format=3 uid="uid://c1re0cj8r6r7v"]
 
 [ext_resource type="Script" uid="uid://dfcq82f7u3fdu" path="res://skripts/main_menu.gd" id="1_fu7sn"]
-[ext_resource type="FontFile" uid="uid://c3nth5fdg48ie" path="res://assets/fonts/GrapeSoda (2).ttf" id="2_fu7sn"]
-[ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="2_glbon"]
-[ext_resource type="Texture2D" uid="uid://ghhxtf2vss2q" path="res://assets/classroom/01_Button_Play.png" id="3_glbon"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="6_nlkkf"]
-[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="6_qe12f"]
+[ext_resource type="FontFile" uid="uid://de7a3qfqbx6ya" path="res://assets/fonts/GrapeSoda (2).ttf" id="2_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://mptgc4vmomd7" path="res://assets/classroom/02_Background_Classroom_Final.png" id="2_glbon"]
+[ext_resource type="Texture2D" uid="uid://bb1ttu0wj2rij" path="res://assets/classroom/01_Button_Play.png" id="3_glbon"]
+[ext_resource type="PackedScene" uid="uid://b7nss2wk0vfbf" path="res://scenes/UI_Button.tscn" id="6_nlkkf"]
+[ext_resource type="FontFile" uid="uid://rnqbrhsiovho" path="res://assets/fonts/GrapeSoda.ttf" id="6_qe12f"]
+[ext_resource type="Script" uid="uid://bv2mpg1t1phki" path="res://scenes/ui_button.gd" id="7_qe12f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
 texture = ExtResource("2_glbon")
@@ -168,7 +169,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="UI_Button" parent="." instance=ExtResource("6_nlkkf")]
+script = ExtResource("7_qe12f")
 
-[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]
