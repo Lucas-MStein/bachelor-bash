@@ -4,9 +4,3 @@ res://scenes/Level_4_CodeMaster.tscn
 res://scenes/Level_2_CodeMaster.tscn
 res://main_menu.tscn
 res://scenes/Level_3_CodeMaster.tscn
-res://skripts/level_1.gd
-res://skripts/level_2.gd
-res://skripts/level_3.gd
-res://skripts/level_4.gd
-res://skripts/level_5.gd
-res://skripts/level_6.gd
