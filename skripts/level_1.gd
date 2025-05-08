@@ -5,23 +5,23 @@ extends Node2D
 var music_enabled := true
 
 func _ready() -> void:
-	music_toggle.focus_mode = Control.FOCUS_NONE
-	music_toggle.button_pressed = !music_enabled
-	music_toggle.pressed.connect(_on_music_toggle_pressed)
+    music_toggle.focus_mode = Control.FOCUS_NONE
+    music_toggle.button_pressed = !music_enabled
+    music_toggle.pressed.connect(_on_music_toggle_pressed)
 
-	if music_enabled and audio_player.playing == false:
-		audio_player.play()
-	
+    if music_enabled and audio_player.playing == false:
+        audio_player.play()
+    
 func toggle_music():
-	music_enabled = !music_enabled
-	if audio_player: 
-		if music_enabled:
-			audio_player.play()
-		else:
-			audio_player.stop()
+    music_enabled = !music_enabled
+    if audio_player: 
+        if music_enabled:
+            audio_player.play()
+        else:
+            audio_player.stop()
 
 func _on_music_toggle_pressed():
-	toggle_music()
-	music_toggle.button_pressed = !music_enabled
+    toggle_music()
+    music_toggle.button_pressed = !music_enabled
 
-	
+    

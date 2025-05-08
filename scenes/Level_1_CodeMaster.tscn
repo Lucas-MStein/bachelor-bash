@@ -1,12 +1,12 @@
 [gd_scene load_steps=27 format=4 uid="uid://cooubdkasekoy"]
 
 [ext_resource type="Script" uid="uid://ddbdwah2li5b3" path="res://skripts/level_1.gd" id="1_r2hmd"]
-[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_wt1y1"]
-[ext_resource type="Texture2D" uid="uid://ce8evqvg1jydu" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_ergy7"]
-[ext_resource type="Texture2D" uid="uid://cl1ho4pp834wo" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_prvlw"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_eyfe2"]
+[ext_resource type="Texture2D" uid="uid://b26ukmwtvt53t" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_wt1y1"]
+[ext_resource type="Texture2D" uid="uid://hgwcwq2w62oj" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_ergy7"]
+[ext_resource type="Texture2D" uid="uid://dh7vmn3m5qfew" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_prvlw"]
+[ext_resource type="Texture2D" uid="uid://dhq5omxient22" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_eyfe2"]
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="6_r2hmd"]
-[ext_resource type="AudioStream" uid="uid://5hdd3l7ad128" path="res://assets/music/level_1.mp3" id="7_me6ay"]
+[ext_resource type="AudioStream" uid="uid://c7rh7q57y6434" path="res://assets/music/level_1.mp3" id="7_me6ay"]
 [ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="8_l82ax"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="8_x5q1v"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="9_r2hmd"]
@@ -17,7 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="13_me6ay"]
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="14_7v7yl"]
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="15_me6ay"]
-[ext_resource type="PackedScene" path="res://scenes/game_manager.tscn" id="18_xnahm"]
+[ext_resource type="PackedScene" uid="uid://cq2utdrloc62v" path="res://scenes/game_manager.tscn" id="18_xnahm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -302,8 +302,8 @@ tile_map_data = PackedByteArray("AAADAP3/AgAIAAQAAAADAP7/AgAIAAUAAAADAP//AgAIAAY
 tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 
-[node name="player_CodeMaster" parent="." instance=ExtResource("6_r2hmd")]
-position = Vector2(460, 24)
+[node name="player_CodeMaster" parent="." groups=["player"] instance=ExtResource("6_r2hmd")]
+position = Vector2(458, 24)
 collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="player_CodeMaster"]

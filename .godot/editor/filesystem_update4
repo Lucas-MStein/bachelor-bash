@@ -2,3 +2,11 @@ res://scenes/Level_2_CodeMaster.tscn
 res://ressources/enemy_CollisionShape.tres
 res://scenes/Level_1_CodeMaster.tscn
 res://scenes/Level_3_CodeMaster.tscn
+res://scenes/character_select_menu.tscn
+res://scenes/enemy_Abgabestress.tscn
+res://scenes/killzone.tscn
+res://scenes/enemy_Aufgabenberg.tscn
+res://scenes/enemy_fieseKlausuren.tscn
+res://scenes/enemy_TechnischesProblem.tscn
+res://scenes/Level_1_ProjektManager.tscn
+res://scenes/Level_1_WebDesigner.tscn

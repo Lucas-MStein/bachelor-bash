@@ -4,11 +4,11 @@ extends Node
 var music_enabled := true
 
 func _ready():
-	if player: 
-		player.stream_paused = !music_enabled
-		player.play()
+    if player: 
+        player.stream_paused = !music_enabled
+        player.play()
 
 func toggle_music():
-	music_enabled = !music_enabled
-	if player: 
-		player.stream_paused = !music_enabled
+    music_enabled = !music_enabled
+    if player: 
+        player.stream_paused = !music_enabled

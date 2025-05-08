@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://l7fdh40emq30"]
 
 [ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_6m5yd"]
-[ext_resource type="Texture2D" uid="uid://w8ybjjnlkl8q" path="res://assets/figures/02_Enemy_Aufgabenberg.svg" id="1_7iwpy"]
+[ext_resource type="Texture2D" uid="uid://d0xp6vx6mhagx" path="res://assets/figures/02_Enemy_Aufgabenberg.svg" id="1_7iwpy"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_1gxs7"]
 [ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="3_6m5yd"]
 

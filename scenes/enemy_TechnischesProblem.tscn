@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://bq2asvtnebc5w"]
 
-[ext_resource type="Texture2D" uid="uid://dpo8sdwyhae5t" path="res://assets/figures/02_Enemy_Technische Probleme.svg" id="1_xjtgb"]
+[ext_resource type="Texture2D" uid="uid://cqnck3xq8sxbr" path="res://assets/figures/02_Enemy_Technische Probleme.svg" id="1_xjtgb"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_g8ord"]
 [ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="3_21j48"]
 [ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="4_21j48"]

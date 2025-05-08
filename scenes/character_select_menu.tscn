@@ -1,39 +1,12 @@
 [gd_scene load_steps=11 format=3 uid="uid://b2ng3cpc3xuxr"]
 
+[ext_resource type="Script" uid="uid://bwusdvkbxle81" path="res://skripts/character_select_menu.gd" id="1_6ckjq"]
 [ext_resource type="Texture2D" uid="uid://mptgc4vmomd7" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_y5b6p"]
 [ext_resource type="FontFile" uid="uid://rnqbrhsiovho" path="res://assets/fonts/GrapeSoda.ttf" id="2_peq0e"]
 [ext_resource type="Texture2D" uid="uid://bytdncmaw3gfh" path="res://assets/figures/01_Player_CodeMaster_stehen.svg" id="3_6ckjq"]
 [ext_resource type="Texture2D" uid="uid://5ixnl3kv5oma" path="res://assets/figures/01_Player_ProjektManager_stehen.svg" id="4_v7jbk"]
 [ext_resource type="Texture2D" uid="uid://cjnqxj8em1qpv" path="res://assets/figures/01_Player_WebDesigner_stehen.svg" id="5_olnq5"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="7_6ckjq"]
-
-[sub_resource type="GDScript" id="GDScript_lik1d"]
-script/source = "extends Control
-
-@onready var music_toggle = $MusicToggleButton  # Verweist auf den Button im SceneTree
-
-func _ready():
-	# Buttons mit Charakteren verbinden
-	$VBoxContainer/HBoxContainer/Char1Button.pressed.connect(func(): _select_character(\"Projekt-Manager\"))
-	$VBoxContainer/HBoxContainer/Char2Button.pressed.connect(func(): _select_character(\"Web-Designer\"))
-	$VBoxContainer/HBoxContainer/Char3Button.pressed.connect(func(): _select_character(\"Code-Master\"))
-
-	# Musik-Button initialisieren
-	music_toggle.button_pressed = false
-	music_toggle.pressed.connect(_on_music_toggle_pressed)
-
-func _select_character(name: String):
-	Global.character = name
-	$VBoxContainer/InfoLabel.text = \"Ausgewählt: \" + name
-	Global.save_game()
-
-	await get_tree().create_timer(1.5).timeout
-	get_tree().change_scene_to_file(\"res://main_menu.tscn\")
-
-func _on_music_toggle_pressed():
-	var music_player = get_node(\"/root/MusicPlayer\")  # Passe den Pfad ggf. an!
-	music_player.toggle_music()
-"
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ruflx"]
 texture = ExtResource("1_y5b6p")
@@ -55,7 +28,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = SubResource("GDScript_lik1d")
+script = ExtResource("1_6ckjq")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1

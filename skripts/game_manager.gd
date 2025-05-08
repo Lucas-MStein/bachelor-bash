@@ -12,16 +12,16 @@ var heart = 3
 
 
 func add_coin():
-	if coins < 3:
-		var coin_icon = coin_container.get_child(coins)
-		coin_icon.visible = true
-		coins += 1
-		
+    if coins < 3:
+        var coin_icon = coin_container.get_child(coins)
+        coin_icon.visible = true
+        coins += 1
+        
 func damage_heart():
-	if heart > 0:
-		heart -= 1
-		var heart_icon = heart_container.get_child(heart)
-		if heart_icon is TextureRect:
-			heart_icon.texture = inactive_heart
-	else:
-		print("Spieler hat keine Leben mehr")
+    if heart > 0:
+        heart -= 1
+        var heart_icon = heart_container.get_child(heart)
+        if heart_icon is TextureRect:
+            heart_icon.texture = inactive_heart
+    else:
+        print("Spieler hat keine Leben mehr")
