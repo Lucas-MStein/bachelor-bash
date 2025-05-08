@@ -13,7 +13,7 @@ func _ready() -> void:
 	GameManager.is_active = true
 	GameManager.update_ui_visibility()
 	
-	music_toggle.focus_mode = Control.FOCUS_NONE
+	#music_toggle.focus_mode = Control.FOCUS_NONE
 	music_toggle.button_pressed = !music_enabled
 	music_toggle.pressed.connect(_on_music_toggle_pressed)
 
