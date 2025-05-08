@@ -1,13 +1,13 @@
 [gd_scene load_steps=17 format=4 uid="uid://balmvmhary6x4"]
 
 [ext_resource type="Script" uid="uid://ddbdwah2li5b3" path="res://skripts/level_1.gd" id="1_6xbp5"]
-[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Elemente_Plattform.svg" id="2_w0cgb"]
-[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="3_7668b"]
-[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="4_yr427"]
-[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_lnx8y"]
+[ext_resource type="Texture2D" uid="uid://b26ukmwtvt53t" path="res://assets/elements/01_Elemente_Plattform.svg" id="2_w0cgb"]
+[ext_resource type="Texture2D" uid="uid://hgwcwq2w62oj" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="3_7668b"]
+[ext_resource type="Texture2D" uid="uid://dh7vmn3m5qfew" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="4_yr427"]
+[ext_resource type="Texture2D" uid="uid://dhq5omxient22" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_lnx8y"]
 [ext_resource type="PackedScene" uid="uid://cref0x0pci8wf" path="res://scenes/player_Projektmanager.tscn" id="6_fartn"]
-[ext_resource type="AudioStream" uid="uid://bbmmw4wfnc5mx" path="res://assets/music/level_1.mp3" id="7_fartn"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="8_6xbp5"]
+[ext_resource type="AudioStream" uid="uid://c7rh7q57y6434" path="res://assets/music/level_1.mp3" id="7_fartn"]
+[ext_resource type="PackedScene" uid="uid://b7nss2wk0vfbf" path="res://scenes/UI_Button.tscn" id="8_6xbp5"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="9_fartn"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
@@ -303,6 +303,7 @@ stream = ExtResource("7_fartn")
 volume_db = -35.0
 
 [node name="CanvasLayer" parent="." instance=ExtResource("8_6xbp5")]
+script = null
 
 [node name="Killzone" parent="." instance=ExtResource("9_fartn")]
 position = Vector2(169, 1106)
@@ -311,3 +312,4 @@ position = Vector2(169, 1106)
 shape = SubResource("WorldBoundaryShape2D_w0cgb")
 
 [node name="UI_Button" parent="." instance=ExtResource("8_6xbp5")]
+script = null

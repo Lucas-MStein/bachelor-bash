@@ -1,7 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://b7nss2wk0vfbf"]
+[gd_scene load_steps=8 format=3 uid="uid://b7nss2wk0vfbf"]
 
 [ext_resource type="Texture2D" uid="uid://ccytthj63r8nd" path="res://assets/classroom/01_Button_Volume_on.svg" id="1_ro3t7"]
-[ext_resource type="Script" path="res://skripts/ui.gd" id="1_ua6yw"]
 [ext_resource type="Texture2D" uid="uid://b5j1v6m0a81do" path="res://assets/classroom/01_Button_Volume_off.svg" id="2_5en4g"]
 [ext_resource type="Texture2D" uid="uid://b1gormctbe00w" path="res://assets/classroom/01_Button_Exit.png" id="3_5en4g"]
 
@@ -38,7 +37,6 @@ shadow_size = 5
 shadow_offset = Vector2(0, 3.41)
 
 [node name="UI_Button" type="CanvasLayer"]
-script = ExtResource("1_ua6yw")
 
 [node name="MusicToggleButton" type="TextureButton" parent="."]
 top_level = true
