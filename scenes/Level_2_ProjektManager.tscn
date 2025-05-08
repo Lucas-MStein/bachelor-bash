@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_n5d8k"]
 [ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_d88sx"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="5_g8tqi"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI.tscn" id="6_3mwpf"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="6_3mwpf"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -294,4 +294,4 @@ position = Vector2(933, -764)
 position = Vector2(-43, -88)
 position_smoothing_enabled = true
 
-[node name="CanvasLayer" parent="." instance=ExtResource("6_3mwpf")]
+[node name="UI_Button" parent="." instance=ExtResource("6_3mwpf")]

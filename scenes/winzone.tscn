@@ -1,6 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://cwjqe6pal0pci"]
 
-[ext_resource type="Script" uid="uid://clq3ekkfkb1h8" path="res://scenes/winzone.gd" id="1_jpvp6"]
+[ext_resource type="Script" uid="uid://1hkbrxbxy8jm" path="res://winzone.gd" id="1_jpvp6"]
 
 [node name="winzone" type="Area2D"]
+light_mask = 3
+visibility_layer = 2
 script = ExtResource("1_jpvp6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

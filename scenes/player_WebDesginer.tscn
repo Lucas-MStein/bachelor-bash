@@ -95,7 +95,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="player_WebDesigner" type="CharacterBody2D"]
+[node name="player_WebDesigner" type="CharacterBody2D" groups=["player"]]
 position = Vector2(43, 32)
 collision_layer = 2
 script = ExtResource("1_eav1d")

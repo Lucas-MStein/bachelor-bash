@@ -1,9 +1,11 @@
 extends Area2D
 
-@onready var game_manager: Node2D = $"../GameManager"
+@onready var coin_sound = $AudioStreamPlayer
 
 func _on_body_entered(body: Node2D) -> void:
-    print("+1 coin")
-    game_manager.add_coin()
-    game_manager.damage_heart()
-    queue_free()
+	print("+1 coin")
+	GameManager.add_coin()
+	coin_sound.play()
+	await coin_sound.finished
+	queue_free()
+	
