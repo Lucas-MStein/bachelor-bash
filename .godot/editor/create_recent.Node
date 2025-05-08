@@ -1,3 +1,4 @@
+AudioStreamPlayer
 CanvasLayer
 HBoxContainer
 GridContainer
@@ -9,6 +10,5 @@ Area2D
 TileMap
 CollisionShape2D
 RayCast2D
-AudioStreamPlayer
 AudioStreamPlayer2D
 TextureButton

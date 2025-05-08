@@ -89,3 +89,7 @@ func stand():
 	is_sliding = false
 	cShape.shape = standing_cShape
 	cShape.position.y = -112
+	
+func bounce():
+	if velocity.y > -400:
+		velocity.y = -400
