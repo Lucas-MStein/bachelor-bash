@@ -303,7 +303,6 @@ stream = ExtResource("7_fartn")
 volume_db = -35.0
 
 [node name="CanvasLayer" parent="." instance=ExtResource("8_6xbp5")]
-script = null
 
 [node name="Killzone" parent="." instance=ExtResource("9_fartn")]
 position = Vector2(169, 1106)
@@ -312,4 +311,3 @@ position = Vector2(169, 1106)
 shape = SubResource("WorldBoundaryShape2D_w0cgb")
 
 [node name="UI_Button" parent="." instance=ExtResource("8_6xbp5")]
-script = null
