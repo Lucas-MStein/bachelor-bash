@@ -1,9 +1,9 @@
 [gd_scene load_steps=17 format=4 uid="uid://385bnxllqtlh"]
 
 [ext_resource type="Script" uid="uid://ddbdwah2li5b3" path="res://skripts/level_1.gd" id="1_tc4xc"]
-[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Elemente_Plattform.svg" id="2_lsu44"]
-[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="3_rq3a5"]
-[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="4_x2i1b"]
+[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="2_lsu44"]
+[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/03_Elemente_Welt 1_Deko.svg" id="3_rq3a5"]
+[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/03_Elemente_Welt_1_Fenster_Türen.svg" id="4_x2i1b"]
 [ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_r022j"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="6_lkgtt"]
 [ext_resource type="AudioStream" uid="uid://bbmmw4wfnc5mx" path="res://assets/music/level_1.mp3" id="7_20sjq"]

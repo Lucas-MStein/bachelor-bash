@@ -2,14 +2,14 @@
 
 [ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_i7kyy"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_bmvyf"]
-[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="2_k4381"]
-[ext_resource type="Texture2D" uid="uid://b1fnqn3xjkyj2" path="res://assets/elements/02_Elemente_Welt_2_Fenster_Türen.svg" id="3_bmvyf"]
-[ext_resource type="Texture2D" uid="uid://qtkluyntsdgx" path="res://assets/elements/02_Elemente_Kellerwand.svg" id="4_k4381"]
-[ext_resource type="Texture2D" uid="uid://d4da4mdm222yp" path="res://assets/elements/02_Elemente_Welt_2_Deko.svg" id="4_s51xx"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_thxcc"]
-[ext_resource type="Texture2D" uid="uid://5yxtpn6ghrk3" path="res://assets/elements/02_Elemente_Welt_2_Hintergrund.svg" id="6_pggfr"]
+[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="2_k4381"]
+[ext_resource type="Texture2D" uid="uid://0i8yad0m67hr" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="3_bmvyf"]
+[ext_resource type="Texture2D" uid="uid://da4pkwer4osuc" path="res://assets/elements/02_Elemente_Kellerwand.svg" id="4_k4381"]
+[ext_resource type="Texture2D" uid="uid://cmwwkpufuyor5" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="4_s51xx"]
+[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_thxcc"]
+[ext_resource type="Texture2D" uid="uid://dajgctlblkpja" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="6_pggfr"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="7_cogh4"]
-[ext_resource type="AudioStream" uid="uid://cvsb7tsi7n0ti" path="res://assets/music/level_4.mp3" id="10_k4381"]
+[ext_resource type="AudioStream" uid="uid://sxnbt2cxepjb" path="res://assets/music/level_3.mp3" id="9_rfbx8"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="10_s7cjk"]
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="11_wf3oe"]
 [ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="12_mgwdd"]
@@ -297,7 +297,7 @@ sources/5 = SubResource("TileSetAtlasSource_1l44t")
 sources/1 = SubResource("TileSetAtlasSource_ah0op")
 sources/2 = SubResource("TileSetAtlasSource_bmvyf")
 
-[node name="Level_4_CodeMaster" type="Node2D"]
+[node name="Level_2_CodeMaster" type="Node2D"]
 script = ExtResource("1_i7kyy")
 metadata/_edit_vertical_guides_ = [45005.0]
 
@@ -336,7 +336,7 @@ position = Vector2(-43, -88)
 position_smoothing_enabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("10_k4381")
+stream = ExtResource("9_rfbx8")
 volume_db = -25.0
 
 [node name="obstacles_Bett" parent="." instance=ExtResource("10_s7cjk")]
