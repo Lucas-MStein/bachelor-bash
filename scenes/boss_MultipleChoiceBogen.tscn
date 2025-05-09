@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://dymbgubro10af"]
+
+[ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_hg7qf"]
+[ext_resource type="Texture2D" uid="uid://bbgrplroij4ih" path="res://assets/figures/03_Boss_MultipleChoiceBogen.svg" id="2_hg7qf"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="3_lgi1y"]
+[ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="4_u8fkk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5fv0x"]
+atlas = ExtResource("2_hg7qf")
+region = Rect2(33, 0, 148, 207)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgi1y"]
+atlas = ExtResource("2_hg7qf")
+region = Rect2(181, 0, 148, 207)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8fkk"]
+atlas = ExtResource("2_hg7qf")
+region = Rect2(329, 0, 148, 207)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urooo"]
+atlas = ExtResource("2_hg7qf")
+region = Rect2(477, 0, 148, 207)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hm0h"]
+atlas = ExtResource("2_hg7qf")
+region = Rect2(625, 0, 148, 207)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v83ml"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5fv0x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgi1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8fkk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urooo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hm0h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="enemy_TechnischesProblem" type="Node2D"]
+script = ExtResource("1_hg7qf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -88)
+sprite_frames = SubResource("SpriteFrames_v83ml")
+autoplay = "default"
+frame_progress = 0.541415
+
+[node name="Killzone" parent="." instance=ExtResource("3_lgi1y")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0, -92)
+shape = ExtResource("4_u8fkk")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(0, -48)
+target_position = Vector2(96, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(0, -48)
+target_position = Vector2(-96, 0)

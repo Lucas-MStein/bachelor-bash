@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cwjqe6pal0pci"]
 
-[ext_resource type="Script" uid="uid://1hkbrxbxy8jm" path="res://winzone.gd" id="1_jpvp6"]
+[ext_resource type="Script" uid="uid://1hkbrxbxy8jm" path="res://skripts/winzone.gd" id="1_jpvp6"]
 
 [node name="winzone" type="Area2D"]
 light_mask = 3

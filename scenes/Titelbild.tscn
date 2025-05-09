@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnilxkt382op"]
+
+[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="1_hjusk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ywjpd"]
+font = ExtResource("1_hjusk")
+font_size = 100
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 868.0
+offset_top = 434.0
+offset_right = 1137.0
+offset_bottom = 534.0
+size_flags_horizontal = 4
+text = "Level 1"
+label_settings = SubResource("LabelSettings_ywjpd")
