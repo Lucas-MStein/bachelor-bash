@@ -1,8 +1,12 @@
-[gd_scene load_steps=9 format=4 uid="uid://cgup202ehbbj8"]
+[gd_scene load_steps=13 format=4 uid="uid://cgup202ehbbj8"]
 
+[ext_resource type="Script" uid="uid://ddbdwah2li5b3" path="res://skripts/level_1.gd" id="1_l6grw"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="3_hny51"]
-[ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="4_0win4"]
-[ext_resource type="PackedScene" uid="uid://cref0x0pci8wf" path="res://scenes/player_Projektmanager.tscn" id="4_hny51"]
+[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="4_3dx25"]
+[ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="5_kri1i"]
+[ext_resource type="AudioStream" uid="uid://bbmmw4wfnc5mx" path="res://assets/music/level_1.mp3" id="5_nuoa6"]
+[ext_resource type="PackedScene" uid="uid://dymbgubro10af" path="res://scenes/boss_MultipleChoiceBogen.tscn" id="6_kri1i"]
+[ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="7_5qbqa"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -59,7 +63,8 @@ tile_size = Vector2i(100, 100)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_4epbf")
 
-[node name="testing2" type="Node2D"]
+[node name="testing" type="Node2D"]
+script = ExtResource("1_l6grw")
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4epbf")
@@ -67,7 +72,7 @@ rendering_quadrant_size = 49
 format = 2
 
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap2"]
-tile_map_data = PackedByteArray("AAD7/wYAAQAEAAIAAAD8/wYAAQAEAAIAAAD9/wYAAQAEAAIAAAD+/wYAAQAEAAIAAAD//wYAAQAEAAIAAAAAAAYAAQAEAAIAAAABAAYAAQAEAAIAAAACAAYAAQAEAAIAAAADAAYAAQAEAAIAAAAEAAYAAQAEAAIAAAAFAAYAAQAEAAIAAAAGAAYAAQAEAAIAAAAHAAYAAQAEAAIAAAAIAAYAAQAEAAIAAAAJAAYAAQAEAAIAAAAKAAYAAQAEAAIAAAALAAYAAQAEAAIAAAAMAAYAAQAEAAIAAAANAAYAAQAEAAIAAAAOAAYAAQAEAAIAAAAPAAYAAQAEAAIAAAAQAAYAAQAEAAIAAAARAAYAAQAEAAIAAAASAAYAAQAEAAIAAAA=")
+tile_map_data = PackedByteArray("AAD7/wYAAQAEAAIAAAD8/wYAAQAEAAIAAAD9/wYAAQAEAAIAAAD+/wYAAQAEAAIAAAD//wYAAQAEAAIAAAAAAAYAAQAEAAIAAAABAAYAAQAEAAIAAAACAAYAAQAEAAIAAAADAAYAAQAEAAIAAAAEAAYAAQAEAAIAAAAFAAYAAQAEAAIAAAAGAAYAAQAEAAIAAAAHAAYAAQAEAAIAAAAIAAYAAQAEAAIAAAAJAAYAAQAEAAIAAAAKAAYAAQAEAAIAAAALAAYAAQAEAAIAAAAMAAYAAQAEAAIAAAANAAYAAQAEAAIAAAAOAAYAAQAEAAIAAAAPAAYAAQAEAAIAAAAQAAYAAQAEAAIAAAARAAYAAQAEAAIAAAASAAYAAQAEAAIAAAD7/wUAAQAFAAIAAAASAAUAAQAFAAIAAAASAAQAAQAFAAIAAAATAAYAAQAEAAIAAAAUAAYAAQAEAAIAAAAVAAYAAQAEAAIAAAAWAAYAAQAEAAIAAAAXAAYAAQAEAAIAAAAYAAYAAQAEAAIAAAAZAAYAAQAEAAIAAAAaAAYAAQAEAAIAAAAbAAYAAQAEAAIAAAD1/wYAAQAEAAIAAAD2/wYAAQAEAAIAAAD3/wYAAQAEAAIAAAD4/wYAAQAEAAIAAAD5/wYAAQAEAAIAAAD6/wYAAQAEAAIAAAA=")
 tile_set = SubResource("TileSet_dcndb")
 
 [node name="player_WebDesigner" parent="." instance=ExtResource("3_hny51")]
@@ -77,8 +82,16 @@ position = Vector2(72, 488)
 position = Vector2(-43, -88)
 position_smoothing_enabled = true
 
-[node name="player_CodeMaster" parent="." instance=ExtResource("4_0win4")]
-position = Vector2(-48, 512)
+[node name="UI_Button" parent="." instance=ExtResource("4_3dx25")]
 
-[node name="player_ProjektManager" parent="." instance=ExtResource("4_hny51")]
-position = Vector2(-280, 492)
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_nuoa6")
+volume_db = -25.0
+
+[node name="enemy_Aufgabenberg" parent="." instance=ExtResource("5_kri1i")]
+position = Vector2(1158, 600)
+
+[node name="boss_MultipleChoiceBogen" parent="." instance=ExtResource("6_kri1i")]
+position = Vector2(462, 572)
+
+[node name="enemy_fieseKlausuren" parent="." instance=ExtResource("7_5qbqa")]

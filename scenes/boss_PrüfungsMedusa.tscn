@@ -1,9 +1,8 @@
 [gd_scene load_steps=11 format=3 uid="uid://cundifhhayipu"]
 
-[ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_yivgw"]
+[ext_resource type="Script" uid="uid://bl2xx45swc8k3" path="res://skripts/boss.gd" id="1_gfsl2"]
 [ext_resource type="Texture2D" uid="uid://70ptiwpdhcab" path="res://assets/figures/03_Boss_PrüfungsMedusa.svg" id="2_gfsl2"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="3_0lbp0"]
-[ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="4_wnsji"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4rudo"]
 atlas = ExtResource("2_gfsl2")
@@ -13,15 +12,15 @@ region = Rect2(0, 0, 150, 200)
 atlas = ExtResource("2_gfsl2")
 region = Rect2(150, 0, 150, 200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ytau8"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gfsl2"]
 atlas = ExtResource("2_gfsl2")
 region = Rect2(300, 0, 150, 200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_o8g0e"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytau8"]
 atlas = ExtResource("2_gfsl2")
 region = Rect2(450, 0, 150, 200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0q3p8"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_o8g0e"]
 atlas = ExtResource("2_gfsl2")
 region = Rect2(600, 0, 150, 200)
 
@@ -33,35 +32,43 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vb52u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gfsl2")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ytau8")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_o8g0e")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0q3p8")
 }],
 "loop": true,
-"name": &"default",
+"name": &"hurt",
 "speed": 5.0
 }]
 
-[node name="boss_PrüfungsMedusa" type="Node2D"]
-script = ExtResource("1_yivgw")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kxpdt"]
+size = Vector2(122, 178)
+
+[node name="boss_PrüfungsMedusa" type="Node2D" groups=["boss"]]
+script = ExtResource("1_gfsl2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -88)
 sprite_frames = SubResource("SpriteFrames_v83ml")
+animation = &"hurt"
 autoplay = "default"
-frame_progress = 0.988192
 
 [node name="Killzone" parent="." instance=ExtResource("3_0lbp0")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0, -92)
-shape = ExtResource("4_wnsji")
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(3, -89)
+shape = SubResource("RectangleShape2D_kxpdt")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
 position = Vector2(0, -48)

@@ -110,7 +110,7 @@ sprite_frames = SubResource("SpriteFrames_vhsox")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="playerShape" type="CollisionShape2D" parent="."]
 position = Vector2(-42, -112)
 shape = ExtResource("3_8l7j8")
 

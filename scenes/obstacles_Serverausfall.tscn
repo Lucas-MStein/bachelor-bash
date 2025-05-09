@@ -28,7 +28,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vrjae"]
 size = Vector2(96, 96)
 
-[node name="obstacles_Serverausfall" type="Node2D"]
+[node name="obstacles_Serverausfall" type="Node2D" groups=["enemy"]]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -48)
@@ -38,6 +38,6 @@ frame_progress = 0.988192
 
 [node name="Killzone" parent="." instance=ExtResource("2_elgid")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(0, -48)
 shape = SubResource("RectangleShape2D_vrjae")
