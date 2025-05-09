@@ -1,7 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://dymbgubro10af"]
+[gd_scene load_steps=11 format=3 uid="uid://bomkw5ex8iagp"]
 
 [ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_hg7qf"]
-[ext_resource type="Texture2D" uid="uid://bbgrplroij4ih" path="res://assets/figures/03_Boss_MultipleChoiceBogen.svg" id="2_hg7qf"]
+[ext_resource type="Texture2D" uid="uid://bhsmv85enqu3v" path="res://assets/figures/03_Boss_MultipleChoiceBogen.svg" id="2_hg7qf"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="3_lgi1y"]
 [ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="4_u8fkk"]
 
@@ -48,7 +48,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="enemy_TechnischesProblem" type="Node2D"]
+[node name="boss_MultipleChoiceBogen" type="Node2D"]
 script = ExtResource("1_hg7qf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

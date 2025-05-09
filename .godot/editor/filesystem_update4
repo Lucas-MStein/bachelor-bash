@@ -10,3 +10,6 @@ res://scenes/heart.tscn
 res://skripts/pickup_credit_point.gd
 res://skripts/player.gd
 res://scenes/Level_6_CodeMaster.tscn
+res://scenes/enemy_Abgabestress.tscn
+res://scenes/boss_MultipleChoiceBogen.tscn
+res://scenes/boss_BachlorBoss.tscn

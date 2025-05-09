@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://b0xey2ll7kfwp"]
+[gd_scene load_steps=25 format=4 uid="uid://b0xey2ll7kfwp"]
 
 [ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_1wfpv"]
 [ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_m8i38"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="6_4kg2l"]
 [ext_resource type="AudioStream" uid="uid://bnentv33mc4fg" path="res://assets/music/level_2.mp3" id="7_4kg2l"]
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="9_afuk4"]
+[ext_resource type="PackedScene" uid="uid://bomkw5ex8iagp" path="res://scenes/boss_MultipleChoiceBogen.tscn" id="9_xoopn"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="10_cvudq"]
 [ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="11_bxi35"]
 [ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="12_xoopn"]
@@ -311,6 +312,9 @@ position_smoothing_enabled = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_4kg2l")
 volume_db = -25.0
+
+[node name="boss_MultipleChoiceBogen" parent="." instance=ExtResource("9_xoopn")]
+position = Vector2(42673, -5)
 
 [node name="obstacles_Giftwolke" parent="." instance=ExtResource("9_afuk4")]
 position = Vector2(4157, -211)
