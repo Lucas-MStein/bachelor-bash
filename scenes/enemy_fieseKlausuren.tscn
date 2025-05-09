@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bc117e3x76c6y"]
 
 [ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_2ivf0"]
-[ext_resource type="Texture2D" uid="uid://lqf4236hk1kg" path="res://assets/figures/02_Enemy_Fiese Klausuren.svg" id="1_e0idc"]
+[ext_resource type="Texture2D" uid="uid://cn31uwdgo2vcn" path="res://assets/figures/02_Enemy_Fiese Klausuren.svg" id="1_e0idc"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_fm0lx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdcsh"]
@@ -29,7 +29,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5n1dk"]
 size = Vector2(128, 176)
 
-[node name="enemy_fieseKlausuren" type="Node2D"]
+[node name="enemy_fieseKlausuren" type="Node2D" groups=["enemy"]]
 script = ExtResource("1_2ivf0")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -40,7 +40,7 @@ frame_progress = 0.31829
 
 [node name="Killzone" parent="." instance=ExtResource("2_fm0lx")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone" groups=["enemy"]]
 position = Vector2(0, -88)
 shape = SubResource("RectangleShape2D_5n1dk")
 

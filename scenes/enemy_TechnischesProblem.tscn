@@ -1,8 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bq2asvtnebc5w"]
 
-[ext_resource type="Texture2D" uid="uid://dpo8sdwyhae5t" path="res://assets/figures/02_Enemy_Technische Probleme.svg" id="1_xjtgb"]
+[ext_resource type="Texture2D" uid="uid://j0j8d8xg6nbq" path="res://assets/figures/02_Enemy_Technische Probleme.svg" id="1_xjtgb"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_g8ord"]
-[ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="3_21j48"]
 [ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="4_21j48"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qt3be"]
@@ -41,7 +40,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="enemy_TechnischesProblem" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xjtgb"]
+size = Vector2(104, 144)
+
+[node name="enemy_TechnischesProblem" type="Node2D" groups=["enemy"]]
 script = ExtResource("4_21j48")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -52,9 +54,9 @@ frame_progress = 0.988192
 
 [node name="Killzone" parent="." instance=ExtResource("2_g8ord")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0, -64)
-shape = ExtResource("3_21j48")
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone" groups=["enemy"]]
+position = Vector2(-4, -72)
+shape = SubResource("RectangleShape2D_xjtgb")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
 position = Vector2(0, -48)

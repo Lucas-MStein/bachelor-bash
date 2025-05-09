@@ -1,9 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://60fyct2j4tqk"]
+[gd_scene load_steps=11 format=3 uid="uid://cxu7ypskea8nn"]
 
-[ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_s8c2a"]
-[ext_resource type="Texture2D" uid="uid://ckuxbjadnxrti" path="res://assets/figures/03_Boss_BachelorBoss.svg" id="2_fvyyg"]
+[ext_resource type="Script" uid="uid://bl2xx45swc8k3" path="res://skripts/boss.gd" id="1_fvyyg"]
+[ext_resource type="Texture2D" uid="uid://kch58lfce34p" path="res://assets/figures/03_Boss_BachelorBoss.svg" id="2_fvyyg"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="3_q34tn"]
-[ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="4_vkhqc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v77wl"]
 atlas = ExtResource("2_fvyyg")
@@ -13,15 +12,15 @@ region = Rect2(0, 0, 150, 200)
 atlas = ExtResource("2_fvyyg")
 region = Rect2(150, 0, 150, 200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nhy0k"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvyyg"]
 atlas = ExtResource("2_fvyyg")
 region = Rect2(300, 0, 150, 200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_v4po7"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_nhy0k"]
 atlas = ExtResource("2_fvyyg")
 region = Rect2(450, 0, 150, 200)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nx51i"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4po7"]
 atlas = ExtResource("2_fvyyg")
 region = Rect2(600, 0, 150, 200)
 
@@ -33,38 +32,45 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7vk7v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fvyyg")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_nhy0k")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_v4po7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nx51i")
 }],
 "loop": true,
-"name": &"default",
+"name": &"hurt",
 "speed": 5.0
 }]
 
-[node name="boss_BachlorBoss" type="Node2D"]
-script = ExtResource("1_s8c2a")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsu2j"]
+size = Vector2(112, 168)
+
+[node name="boss_BachlorBoss" type="Node2D" groups=["boss"]]
+script = ExtResource("1_fvyyg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -97)
 sprite_frames = SubResource("SpriteFrames_v83ml")
 autoplay = "default"
-frame_progress = 0.680967
 
 [node name="Killzone" parent="." instance=ExtResource("3_q34tn")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0, -90)
-shape = ExtResource("4_vkhqc")
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-8, -84)
+shape = SubResource("RectangleShape2D_qsu2j")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
-position = Vector2(0, -27)
+position = Vector2(0, -48)
 target_position = Vector2(96, 0)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]

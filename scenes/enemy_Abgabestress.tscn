@@ -27,7 +27,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="enemy_Abgabestress" type="Node2D"]
+[node name="enemy_Abgabestress" type="Node2D" groups=["enemy"]]
 script = ExtResource("1_ikuey")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -38,8 +38,8 @@ frame_progress = 0.392114
 
 [node name="Killzone" parent="." instance=ExtResource("2_28xcr")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0, -64)
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone" groups=["enemy"]]
+position = Vector2(0, -66)
 shape = ExtResource("3_w8lcs")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]

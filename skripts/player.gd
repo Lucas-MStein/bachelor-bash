@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var animated_sprite = $AnimatedSprite2D
-@onready var cShape = $CollisionShape2D
+@onready var cShape = $playerShape
 
 @onready var jumpAudio: AudioStreamPlayer = $jumpAudio
 @onready var slideAudio: AudioStreamPlayer = $slideAudio
