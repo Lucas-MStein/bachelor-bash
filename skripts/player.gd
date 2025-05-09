@@ -6,6 +6,7 @@ extends CharacterBody2D
 @onready var jumpAudio: AudioStreamPlayer = $jumpAudio
 @onready var slideAudio: AudioStreamPlayer = $slideAudio
 @onready var downAudio: AudioStreamPlayer = $downAudio
+@onready var bounceAudio: AudioStreamPlayer = $bounceAudio
 
 const SPEED = 500.0
 const JUMP_VELOCITY = -600.0
@@ -118,5 +119,6 @@ func stand():
 	cShape.position.y = -112
 	
 func bounce():
+	bounceAudio.play()
 	if velocity.y > -400:
 		velocity.y = -400

@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://cxu7ypskea8nn"]
 
 [ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_s8c2a"]
-[ext_resource type="Texture2D" uid="uid://kch58lfce34p" path="res://assets/figures/2.1_EndBoss_BachelorBoss.svg" id="2_fvyyg"]
+[ext_resource type="Texture2D" uid="uid://kch58lfce34p" path="res://assets/figures/03_Boss_BachelorBoss.svg" id="2_fvyyg"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="3_q34tn"]
 [ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="4_vkhqc"]
 

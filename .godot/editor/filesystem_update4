@@ -1,8 +1,11 @@
-res://scenes/pickup_CreditPoint.tscn
-res://ressources/enemy_CollisionShape.tres
 res://scenes/game_manager.tscn
-res://scenes/obstacles_Stachelfalle.tscn
-res://scenes/obstacles_Serverausfall.tscn
+res://ressources/enemy_CollisionShape.tres
+res://scenes/pickup_CreditPoint.tscn
+res://scenes/Level_1_CodeMaster.tscn
 res://scenes/boss_BachlorBoss.tscn
 res://scenes/boss_PrüfungsMedusa.tscn
 res://scenes/boss_MultipleChoiceBogen.tscn
+res://scenes/player_CodeMaster.tscn
+res://scenes/player_Projektmanager.tscn
+res://scenes/player_WebDesginer.tscn
+res://skripts/player.gd

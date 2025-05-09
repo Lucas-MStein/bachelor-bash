@@ -1,14 +1,14 @@
 [gd_scene load_steps=16 format=4 uid="uid://dlkh4b8qlqd6f"]
 
 [ext_resource type="Script" path="res://scenes/level_1.gd" id="1_d6w1m"]
-[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Elemente_Plattform.svg" id="1_wt1y1"]
+[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="1_wt1y1"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="2_4aglu"]
-[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="2_ergy7"]
-[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="3_prvlw"]
+[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/03_Elemente_Welt 1_Deko.svg" id="2_ergy7"]
+[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/03_Elemente_Welt_1_Fenster_Türen.svg" id="3_prvlw"]
 [ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="4_eyfe2"]
 [ext_resource type="Texture2D" uid="uid://b1ckwwpep4njq" path="res://assets/classroom/01_Button_Volume_on.svg" id="7_bmqp6"]
 [ext_resource type="Texture2D" uid="uid://ctf4a5be7hhdq" path="res://assets/classroom/01_Button_Volume_off.svg" id="8_f63rn"]
-[ext_resource type="AudioStream" uid="uid://bo6gmpm2hg6bl" path="res://assets/music/lady-of-the-80x27s-128379.mp3" id="9_f63rn"]
+[ext_resource type="AudioStream" uid="uid://bo6gmpm2hg6bl" path="res://assets/music/general.mp3" id="9_f63rn"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
