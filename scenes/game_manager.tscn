@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cq2utdrloc62v"]
 
 [ext_resource type="Script" uid="uid://donr4kgv3k60m" path="res://skripts/game_manager.gd" id="1_hwd4i"]
-[ext_resource type="Texture2D" uid="uid://obvlfpyxhfrl" path="res://assets/elements/03_Elements_CreditPoint.svg" id="3_udu3i"]
+[ext_resource type="Texture2D" uid="uid://b5x7wvtug1yrx" path="res://assets/elements/Zeichenfläche 1.svg" id="2_udu3i"]
 [ext_resource type="PackedScene" uid="uid://c78bwypwqoost" path="res://scenes/hearts_container.tscn" id="5_eaq8r"]
 
 [node name="GameManager" type="Node2D"]
@@ -17,18 +17,19 @@ offset_right = 140.0
 offset_bottom = 140.0
 
 [node name="Coin3" type="TextureRect" parent="CanvasLayer/CoinContainer"]
+visible = false
 layout_mode = 2
-texture = ExtResource("3_udu3i")
+texture = ExtResource("2_udu3i")
 
 [node name="Coin2" type="TextureRect" parent="CanvasLayer/CoinContainer"]
 visible = false
 layout_mode = 2
-texture = ExtResource("3_udu3i")
+texture = ExtResource("2_udu3i")
 
 [node name="Coin1" type="TextureRect" parent="CanvasLayer/CoinContainer"]
 visible = false
 layout_mode = 2
-texture = ExtResource("3_udu3i")
+texture = ExtResource("2_udu3i")
 
 [node name="HeartsContainer" parent="CanvasLayer" instance=ExtResource("5_eaq8r")]
 anchors_preset = 5
