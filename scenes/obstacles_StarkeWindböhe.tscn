@@ -25,10 +25,10 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ftgob"]
-radius = 40.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y33tp"]
+size = Vector2(88, 80)
 
-[node name="obstacles_StarkeWindböhe" type="Node2D"]
+[node name="obstacles_StarkeWindböhe" type="Node2D" groups=["enemy"]]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -48)
@@ -38,6 +38,6 @@ frame_progress = 0.988192
 
 [node name="Killzone" parent="." instance=ExtResource("2_dvuu5")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0, -40)
-shape = SubResource("CircleShape2D_ftgob")
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-4, -40)
+shape = SubResource("RectangleShape2D_y33tp")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://nuqv8gshcuv"]
 
-[ext_resource type="Texture2D" uid="uid://bafiip60h6ymr" path="res://assets/elements/04_Obstacles_Bett.svg" id="1_1sk85"]
+[ext_resource type="Texture2D" uid="uid://b3b53wx4tgh0r" path="res://assets/elements/04_Obstacles_Bett.svg" id="1_1sk85"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_n2npi"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mn17q"]
@@ -21,7 +21,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n2npi"]
 size = Vector2(178, 94)
 
-[node name="obstacles_Bett" type="Node2D"]
+[node name="obstacles_Bett" type="Node2D" groups=["enemy"]]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(23, -75)
@@ -31,6 +31,6 @@ frame_progress = 0.988192
 
 [node name="Killzone" parent="." instance=ExtResource("2_n2npi")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(-2, -47)
 shape = SubResource("RectangleShape2D_n2npi")
