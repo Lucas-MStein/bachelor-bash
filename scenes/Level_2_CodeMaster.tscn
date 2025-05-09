@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="6_4kg2l"]
 [ext_resource type="AudioStream" uid="uid://bnentv33mc4fg" path="res://assets/music/level_2.mp3" id="7_4kg2l"]
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="9_afuk4"]
-[ext_resource type="PackedScene" uid="uid://bomkw5ex8iagp" path="res://scenes/boss_MultipleChoiceBogen.tscn" id="9_xoopn"]
+[ext_resource type="PackedScene" uid="uid://dymbgubro10af" path="res://scenes/boss_MultipleChoiceBogen.tscn" id="9_xoopn"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="10_cvudq"]
 [ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="11_bxi35"]
 [ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="12_xoopn"]
