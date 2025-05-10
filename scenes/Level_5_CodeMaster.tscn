@@ -2,18 +2,18 @@
 
 [ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_jvroi"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_wjyqa"]
-[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="3_vv7ot"]
-[ext_resource type="Texture2D" uid="uid://0i8yad0m67hr" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="4_4koex"]
-[ext_resource type="Texture2D" uid="uid://da4pkwer4osuc" path="res://assets/elements/02_Elemente_Kellerwand.svg" id="5_q2ht7"]
-[ext_resource type="Texture2D" uid="uid://cmwwkpufuyor5" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="6_j8q7b"]
-[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="7_hmi21"]
-[ext_resource type="Texture2D" uid="uid://dajgctlblkpja" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="8_hln4j"]
-[ext_resource type="Texture2D" uid="uid://bxqvhwau8wdmj" path="res://assets/elements/03_Elemente_Welt_3_Fenster_Türen.svg" id="9_4koex"]
+[ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="3_vv7ot"]
+[ext_resource type="Texture2D" uid="uid://bn2q1wm3ag60f" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="4_4koex"]
+[ext_resource type="Texture2D" uid="uid://qtkluyntsdgx" path="res://assets/elements/02_Elemente_Kellerwand.svg" id="5_q2ht7"]
+[ext_resource type="Texture2D" uid="uid://dw7a85y8tufls" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="6_j8q7b"]
+[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="7_hmi21"]
+[ext_resource type="Texture2D" uid="uid://cunp5od2hht06" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="8_hln4j"]
+[ext_resource type="Texture2D" uid="uid://d7g5ek2cqnvs" path="res://assets/elements/03_Elemente_Welt_3_Fenster_Türen.svg" id="9_4koex"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="9_cqm2s"]
-[ext_resource type="AudioStream" uid="uid://ks1sivuvmf58" path="res://assets/music/level_5.mp3" id="10_jvroi"]
-[ext_resource type="Texture2D" uid="uid://d10k2hvlutsdt" path="res://assets/elements/03_Elemente_Welt_3_Hintergrund.svg" id="10_q2ht7"]
+[ext_resource type="AudioStream" uid="uid://ctnpjbxmowuft" path="res://assets/music/level_5.mp3" id="10_jvroi"]
+[ext_resource type="Texture2D" uid="uid://dmnikgnr7xewu" path="res://assets/elements/03_Elemente_Welt_3_Hintergrund.svg" id="10_q2ht7"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="11_6pfn2"]
-[ext_resource type="Texture2D" uid="uid://cs85bqffa53mi" path="res://assets/elements/03_Elemente_Welt_3_Deko.svg" id="11_j8q7b"]
+[ext_resource type="Texture2D" uid="uid://bwqalcfg5m8oa" path="res://assets/elements/03_Elemente_Welt_3_Deko.svg" id="11_j8q7b"]
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="12_3mh18"]
 [ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="13_46lli"]
 [ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="14_n7hx7"]
@@ -543,7 +543,7 @@ sources/6 = SubResource("TileSetAtlasSource_hmi21")
 sources/7 = SubResource("TileSetAtlasSource_hln4j")
 sources/8 = SubResource("TileSetAtlasSource_cqm2s")
 
-[node name="Level_5_CodeMaster" type="Node2D"]
+[node name="Level_5_CodeMaster2" type="Node2D"]
 script = ExtResource("1_jvroi")
 metadata/_edit_vertical_guides_ = [45005.0]
 
