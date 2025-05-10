@@ -14,3 +14,7 @@ res://skripts/level_5.gd
 res://skripts/level_6.gd
 res://skripts/character_select_menu.gd
 res://scenes/Level_2_CodeMaster.tscn
+res://scenes/Level_3_CodeMaster.tscn
+res://scenes/Level_5_CodeMaster.tscn
+res://scenes/Level_6_CodeMaster.tscn
+res://scenes/Level_4_CodeMaster.tscn
