@@ -1,6 +1,6 @@
-[gd_scene load_steps=34 format=4 uid="uid://c50txj1jbngd6"]
+[gd_scene load_steps=36 format=4 uid="uid://c50txj1jbngd6"]
 
-[ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_5pumr"]
+[ext_resource type="Script" uid="uid://cfkw1t288sc1b" path="res://skripts/level_6.gd" id="1_81ew8"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_mj1mk"]
 [ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="3_81ew8"]
 [ext_resource type="Texture2D" uid="uid://0i8yad0m67hr" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="4_p5mk8"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="19_bfhfy"]
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="20_mc6yr"]
 [ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="21_y5ysg"]
+[ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="23_81ew8"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -544,8 +545,11 @@ sources/6 = SubResource("TileSetAtlasSource_hmi21")
 sources/7 = SubResource("TileSetAtlasSource_hln4j")
 sources/8 = SubResource("TileSetAtlasSource_cqm2s")
 
-[node name="Level_5_CodeMaster" type="Node2D"]
-script = ExtResource("1_5pumr")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5mk8"]
+size = Vector2(141, 294.5)
+
+[node name="Level_6_CodeMaster" type="Node2D"]
+script = ExtResource("1_81ew8")
 metadata/_edit_vertical_guides_ = [45005.0]
 
 [node name="UI_Button" parent="." instance=ExtResource("2_mj1mk")]
@@ -638,3 +642,13 @@ scale = Vector2(1.25, 1.25)
 [node name="enemy_Abgabestress" parent="." instance=ExtResource("21_y5ysg")]
 position = Vector2(1616, 0)
 scale = Vector2(1.5, 1.5)
+
+[node name="winzone" parent="." instance=ExtResource("23_81ew8")]
+collision_layer = 2
+collision_mask = 3
+
+[node name="Tür" type="CollisionShape2D" parent="winzone"]
+light_mask = 3
+visibility_layer = 2
+position = Vector2(44110, -748)
+shape = SubResource("RectangleShape2D_p5mk8")

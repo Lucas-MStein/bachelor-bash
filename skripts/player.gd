@@ -11,6 +11,9 @@ extends CharacterBody2D
 const SPEED = 500.0
 const JUMP_VELOCITY = -600.0
 
+const MIN_X = 0
+const MAX_X = 45000
+
 var double_jump_used = false;
 var is_sliding = false;
 var last_direction = 0.0
@@ -62,6 +65,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	
+	position.x = clamp(position.x, MIN_X, MAX_X)
 	
 	update_animation(direction)
 	
