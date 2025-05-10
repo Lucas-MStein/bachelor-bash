@@ -24,3 +24,9 @@ func load_game():
 
 func set_Level(playerLevel: int):
 	level = playerLevel
+
+func simulate_save(character_name: String, level_number: int):
+	character = character_name
+	level = level_number
+	save_game()
+	print("Simulierter Spielstand gespeichert: ", character, " Level: ", level)
