@@ -4,9 +4,12 @@ extends Node2D
 @onready var audio_player = $AudioStreamPlayer         
 var music_enabled := true
 
+var current_level: int = 1
+
 func _ready() -> void:
+	Global.set_Level(current_level)
 	Global.load_game()
-	print("Level 2 CodeMaster geladen!")
+	print("Level 2 wurde geladen!")
 	
 	MusicPlayer.is_active = false
 	MusicPlayer.player.stop()
@@ -32,7 +35,3 @@ func toggle_music():
 func _on_music_toggle_pressed():
 	toggle_music()
 	music_toggle.button_pressed = !music_enabled
-
-func _on_level_completed(next_level: int):
-	Global.set_Level(next_level) # Setze das nächste Level
-	Global.save_game()

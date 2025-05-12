@@ -1,6 +1,6 @@
-[gd_scene load_steps=28 format=4 uid="uid://bxmaxa11nqdcy"]
+[gd_scene load_steps=30 format=4 uid="uid://bxmaxa11nqdcy"]
 
-[ext_resource type="Script" uid="uid://b4tugn40udv8k" path="res://skripts/level_2.gd" id="1_i7kyy"]
+[ext_resource type="Script" uid="uid://cek8i8t8rdtcx" path="res://skripts/level_4.gd" id="1_s51xx"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_bmvyf"]
 [ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="2_k4381"]
 [ext_resource type="Texture2D" uid="uid://bn2q1wm3ag60f" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="3_bmvyf"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="15_ss0kx"]
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="16_n7hli"]
 [ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="17_qnjiq"]
+[ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="20_s51xx"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -296,8 +297,11 @@ sources/5 = SubResource("TileSetAtlasSource_1l44t")
 sources/1 = SubResource("TileSetAtlasSource_ah0op")
 sources/2 = SubResource("TileSetAtlasSource_bmvyf")
 
-[node name="Level_2_CodeMaster" type="Node2D"]
-script = ExtResource("1_i7kyy")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_thxcc"]
+size = Vector2(141, 294.5)
+
+[node name="Level_4_CodeMaster" type="Node2D"]
+script = ExtResource("1_s51xx")
 metadata/_edit_vertical_guides_ = [45005.0]
 
 [node name="UI_Button" parent="." instance=ExtResource("2_bmvyf")]
@@ -376,3 +380,13 @@ scale = Vector2(1.25, 1.25)
 [node name="enemy_Abgabestress" parent="." instance=ExtResource("17_qnjiq")]
 position = Vector2(25733, -121)
 scale = Vector2(1.5, 1.5)
+
+[node name="winzone" parent="." instance=ExtResource("20_s51xx")]
+collision_layer = 2
+collision_mask = 3
+
+[node name="Tür" type="CollisionShape2D" parent="winzone"]
+light_mask = 3
+visibility_layer = 2
+position = Vector2(44920, -150)
+shape = SubResource("RectangleShape2D_thxcc")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cvclp327sdn8j"]
+[gd_scene load_steps=10 format=3 uid="uid://cvclp327sdn8j"]
 
 [ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_826fv"]
+[ext_resource type="Script" uid="uid://cj6qop5e2lkw1" path="res://skripts/win.gd" id="1_iiocm"]
 [ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="2_iiocm"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yxbqr"]
@@ -10,7 +11,40 @@ texture = ExtResource("1_826fv")
 font = ExtResource("2_iiocm")
 font_size = 100
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yxbqr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tylv2"]
+bg_color = Color(0.74978, 0.74978, 0.74978, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vxan"]
+bg_color = Color(0.603248, 0.603248, 0.603248, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4826q"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
 [node name="win" type="Node2D"]
+script = ExtResource("1_iiocm")
 
 [node name="Panel" type="Panel" parent="."]
 anchors_preset = 15
@@ -36,3 +70,29 @@ grow_vertical = 2
 size_flags_horizontal = 4
 text = "Du hast gewonnen!"
 label_settings = SubResource("LabelSettings_tylv2")
+
+[node name="Reset" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 784.0
+offset_top = 792.0
+offset_right = 1134.0
+offset_bottom = 856.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yxbqr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tylv2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5vxan")
+theme_override_styles/normal = SubResource("StyleBoxFlat_4826q")
+text = "Erneut Spielen"
+
+[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]

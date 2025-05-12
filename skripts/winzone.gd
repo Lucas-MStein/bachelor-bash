@@ -23,6 +23,8 @@ func create_next_scene_path() -> String:
 	var level = Global.level + 1
 	print (level)
 	Global.set_Level(level)
-	# Dynamisches Erstellen des Szenenpfads
-	var scene_path = base_scene_path + "Level_" + str(level) + "_" + character + ".tscn"
-	return scene_path
+	if level<6:
+		var scene_path = base_scene_path + "Level_" + str(level) + "_" + character + ".tscn"
+		return scene_path
+	else:
+		return "res://scenes/win.tscn"
