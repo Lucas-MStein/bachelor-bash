@@ -202,7 +202,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
 text = "Spiel laden
 "
 
-[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]
 [connection signal="pressed" from="Spielstand" to="." method="_on_spielstand_pressed"]

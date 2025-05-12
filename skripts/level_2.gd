@@ -1,10 +1,10 @@
 extends Node2D
 
-@onready var music_toggle = $UI_Button/MusicToggleButton
+@onready var music_toggle = get_node("/root/Ui/MusicToggleButton")
 @onready var audio_player = $AudioStreamPlayer         
 var music_enabled := true
 
-var current_level: int = 1
+var current_level: int = 2
 
 func _ready() -> void:
 	Global.set_Level(current_level)

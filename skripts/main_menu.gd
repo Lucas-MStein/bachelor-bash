@@ -32,6 +32,7 @@ func _ready() -> void:
 	# Begrüßungstext
 	if Global.character != "":
 		$Label2.text = "Ausgewählt: " + Global.character + " in Level " + str(Global.level)
+
 func _input(event):
 	if OS.is_debug_build() and event.is_action_pressed("simulate_save"):
 		Global.simulate_save("CodeMaster", 2) # Simuliere CodeMaster auf Level 2
@@ -49,44 +50,22 @@ func _on_start_pressed() -> void:
 		print("Kein Charakter ausgewählt!")
 		return
 	
-	Global.save_game()
+	var base_scene_path = "res://scenes/Level_"
 	
-	var character_scene_map = {
-		"CodeMaster": "res://scenes/Level_",
-		"ProjektManager": "res://scenes/Level_",
-		"WebDesigner": "res://scenes/Level_"
-	}
-	
-	var base_path = character_scene_map.get(Global.character, "")
-	if base_path != "":
-		var scene_path = "res://scenes/Level_2_CodeMaster.tscn"
-		print("Teste Szene: ", scene_path)
-		if ResourceLoader.exists(scene_path):
-			var scene = ResourceLoader.load(scene_path, "PackedScene")
-			if scene and scene is PackedScene:
-				var error = get_tree().change_scene_to_packed(scene)
-				if error == OK:
-					print("Szenenwechsel erfolgreich")
-				else:
-					print("Fehler beim Szenenwechsel: ", error)
-			else:
-				print("Fehler: Szene ungültig oder nicht geladen. Geladenes Objekt: ", scene)
-		else:
-			print("Szene nicht gefunden: ", scene_path)
-		
-		if MusicPlayer.music_enabled:
-			MusicPlayer.player.stop()
-	else:
-		$Label2.text = "Ungültiger Charakter!"
-		print("Ungültiger Charakter: ", Global.character)
+	if Global.level == 1:
+		var welt = get_tree().change_scene_to_file("res://scenes/Welt_1.tscn")
+	elif Global.level == 3:
+		var welt = get_tree().change_scene_to_file("res://scenes/Welt_2.tscn")
+	elif Global.level ==5:
+		var welt = get_tree().change_scene_to_file("res://scenes/Welt_3.tscn")
+	else: 
+		var scene_path = base_scene_path + str(Global.level) + "_" + Global.character + ".tscn"
+		get_tree().change_scene_to_file(scene_path)
 
 
 func _on_character_pressed() -> void:
 	var char_select = load("res://scenes/character_select_menu.tscn").instantiate()
 	add_child(char_select)
-
-func _on_options_pressed() -> void:
-	print("Options pressed")
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
@@ -94,7 +73,6 @@ func _on_exit_pressed() -> void:
 func _on_music_toggle_pressed():
 	MusicPlayer.toggle_music()
 	music_toggle.button_pressed = !MusicPlayer.music_enabled
-
 
 func _on_spielstand_pressed() -> void:
 	Global.load_game()

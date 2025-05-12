@@ -1,14 +1,14 @@
-[gd_scene load_steps=27 format=4 uid="uid://d1pwo2chx0olw"]
+[gd_scene load_steps=29 format=4 uid="uid://d1pwo2chx0olw"]
 
 [ext_resource type="Script" uid="uid://0640k4i1b230" path="res://skripts/level_3.gd" id="1_v8k0b"]
-[ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="2_j74nq"]
+[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="2_j74nq"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_thd6p"]
-[ext_resource type="Texture2D" uid="uid://dw7a85y8tufls" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="3_ce5an"]
-[ext_resource type="Texture2D" uid="uid://bn2q1wm3ag60f" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="3_j74nq"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_1l44t"]
-[ext_resource type="Texture2D" uid="uid://cunp5od2hht06" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="5_j74nq"]
+[ext_resource type="Texture2D" uid="uid://cmwwkpufuyor5" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="3_ce5an"]
+[ext_resource type="Texture2D" uid="uid://0i8yad0m67hr" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="3_j74nq"]
+[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_1l44t"]
+[ext_resource type="Texture2D" uid="uid://dajgctlblkpja" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="5_j74nq"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="6_60178"]
-[ext_resource type="AudioStream" uid="uid://xc42seui4bwl" path="res://assets/music/level_3.mp3" id="8_ah0op"]
+[ext_resource type="AudioStream" uid="uid://sxnbt2cxepjb" path="res://assets/music/level_3.mp3" id="8_ah0op"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="10_ah0op"]
 [ext_resource type="PackedScene" uid="uid://bq2asvtnebc5w" path="res://scenes/enemy_TechnischesProblem.tscn" id="11_o26au"]
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="12_1l44t"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="15_7vgdd"]
 [ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="16_thd6p"]
 [ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="18_v8k0b"]
+[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="19_yjkoc"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -294,6 +295,11 @@ sources/1 = SubResource("TileSetAtlasSource_ah0op")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjkoc"]
 size = Vector2(141, 294.5)
 
+[sub_resource type="LabelSettings" id="LabelSettings_euihj"]
+font = ExtResource("19_yjkoc")
+font_size = 50
+font_color = Color(0.341176, 0.294118, 1, 1)
+
 [node name="Level_3_CodeMaster" type="Node2D"]
 script = ExtResource("1_v8k0b")
 metadata/_edit_vertical_guides_ = [45005.0]
@@ -381,3 +387,11 @@ light_mask = 3
 visibility_layer = 2
 position = Vector2(44920, -150)
 shape = SubResource("RectangleShape2D_yjkoc")
+
+[node name="Level" type="Label" parent="."]
+offset_left = 336.0
+offset_top = -360.0
+offset_right = 470.0
+offset_bottom = -309.0
+text = "Level 3"
+label_settings = SubResource("LabelSettings_euihj")
