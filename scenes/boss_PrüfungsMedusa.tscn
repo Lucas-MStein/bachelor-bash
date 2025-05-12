@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://cundifhhayipu"]
 
 [ext_resource type="Script" uid="uid://bl2xx45swc8k3" path="res://skripts/boss.gd" id="1_gfsl2"]
-[ext_resource type="Texture2D" uid="uid://70ptiwpdhcab" path="res://assets/figures/03_Boss_PrüfungsMedusa.svg" id="2_gfsl2"]
+[ext_resource type="Texture2D" uid="uid://nvg2urrkq0yf" path="res://assets/figures/03_Boss_PrüfungsMedusa.svg" id="2_gfsl2"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="3_0lbp0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4rudo"]
@@ -71,9 +71,9 @@ position = Vector2(3, -89)
 shape = SubResource("RectangleShape2D_kxpdt")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
-position = Vector2(0, -48)
+position = Vector2(0, -32)
 target_position = Vector2(96, 0)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
-position = Vector2(0, -48)
+position = Vector2(0, -32)
 target_position = Vector2(-96, 0)
