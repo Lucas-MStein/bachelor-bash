@@ -275,8 +275,8 @@ distance = -95.6358
 
 [sub_resource type="LabelSettings" id="LabelSettings_1csyd"]
 font = ExtResource("18_xnahm")
-font_size = 40
-font_color = Color(0, 0, 0, 1)
+font_size = 50
+font_color = Color(0.341176, 0.294118, 1, 1)
 
 [node name="Level_1_CodeMaster" type="Node2D"]
 script = ExtResource("1_r2hmd")
@@ -311,7 +311,7 @@ tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 
 [node name="player_CodeMaster" parent="." instance=ExtResource("6_r2hmd")]
-position = Vector2(460, 24)
+position = Vector2(461, 28)
 collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="player_CodeMaster"]
@@ -372,10 +372,10 @@ position = Vector2(169, 1106)
 visibility_layer = 3
 shape = SubResource("WorldBoundaryShape2D_446xa")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 339.0
-offset_top = -348.0
-offset_right = 447.0
-offset_bottom = -308.0
+[node name="Level" type="Label" parent="."]
+offset_left = 336.0
+offset_top = -360.0
+offset_right = 470.0
+offset_bottom = -309.0
 text = "Level 1"
 label_settings = SubResource("LabelSettings_1csyd")

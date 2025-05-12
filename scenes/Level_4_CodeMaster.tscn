@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://bxmaxa11nqdcy"]
+[gd_scene load_steps=32 format=4 uid="uid://bxmaxa11nqdcy"]
 
 [ext_resource type="Script" uid="uid://cek8i8t8rdtcx" path="res://skripts/level_4.gd" id="1_s51xx"]
 [ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_bmvyf"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="16_n7hli"]
 [ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="17_qnjiq"]
 [ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="20_s51xx"]
+[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="21_thxcc"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -300,6 +301,11 @@ sources/2 = SubResource("TileSetAtlasSource_bmvyf")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_thxcc"]
 size = Vector2(141, 294.5)
 
+[sub_resource type="LabelSettings" id="LabelSettings_pggfr"]
+font = ExtResource("21_thxcc")
+font_size = 50
+font_color = Color(0.341176, 0.294118, 1, 1)
+
 [node name="Level_4_CodeMaster" type="Node2D"]
 script = ExtResource("1_s51xx")
 metadata/_edit_vertical_guides_ = [45005.0]
@@ -390,3 +396,11 @@ light_mask = 3
 visibility_layer = 2
 position = Vector2(44920, -150)
 shape = SubResource("RectangleShape2D_thxcc")
+
+[node name="Level" type="Label" parent="."]
+offset_left = 336.0
+offset_top = -360.0
+offset_right = 470.0
+offset_bottom = -309.0
+text = "Level 4"
+label_settings = SubResource("LabelSettings_pggfr")
