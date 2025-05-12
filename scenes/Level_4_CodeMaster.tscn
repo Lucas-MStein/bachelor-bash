@@ -397,8 +397,8 @@ shape = SubResource("RectangleShape2D_thxcc")
 
 [node name="Level" type="Label" parent="."]
 offset_left = 336.0
-offset_top = -360.0
-offset_right = 470.0
-offset_bottom = -309.0
+offset_top = 344.0
+offset_right = 477.0
+offset_bottom = 395.0
 text = "Level 4"
 label_settings = SubResource("LabelSettings_pggfr")

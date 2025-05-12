@@ -640,9 +640,9 @@ position = Vector2(44920, -150)
 shape = SubResource("RectangleShape2D_j8q7b")
 
 [node name="Level" type="Label" parent="."]
-offset_left = 136.0
+offset_left = 336.0
 offset_top = -360.0
-offset_right = 277.0
+offset_right = 477.0
 offset_bottom = -309.0
 text = "Level 5"
 label_settings = SubResource("LabelSettings_hmi21")

@@ -687,4 +687,4 @@ label_settings = SubResource("LabelSettings_hjusk")
 horizontal_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 15.0
+wait_time = 5.0

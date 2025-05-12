@@ -707,7 +707,7 @@ font = ExtResource("4_lua0r")
 font_size = 90
 font_color = Color(0.721569, 0.14902, 0.247059, 1)
 
-[node name="Welt_2" type="Node2D"]
+[node name="Welt_3" type="Node2D"]
 script = ExtResource("1_0msxl")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -729,4 +729,4 @@ label_settings = SubResource("LabelSettings_hjusk")
 horizontal_alignment = 1
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 15.0
+wait_time = 5.0
