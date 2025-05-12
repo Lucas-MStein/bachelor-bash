@@ -1,6 +1,6 @@
 extends Control
 
-@onready var music_toggle = get_node("UI_Button/MusicToggleButton")
+@onready var music_toggle = get_node("/root/Ui/MusicToggleButton")
 @onready var music_player = get_node("/root/MusicPlayer")
 
 func _ready():
@@ -8,13 +8,12 @@ func _ready():
 	GameManager.update_ui_visibility()
 	
 	MusicPlayer.is_active = true
+	music_toggle.button_pressed = false
+	music_toggle.pressed.connect(_on_music_toggle_pressed)
 	
 	$VBoxContainer/HBoxContainer/Char1Button.pressed.connect(func(): _select_character("CodeMaster"))
 	$VBoxContainer/HBoxContainer/Char2Button.pressed.connect(func(): _select_character("ProjektManager"))
 	$VBoxContainer/HBoxContainer/Char3Button.pressed.connect(func(): _select_character("WebDesigner"))
-
-	music_toggle.button_pressed = false
-	music_toggle.pressed.connect(_on_music_toggle_pressed)
 
 func _select_character(charactername: String):
 	Global.character = charactername

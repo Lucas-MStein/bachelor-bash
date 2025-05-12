@@ -24,7 +24,20 @@ func create_next_scene_path() -> String:
 	print (level)
 	Global.set_Level(level)
 	if level<6:
-		var scene_path = base_scene_path + "Level_" + str(level) + "_" + character + ".tscn"
-		return scene_path
+		if level == 1:
+			"res://scenes/Welt_1.tscn"
+			var scene_path = base_scene_path + "Level_" + str(level) + "_" + character + ".tscn"
+			return scene_path
+		elif level == 3:
+			"res://scenes/Welt_2.tscn"
+			var scene_path = base_scene_path + "Level_" + str(level) + "_" + character + ".tscn"
+			return scene_path
+		elif level ==5:
+			"res://scenes/Welt_3.tscn"
+			var scene_path = base_scene_path + "Level_" + str(level) + "_" + character + ".tscn"
+			return scene_path
+		else: 
+			var scene_path = base_scene_path + "Level_" + str(level) + "_" + character + ".tscn"
+			return scene_path
 	else:
 		return "res://scenes/win.tscn"

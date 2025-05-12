@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b2ng3cpc3xuxr"]
+[gd_scene load_steps=10 format=3 uid="uid://b2ng3cpc3xuxr"]
 
 [ext_resource type="Script" uid="uid://bwusdvkbxle81" path="res://skripts/character_select_menu.gd" id="1_v7jbk"]
 [ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_y5b6p"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://1mhl6i6obaux" path="res://assets/figures/01_Player_CodeMaster_stehen.svg" id="3_6ckjq"]
 [ext_resource type="Texture2D" uid="uid://cbrrb4nu4njp0" path="res://assets/figures/01_Player_ProjektManager_stehen.svg" id="4_v7jbk"]
 [ext_resource type="Texture2D" uid="uid://ba5tldm4qkssl" path="res://assets/figures/01_Player_WebDesigner_stehen.svg" id="5_olnq5"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="7_6ckjq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ruflx"]
 texture = ExtResource("1_y5b6p")
@@ -105,5 +104,3 @@ theme_override_font_sizes/font_size = 82
 text = "Bachelor Bash"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="UI_Button" parent="." instance=ExtResource("7_6ckjq")]

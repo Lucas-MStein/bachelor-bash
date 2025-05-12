@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var music_toggle = $UI_Button/MusicToggleButton
+@onready var music_toggle = get_node("/root/Ui/MusicToggleButton")
 @onready var audio_player = $AudioStreamPlayer         
 var music_enabled := true
 
@@ -35,7 +35,3 @@ func toggle_music():
 func _on_music_toggle_pressed():
 	toggle_music()
 	music_toggle.button_pressed = !music_enabled
-
-func _on_level_completed(next_level: int):
-	Global.set_Level(next_level) # Setze das nächste Level
-	Global.save_game()

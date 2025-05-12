@@ -1,5 +1,6 @@
-Label
+Timer
 TileMapLayer
+Label
 VBoxContainer
 Panel
 AudioStreamPlayer
@@ -11,4 +12,3 @@ Sprite2D
 TextureRect
 Area2D
 TileMap
-CollisionShape2D
