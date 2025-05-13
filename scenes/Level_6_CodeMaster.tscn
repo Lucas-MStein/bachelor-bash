@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://c50txj1jbngd6"]
+[gd_scene load_steps=39 format=4 uid="uid://c50txj1jbngd6"]
 
 [ext_resource type="Script" uid="uid://cfkw1t288sc1b" path="res://skripts/level_6.gd" id="1_81ew8"]
 [ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="3_81ew8"]
@@ -17,7 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="15_7t25g"]
 [ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="16_2atg4"]
 [ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="17_6glye"]
+[ext_resource type="PackedScene" uid="uid://dvfjpm53mvy4r" path="res://scenes/obstacles_Stachelfalle.tscn" id="17_uw4hf"]
 [ext_resource type="PackedScene" uid="uid://bq2asvtnebc5w" path="res://scenes/enemy_TechnischesProblem.tscn" id="18_2ih3u"]
+[ext_resource type="PackedScene" uid="uid://cp11omglnrvc0" path="res://scenes/obstacles_Serverausfall.tscn" id="18_mn3l2"]
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="19_bfhfy"]
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="20_mc6yr"]
 [ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="21_y5ysg"]
@@ -616,6 +618,13 @@ scale = Vector2(3, 3)
 [node name="obstacles_StarkeWindböhe" parent="." instance=ExtResource("16_2atg4")]
 position = Vector2(709, -13)
 scale = Vector2(2, 2)
+
+[node name="obstacles_Stachelfalle" parent="." instance=ExtResource("17_uw4hf")]
+position = Vector2(27882, -99)
+
+[node name="obstacles_Serverausfall" parent="." instance=ExtResource("18_mn3l2")]
+position = Vector2(40571, -8.00002)
+scale = Vector2(1.5, 1.5)
 
 [node name="obstacles_StarkeWindböhe2" parent="." instance=ExtResource("16_2atg4")]
 position = Vector2(32375, -197)

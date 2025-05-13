@@ -11,7 +11,7 @@ extends CharacterBody2D
 const SPEED = 500.0
 const JUMP_VELOCITY = -600.0
 
-const MIN_X = 0
+const MIN_X = 460
 const MAX_X = 45000
 
 var double_jump_used = false;
