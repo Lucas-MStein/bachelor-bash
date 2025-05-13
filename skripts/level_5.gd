@@ -2,11 +2,10 @@ extends Node2D
 
 @onready var music_toggle = get_node("/root/Ui/MusicToggleButton")
 @onready var audio_player = $AudioStreamPlayer         
-var music_enabled := true
 
 var current_level: int = 5
 
-func _ready() -> void:	
+func _ready() -> void:
 	Global.set_Level(current_level)
 	Global.load_game()
 	print("Level 5 wurde geladen!")
@@ -18,20 +17,25 @@ func _ready() -> void:
 	GameManager.update_ui_visibility()
 	
 	music_toggle.focus_mode = Control.FOCUS_NONE
-	music_toggle.button_pressed = !music_enabled
-	music_toggle.pressed.connect(_on_music_toggle_pressed)
-
-	if music_enabled and audio_player.playing == false:
+	music_toggle.button_pressed = !Global.music_enabled
+	Global.music_enabled_changed.connect(_on_music_enabled_changed)
+	Ui.music_toggle_pressed.connect(_on_music_toggle_pressed)
+	
+	if Global.music_enabled and not audio_player.playing:
 		audio_player.play()
-
-func toggle_music():
-	music_enabled = !music_enabled
-	if audio_player: 
-		if music_enabled:
-			audio_player.stream_paused = false
-		else:
-			audio_player.stream_paused = true
+	else:
+		audio_player.stream_paused = true
 
 func _on_music_toggle_pressed():
-	toggle_music()
-	music_toggle.button_pressed = !music_enabled
+	print("Level: Music toggle pressed, Frame: ", Engine.get_frames_drawn())
+
+func _on_music_enabled_changed(new_state: bool):
+	music_toggle.button_pressed = !new_state
+	if audio_player:
+		if new_state:
+			audio_player.stream_paused = false
+			if not audio_player.playing:
+				audio_player.play()
+		else:
+			audio_player.stream_paused = true
+	print("Level: Music enabled changed to ", new_state)

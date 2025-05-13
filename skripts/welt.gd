@@ -9,12 +9,16 @@ func _ready() -> void:
 	GameManager.update_ui_visibility()
 	
 	MusicPlayer.is_active = true
-	music_toggle.button_pressed = false
-	music_toggle.pressed.connect(_on_music_toggle_pressed)
+	MusicPlayer.update_music_state()
+
+	music_toggle.focus_mode = Control.FOCUS_NONE
+	music_toggle.button_pressed = !Global.music_enabled
+	Global.music_enabled_changed.connect(_on_music_enabled_changed)
+	Ui.music_toggle_pressed.connect(_on_music_toggle_pressed)
 	
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start()
-	
+
 func _on_timer_timeout() -> void:
 	print("Welt-Timer abgelaufen")
 	var base_scene_path = "res://scenes/Level_"
@@ -22,4 +26,8 @@ func _on_timer_timeout() -> void:
 	get_tree().change_scene_to_file(scene_path)
 
 func _on_music_toggle_pressed():
-	music_player.toggle_music()
+	print("Welt: Music toggle pressed, Frame: ", Engine.get_frames_drawn())
+
+func _on_music_enabled_changed(new_state: bool):
+	music_toggle.button_pressed = !new_state
+	print("Welt: Music enabled changed to ", new_state)

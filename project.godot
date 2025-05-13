@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Bachelor Bash"
+config/name="SurviveTheSemester"
 run/main_scene="uid://c1re0cj8r6r7v"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
@@ -18,9 +18,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://skripts/global.gd"
-MusicPlayer="*res://scenes/music_player.tscn"
 Ui="*res://scenes/UI_Button.tscn"
 GameManager="*res://scenes/game_manager.tscn"
+MusicPlayer="*res://scenes/music_player.tscn"
 
 [display]
 
@@ -65,3 +65,4 @@ down={
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true

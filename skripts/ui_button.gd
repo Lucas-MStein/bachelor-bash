@@ -1,15 +1,31 @@
 extends CanvasLayer
 
-@onready var music_toggle = $MusicToggleButton  
+signal music_toggle_pressed()
 
-# Called when the node enters the scene tree for the first time.
+@onready var music_toggle = $MusicToggleButton
+var can_toggle: bool = true
+
 func _ready() -> void:
-	pass # Replace with function body.
+	if music_toggle:
+		music_toggle.focus_mode = Control.FOCUS_NONE
+		music_toggle.button_pressed = !Global.music_enabled
+		if music_toggle.pressed.is_connected(_on_music_toggle_pressed):
+			music_toggle.pressed.disconnect(_on_music_toggle_pressed)
+		music_toggle.pressed.connect(_on_music_toggle_pressed)
+		Global.music_enabled_changed.connect(_on_music_enabled_changed)
 
+func _on_music_toggle_pressed():
+	if not can_toggle:
+		return
+	can_toggle = false
+	print("Ui: Music toggle pressed, Frame: ", Engine.get_frames_drawn())
+	music_toggle_pressed.emit()
+	await get_tree().create_timer(0.2).timeout
+	can_toggle = true
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_music_enabled_changed(new_state: bool):
+	music_toggle.button_pressed = !new_state
+	print("Ui: Music enabled changed to ", new_state)
 
 func _on_exit_pressed() -> void:
 	get_tree().quit()
