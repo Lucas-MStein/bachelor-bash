@@ -1,8 +1,7 @@
-[gd_scene load_steps=29 format=4 uid="uid://d1pwo2chx0olw"]
+[gd_scene load_steps=30 format=4 uid="uid://d1pwo2chx0olw"]
 
 [ext_resource type="Script" uid="uid://0640k4i1b230" path="res://skripts/level_3.gd" id="1_v8k0b"]
 [ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="2_j74nq"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_thd6p"]
 [ext_resource type="Texture2D" uid="uid://cmwwkpufuyor5" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="3_ce5an"]
 [ext_resource type="Texture2D" uid="uid://0i8yad0m67hr" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="3_j74nq"]
 [ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_1l44t"]
@@ -18,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="15_7vgdd"]
 [ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="16_thd6p"]
 [ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="18_v8k0b"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="19_euihj"]
 [ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="19_yjkoc"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
@@ -25,6 +25,7 @@
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bbiwm"]
 texture = ExtResource("2_j74nq")
 texture_region_size = Vector2i(100, 100)
+use_texture_padding = false
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
 1:0/0 = 0
@@ -292,6 +293,9 @@ sources/3 = SubResource("TileSetAtlasSource_o26au")
 sources/5 = SubResource("TileSetAtlasSource_1l44t")
 sources/1 = SubResource("TileSetAtlasSource_ah0op")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_euihj"]
+size = Vector2(399, 54)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yjkoc"]
 size = Vector2(141, 294.5)
 
@@ -303,8 +307,6 @@ font_color = Color(0.341176, 0.294118, 1, 1)
 [node name="Level_3_CodeMaster" type="Node2D"]
 script = ExtResource("1_v8k0b")
 metadata/_edit_vertical_guides_ = [45005.0]
-
-[node name="UI_Button" parent="." instance=ExtResource("2_thd6p")]
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4epbf")
@@ -377,6 +379,14 @@ scale = Vector2(1.25, 1.25)
 [node name="enemy_Abgabestress" parent="." instance=ExtResource("16_thd6p")]
 position = Vector2(37404, -11)
 scale = Vector2(1.25, 1.25)
+
+[node name="killzone_floor" type="Node2D" parent="." groups=["floor"]]
+
+[node name="Killzone" parent="killzone_floor" instance=ExtResource("19_euihj")]
+
+[node name="killzoneShape" type="CollisionShape2D" parent="killzone_floor/Killzone" groups=["enemy"]]
+position = Vector2(15612.5, 677)
+shape = SubResource("RectangleShape2D_euihj")
 
 [node name="winzone" parent="." instance=ExtResource("18_v8k0b")]
 collision_layer = 2

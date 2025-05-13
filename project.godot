@@ -33,6 +33,7 @@ window/stretch/mode="viewport"
 player=""
 boss=""
 enemy=""
+floor=""
 
 [input]
 

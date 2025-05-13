@@ -274,7 +274,7 @@ font = ExtResource("18_7mv8l")
 font_size = 50
 font_color = Color(0.341176, 0.294118, 1, 1)
 
-[node name="Level_2_CodeMaster2" type="Node2D"]
+[node name="Level_2_CodeMaster" type="Node2D"]
 script = ExtResource("1_1wfpv")
 metadata/_edit_vertical_guides_ = [45005.0]
 

@@ -21,7 +21,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n2npi"]
 size = Vector2(178, 94)
 
-[node name="obstacles_Bett" type="Node2D" groups=["enemy"]]
+[node name="obstacles_Bett" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(23, -75)
