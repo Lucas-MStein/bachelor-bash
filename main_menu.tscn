@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bb1ttu0wj2rij" path="res://assets/classroom/01_Button_Play.png" id="3_glbon"]
 [ext_resource type="PackedScene" uid="uid://b7nss2wk0vfbf" path="res://scenes/UI_Button.tscn" id="6_nlkkf"]
 [ext_resource type="FontFile" uid="uid://rnqbrhsiovho" path="res://assets/fonts/GrapeSoda.ttf" id="6_qe12f"]
-[ext_resource type="Script" path="res://skripts/ui_button.gd" id="7_qe12f"]
+[ext_resource type="Script" uid="uid://dsncm4bamf23l" path="res://skripts/ui_button.gd" id="7_qe12f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
 texture = ExtResource("2_glbon")

@@ -1,11 +1,6 @@
-res://scenes/game_manager.tscn
+res://scenes/Level_Tutorial.tscn
 res://ressources/enemy_CollisionShape.tres
-res://scenes/pickup_CreditPoint.tscn
+res://scenes/testing.tscn
+res://main_menu.tscn
 res://scenes/Level_1_CodeMaster.tscn
-res://scenes/boss_BachlorBoss.tscn
-res://scenes/boss_PrüfungsMedusa.tscn
-res://scenes/boss_MultipleChoiceBogen.tscn
-res://scenes/player_CodeMaster.tscn
-res://scenes/player_Projektmanager.tscn
-res://scenes/player_WebDesginer.tscn
-res://skripts/player.gd
+res://skripts/level_tutorial.gd

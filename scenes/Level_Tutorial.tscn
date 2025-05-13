@@ -1,13 +1,14 @@
-[gd_scene load_steps=24 format=4 uid="uid://lng2tvf84lul"]
+[gd_scene load_steps=28 format=4 uid="uid://lng2tvf84lul"]
 
-[ext_resource type="Script" uid="uid://ddbdwah2li5b3" path="res://skripts/level_1.gd" id="1_5oxa6"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_oqcwu"]
-[ext_resource type="Texture2D" uid="uid://br7mhin2d0pg0" path="res://assets/elements/01_Elemente_Plattform.svg" id="3_hkwt4"]
-[ext_resource type="Texture2D" uid="uid://ce8evqvg1jydu" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="4_jawlk"]
-[ext_resource type="Texture2D" uid="uid://cl1ho4pp834wo" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="5_s3wpl"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="6_3jc2k"]
+[ext_resource type="Script" uid="uid://te7pxiuk3p56" path="res://skripts/level_tutorial.gd" id="1_q0gyf"]
+[ext_resource type="FontFile" uid="uid://rnqbrhsiovho" path="res://assets/fonts/GrapeSoda.ttf" id="2_1bymn"]
+[ext_resource type="PackedScene" uid="uid://b7nss2wk0vfbf" path="res://scenes/UI_Button.tscn" id="2_oqcwu"]
+[ext_resource type="Texture2D" uid="uid://b26ukmwtvt53t" path="res://assets/elements/01_Elemente_Plattform.svg" id="3_hkwt4"]
+[ext_resource type="Texture2D" uid="uid://hgwcwq2w62oj" path="res://assets/elements/02_Elemente_Hintergrund_ Deko_Welt_1.svg" id="4_jawlk"]
+[ext_resource type="Texture2D" uid="uid://dh7vmn3m5qfew" path="res://assets/elements/02_Elemente_Welt_1_Fenster_Türen.svg" id="5_s3wpl"]
+[ext_resource type="Texture2D" uid="uid://dhq5omxient22" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="6_3jc2k"]
 [ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="7_xbrje"]
-[ext_resource type="AudioStream" uid="uid://5hdd3l7ad128" path="res://assets/music/level_1.mp3" id="8_kuud5"]
+[ext_resource type="AudioStream" uid="uid://c7rh7q57y6434" path="res://assets/music/level_1.mp3" id="8_kuud5"]
 [ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="9_tv30r"]
 [ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="10_lcddd"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="11_hkxt0"]
@@ -15,6 +16,15 @@
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="15_x0c8x"]
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="16_mwiqw"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="17_epc6i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q0gyf"]
+size = Vector2(44.0593, 77.9898)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bymn"]
+size = Vector2(1118, 523.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5oxa6"]
+size = Vector2(386.75, 36.3368)
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
@@ -267,12 +277,62 @@ sources/4 = SubResource("TileSetAtlasSource_17bo3")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_me6ay"]
 size = Vector2(141, 294.5)
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_446xa"]
-distance = -95.6358
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqcwu"]
 
-[node name="Level_1_CodeMaster" type="Node2D"]
-script = ExtResource("1_5oxa6")
+[node name="Level_1_CodeMaster" type="Node2D" groups=["player"]]
+script = ExtResource("1_q0gyf")
 metadata/_edit_vertical_guides_ = [45005.0, 10012.0]
+
+[node name="UI_Tutorial" type="CanvasLayer" parent="."]
+
+[node name="TutorialLabel" type="Label" parent="UI_Tutorial"]
+anchors_preset = -1
+anchor_left = 0.658
+anchor_top = -0.08
+anchor_right = 0.658
+anchor_bottom = -0.08
+offset_left = -663.36
+offset_top = 257.4
+offset_right = -84.3601
+offset_bottom = 552.4
+grow_horizontal = 2
+scale = Vector2(1.224, 1)
+theme_override_fonts/font = ExtResource("2_1bymn")
+theme_override_font_sizes/font_size = 50
+text = "
+"
+autowrap_mode = 3
+
+[node name="Area_Controls" type="Area2D" parent="." groups=["player"]]
+position = Vector2(581, -149)
+scale = Vector2(0.0799988, 1)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_Controls" groups=["player"]]
+position = Vector2(-62.0371, -85.2141)
+scale = Vector2(719.474, -6.50715)
+shape = SubResource("RectangleShape2D_q0gyf")
+
+[node name="Area_Enemies" type="Area2D" parent="." groups=["player"]]
+position = Vector2(1995, -151)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_Enemies" groups=["player"]]
+position = Vector2(527, -100.25)
+shape = SubResource("RectangleShape2D_1bymn")
+
+[node name="Area_Credits" type="Area2D" parent="." groups=["player"]]
+position = Vector2(3114, -55)
+scale = Vector2(3.04, -13.2591)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_Credits" groups=["player"]]
+position = Vector2(193.092, 5.58109)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_5oxa6")
 
 [node name="UI_Button" parent="." instance=ExtResource("2_oqcwu")]
 
@@ -354,4 +414,11 @@ position = Vector2(169, 1106)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 visibility_layer = 3
-shape = SubResource("WorldBoundaryShape2D_446xa")
+shape = SubResource("RectangleShape2D_oqcwu")
+
+[connection signal="body_entered" from="Area_Controls" to="." method="_on_area_controls_body_entered"]
+[connection signal="body_exited" from="Area_Controls" to="." method="_on_area_controls_body_exited"]
+[connection signal="body_entered" from="Area_Enemies" to="." method="_on_area_enemies_body_entered"]
+[connection signal="body_exited" from="Area_Enemies" to="." method="_on_area_enemies_body_exited"]
+[connection signal="body_entered" from="Area_Credits" to="." method="_on_area_credits_body_entered"]
+[connection signal="body_exited" from="Area_Credits" to="." method="_on_area_credits_body_exited"]

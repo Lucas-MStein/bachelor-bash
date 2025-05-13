@@ -1,11 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bc117e3x76c6y"]
 
 [ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_2ivf0"]
-<<<<<<< HEAD
 [ext_resource type="Texture2D" uid="uid://bkhad4yvcdy88" path="res://assets/figures/02_Enemy_Fiese Klausuren.svg" id="1_e0idc"]
-=======
-[ext_resource type="Texture2D" uid="uid://lqf4236hk1kg" path="res://assets/figures/02_Enemy_Fiese Klausuren.svg" id="1_e0idc"]
->>>>>>> origin/develop
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_fm0lx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdcsh"]
