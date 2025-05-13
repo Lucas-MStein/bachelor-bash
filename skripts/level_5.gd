@@ -23,14 +23,14 @@ func _ready() -> void:
 
 	if music_enabled and audio_player.playing == false:
 		audio_player.play()
-	
+
 func toggle_music():
 	music_enabled = !music_enabled
 	if audio_player: 
 		if music_enabled:
-			audio_player.play()
+			audio_player.stream_paused = false
 		else:
-			audio_player.stop()
+			audio_player.stream_paused = true
 
 func _on_music_toggle_pressed():
 	toggle_music()

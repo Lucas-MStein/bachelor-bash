@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://60fyct2j4tqk"]
 
-[ext_resource type="Script" path="res://skripts/boss.gd" id="1_fvyyg"]
-[ext_resource type="Texture2D" uid="uid://ckuxbjadnxrti" path="res://assets/figures/03_Boss_BachelorBoss.svg" id="2_fvyyg"]
+[ext_resource type="Script" uid="uid://bl2xx45swc8k3" path="res://skripts/boss.gd" id="1_fvyyg"]
+[ext_resource type="Texture2D" uid="uid://kch58lfce34p" path="res://assets/figures/03_Boss_BachelorBoss.svg" id="2_fvyyg"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="3_q34tn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v77wl"]
@@ -70,9 +70,9 @@ position = Vector2(-8, -84)
 shape = SubResource("RectangleShape2D_qsu2j")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
-position = Vector2(0, -48)
+position = Vector2(0, -25)
 target_position = Vector2(96, 0)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
-position = Vector2(0, -48)
+position = Vector2(0, -25)
 target_position = Vector2(-96, 0)

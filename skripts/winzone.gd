@@ -22,7 +22,7 @@ func create_next_scene_path() -> String:
 	var level = Global.level + 1
 	print (level)
 	Global.set_Level(level)
-	if level<6:
+	if level<7:
 		if level == 1:
 			var welt = "res://scenes/Welt_1.tscn"
 			return welt

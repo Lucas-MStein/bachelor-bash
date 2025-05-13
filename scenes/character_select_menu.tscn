@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b2ng3cpc3xuxr"]
+[gd_scene load_steps=11 format=3 uid="uid://b2ng3cpc3xuxr"]
 
 [ext_resource type="Script" uid="uid://bwusdvkbxle81" path="res://skripts/character_select_menu.gd" id="1_v7jbk"]
 [ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_y5b6p"]
@@ -12,13 +12,15 @@ texture = ExtResource("1_y5b6p")
 
 [sub_resource type="LabelSettings" id="LabelSettings_6ckjq"]
 font = ExtResource("2_peq0e")
-font_size = 39
+font_size = 45
 shadow_size = 3
 shadow_color = Color(0, 0, 0, 1)
 
+[sub_resource type="FontVariation" id="FontVariation_lik1d"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_v7jbk"]
-font = ExtResource("2_peq0e")
-font_size = 26
+font = SubResource("FontVariation_lik1d")
+font_size = 25
 
 [node name="CharacterSelect" type="Control"]
 layout_mode = 3

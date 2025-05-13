@@ -13,4 +13,6 @@ func _process(delta: float) -> void:
 
 
 func _on_reset_pressed() -> void:
+	Global.reset_game()
 	get_tree().change_scene_to_file("res://main_menu.tscn")
+	
