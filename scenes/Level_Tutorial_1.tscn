@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://lng2tvf84lul"]
+[gd_scene load_steps=28 format=4 uid="uid://cv2bg2ycsikmj"]
 
 [ext_resource type="Script" uid="uid://i423i4d6o6ew" path="res://skripts/level_tutorial.gd" id="1_q0gyf"]
 [ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="2_1bymn"]

@@ -1,29 +1,29 @@
-[gd_scene load_steps=30 format=4 uid="uid://d1pwo2chx0olw"]
+[gd_scene load_steps=30 format=4 uid="uid://7lhhhd350fwi"]
 
-[ext_resource type="Script" uid="uid://0640k4i1b230" path="res://skripts/level_3.gd" id="1_v8k0b"]
-[ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="2_j74nq"]
-[ext_resource type="Texture2D" uid="uid://dw7a85y8tufls" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="3_ce5an"]
-[ext_resource type="Texture2D" uid="uid://bn2q1wm3ag60f" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="3_j74nq"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_1l44t"]
-[ext_resource type="Texture2D" uid="uid://cunp5od2hht06" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="5_j74nq"]
-[ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="7_yjkoc"]
-[ext_resource type="AudioStream" uid="uid://5hap1xyrt8ip" path="res://assets/music/Level3_Prio3.mp3" id="8_yjkoc"]
-[ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="10_ah0op"]
-[ext_resource type="PackedScene" uid="uid://bq2asvtnebc5w" path="res://scenes/enemy_TechnischesProblem.tscn" id="11_o26au"]
-[ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="12_1l44t"]
-[ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="12_thd6p"]
-[ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="13_xgayl"]
-[ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="14_lf68n"]
-[ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="15_7vgdd"]
-[ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="16_thd6p"]
-[ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="18_v8k0b"]
-[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="19_euihj"]
-[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="19_yjkoc"]
+[ext_resource type="Script" uid="uid://0640k4i1b230" path="res://skripts/level_3.gd" id="1_oqlom"]
+[ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="2_0a6ww"]
+[ext_resource type="Texture2D" uid="uid://bn2q1wm3ag60f" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="3_k63ml"]
+[ext_resource type="Texture2D" uid="uid://dw7a85y8tufls" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="4_6oqou"]
+[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_r30on"]
+[ext_resource type="Texture2D" uid="uid://cunp5od2hht06" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="6_k3dmf"]
+[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="7_wmmtl"]
+[ext_resource type="AudioStream" uid="uid://5hap1xyrt8ip" path="res://assets/music/Level3_Prio3.mp3" id="8_kietj"]
+[ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="9_j7uiv"]
+[ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="10_jie4c"]
+[ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="11_2q5n6"]
+[ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="12_30up0"]
+[ext_resource type="PackedScene" uid="uid://bq2asvtnebc5w" path="res://scenes/enemy_TechnischesProblem.tscn" id="13_pmo0l"]
+[ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="14_p8sjp"]
+[ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="15_gugh2"]
+[ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="16_mfw4l"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="17_853ap"]
+[ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="18_ueap2"]
+[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="19_cydqg"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bbiwm"]
-texture = ExtResource("2_j74nq")
+texture = ExtResource("2_0a6ww")
 texture_region_size = Vector2i(100, 100)
 use_texture_padding = false
 0:0/0 = 0
@@ -74,7 +74,7 @@ use_texture_padding = false
 5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ah0op"]
-texture = ExtResource("3_j74nq")
+texture = ExtResource("3_k63ml")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -167,7 +167,7 @@ texture_region_size = Vector2i(100, 100)
 7:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o26au"]
-texture = ExtResource("3_ce5an")
+texture = ExtResource("4_6oqou")
 separation = Vector2i(3, 3)
 texture_region_size = Vector2i(98, 98)
 0:0/0 = 0
@@ -188,7 +188,7 @@ texture_region_size = Vector2i(98, 98)
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_17bo3"]
-texture = ExtResource("5_1l44t")
+texture = ExtResource("5_r30on")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -214,7 +214,7 @@ texture_region_size = Vector2i(100, 100)
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1l44t"]
-texture = ExtResource("5_j74nq")
+texture = ExtResource("6_k3dmf")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -300,12 +300,12 @@ size = Vector2(540.5, 54)
 size = Vector2(141, 294.5)
 
 [sub_resource type="LabelSettings" id="LabelSettings_euihj"]
-font = ExtResource("19_yjkoc")
+font = ExtResource("19_cydqg")
 font_size = 50
 font_color = Color(0.341176, 0.294118, 1, 1)
 
 [node name="Level_3_CodeMaster" type="Node2D"]
-script = ExtResource("1_v8k0b")
+script = ExtResource("1_oqlom")
 metadata/_edit_vertical_guides_ = [45005.0]
 
 [node name="TileMap2" type="TileMap" parent="."]
@@ -331,57 +331,57 @@ tile_map_data = PackedByteArray("AAADAP3/AQAIAAQAAAADAP7/AQAIAAUAAAADAP//AQAIAAY
 tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 
-[node name="player_CodeMaster" parent="." instance=ExtResource("7_yjkoc")]
+[node name="player_WebDesigner" parent="." instance=ExtResource("7_wmmtl")]
 position = Vector2(461, 28)
 
-[node name="Camera2D" type="Camera2D" parent="player_CodeMaster"]
+[node name="Camera2D" type="Camera2D" parent="player_WebDesigner"]
 position = Vector2(124, -194)
 position_smoothing_enabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("8_yjkoc")
+stream = ExtResource("8_kietj")
 volume_db = -25.0
 parameters/looping = true
 
-[node name="obstacles_Bett" parent="." instance=ExtResource("10_ah0op")]
+[node name="obstacles_Bett" parent="." instance=ExtResource("9_j7uiv")]
 position = Vector2(22373, -100)
 scale = Vector2(1.5, 1.5)
 
-[node name="obstacles_Giftwolke" parent="." instance=ExtResource("12_1l44t")]
+[node name="obstacles_Giftwolke" parent="." instance=ExtResource("10_jie4c")]
 position = Vector2(10310, -111)
 scale = Vector2(1.5, 1.5)
 
-[node name="obstacles_StarkeWindböhe" parent="." instance=ExtResource("12_thd6p")]
+[node name="obstacles_StarkeWindböhe" parent="." instance=ExtResource("11_2q5n6")]
 position = Vector2(15599, -15)
 scale = Vector2(2, 2)
 
-[node name="CreditPoint" parent="." instance=ExtResource("13_xgayl")]
+[node name="CreditPoint" parent="." instance=ExtResource("12_30up0")]
 position = Vector2(10047, -115)
 
-[node name="CreditPoint2" parent="." instance=ExtResource("13_xgayl")]
+[node name="CreditPoint2" parent="." instance=ExtResource("12_30up0")]
 position = Vector2(30039, -146)
 
-[node name="CreditPoint3" parent="." instance=ExtResource("13_xgayl")]
+[node name="CreditPoint3" parent="." instance=ExtResource("12_30up0")]
 position = Vector2(18451, -414)
 
-[node name="enemy_TechnischesProblem" parent="." instance=ExtResource("11_o26au")]
+[node name="enemy_TechnischesProblem" parent="." instance=ExtResource("13_pmo0l")]
 position = Vector2(4871, -105)
 
-[node name="enemy_Aufgabenberg" parent="." instance=ExtResource("14_lf68n")]
+[node name="enemy_Aufgabenberg" parent="." instance=ExtResource("14_p8sjp")]
 position = Vector2(27097, -405)
 scale = Vector2(1.2, 1.2)
 
-[node name="enemy_fieseKlausuren" parent="." instance=ExtResource("15_7vgdd")]
+[node name="enemy_fieseKlausuren" parent="." instance=ExtResource("15_gugh2")]
 position = Vector2(41711, -97)
 scale = Vector2(1.25, 1.25)
 
-[node name="enemy_Abgabestress" parent="." instance=ExtResource("16_thd6p")]
+[node name="enemy_Abgabestress" parent="." instance=ExtResource("16_mfw4l")]
 position = Vector2(37404, -11)
 scale = Vector2(1.25, 1.25)
 
 [node name="killzone_floor" type="Node2D" parent="." groups=["floor"]]
 
-[node name="Killzone" parent="killzone_floor" instance=ExtResource("19_euihj")]
+[node name="Killzone" parent="killzone_floor" instance=ExtResource("17_853ap")]
 
 [node name="killzoneShape" type="CollisionShape2D" parent="killzone_floor/Killzone" groups=["enemy"]]
 position = Vector2(15612.5, 677)
@@ -389,13 +389,13 @@ shape = SubResource("RectangleShape2D_euihj")
 
 [node name="killzone_floor" type="Node2D" parent="killzone_floor" groups=["floor"]]
 
-[node name="Killzone" parent="killzone_floor/killzone_floor" instance=ExtResource("19_euihj")]
+[node name="Killzone" parent="killzone_floor/killzone_floor" instance=ExtResource("17_853ap")]
 
 [node name="killzoneShape" type="CollisionShape2D" parent="killzone_floor/killzone_floor/Killzone" groups=["enemy"]]
 position = Vector2(36660.8, 561)
 shape = SubResource("RectangleShape2D_euihj")
 
-[node name="winzone" parent="." instance=ExtResource("18_v8k0b")]
+[node name="winzone" parent="." instance=ExtResource("18_ueap2")]
 collision_layer = 2
 collision_mask = 3
 

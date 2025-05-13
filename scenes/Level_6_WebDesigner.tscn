@@ -1,36 +1,36 @@
-[gd_scene load_steps=41 format=4 uid="uid://c50txj1jbngd6"]
+[gd_scene load_steps=41 format=4 uid="uid://ucrgrbr1qnrx"]
 
-[ext_resource type="Script" uid="uid://cfkw1t288sc1b" path="res://skripts/level_6.gd" id="1_81ew8"]
-[ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="3_81ew8"]
-[ext_resource type="Texture2D" uid="uid://bn2q1wm3ag60f" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="4_p5mk8"]
-[ext_resource type="Texture2D" uid="uid://qtkluyntsdgx" path="res://assets/elements/02_Elemente_Kellerwand.svg" id="5_uw4hf"]
-[ext_resource type="Texture2D" uid="uid://dw7a85y8tufls" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="6_mn3l2"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="7_ebdlc"]
-[ext_resource type="Texture2D" uid="uid://cunp5od2hht06" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="8_hd75l"]
-[ext_resource type="Texture2D" uid="uid://d7g5ek2cqnvs" path="res://assets/elements/03_Elemente_Welt_3_Fenster_Türen.svg" id="9_vsdop"]
-[ext_resource type="Texture2D" uid="uid://dmnikgnr7xewu" path="res://assets/elements/03_Elemente_Welt_3_Hintergrund.svg" id="10_hpefn"]
-[ext_resource type="Texture2D" uid="uid://bwqalcfg5m8oa" path="res://assets/elements/03_Elemente_Welt_3_Deko.svg" id="11_8sw2e"]
-[ext_resource type="PackedScene" uid="uid://b88jwlt54mlsy" path="res://scenes/player_CodeMaster.tscn" id="11_mn3l2"]
-[ext_resource type="AudioStream" uid="uid://2pn5si5b502p" path="res://assets/music/Level6_Prio2.mp3" id="12_mn3l2"]
-[ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="14_bielw"]
-[ext_resource type="PackedScene" uid="uid://60fyct2j4tqk" path="res://scenes/boss_BachlorBoss.tscn" id="14_mj1mk"]
-[ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="15_7t25g"]
-[ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="16_2atg4"]
-[ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="17_6glye"]
-[ext_resource type="PackedScene" uid="uid://dvfjpm53mvy4r" path="res://scenes/obstacles_Stachelfalle.tscn" id="17_uw4hf"]
-[ext_resource type="PackedScene" uid="uid://bq2asvtnebc5w" path="res://scenes/enemy_TechnischesProblem.tscn" id="18_2ih3u"]
-[ext_resource type="PackedScene" uid="uid://cp11omglnrvc0" path="res://scenes/obstacles_Serverausfall.tscn" id="18_mn3l2"]
-[ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="19_bfhfy"]
-[ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="20_mc6yr"]
-[ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="21_y5ysg"]
-[ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="23_81ew8"]
-[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="24_p5mk8"]
-[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="26_mn3l2"]
+[ext_resource type="Script" uid="uid://cfkw1t288sc1b" path="res://skripts/level_6.gd" id="1_xe0q8"]
+[ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="2_dak2q"]
+[ext_resource type="Texture2D" uid="uid://bn2q1wm3ag60f" path="res://assets/elements/03_Elemente_Welt_2_Fenster_Türen.svg" id="3_qge7i"]
+[ext_resource type="Texture2D" uid="uid://qtkluyntsdgx" path="res://assets/elements/02_Elemente_Kellerwand.svg" id="4_w26n1"]
+[ext_resource type="Texture2D" uid="uid://dw7a85y8tufls" path="res://assets/elements/03_Elemente_Welt_2_Deko.svg" id="5_7mpvd"]
+[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="6_74cch"]
+[ext_resource type="Texture2D" uid="uid://cunp5od2hht06" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="7_1fp73"]
+[ext_resource type="Texture2D" uid="uid://d7g5ek2cqnvs" path="res://assets/elements/03_Elemente_Welt_3_Fenster_Türen.svg" id="8_a4pnm"]
+[ext_resource type="Texture2D" uid="uid://dmnikgnr7xewu" path="res://assets/elements/03_Elemente_Welt_3_Hintergrund.svg" id="9_77n1a"]
+[ext_resource type="Texture2D" uid="uid://bwqalcfg5m8oa" path="res://assets/elements/03_Elemente_Welt_3_Deko.svg" id="10_nsdy2"]
+[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="11_ihsvh"]
+[ext_resource type="AudioStream" uid="uid://2pn5si5b502p" path="res://assets/music/Level6_Prio2.mp3" id="12_aw77t"]
+[ext_resource type="PackedScene" uid="uid://60fyct2j4tqk" path="res://scenes/boss_BachlorBoss.tscn" id="13_7rilo"]
+[ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="14_3nvrr"]
+[ext_resource type="PackedScene" uid="uid://cuigc82wpdlc5" path="res://scenes/obstacles_Giftwolke.tscn" id="15_qs6hl"]
+[ext_resource type="PackedScene" uid="uid://cfoeqc16lj5a8" path="res://scenes/obstacles_StarkeWindböhe.tscn" id="16_3g5bo"]
+[ext_resource type="PackedScene" uid="uid://dvfjpm53mvy4r" path="res://scenes/obstacles_Stachelfalle.tscn" id="17_17nuv"]
+[ext_resource type="PackedScene" uid="uid://cp11omglnrvc0" path="res://scenes/obstacles_Serverausfall.tscn" id="18_go2lg"]
+[ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="19_cp56h"]
+[ext_resource type="PackedScene" uid="uid://bq2asvtnebc5w" path="res://scenes/enemy_TechnischesProblem.tscn" id="20_3ps6d"]
+[ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="21_68nto"]
+[ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="22_nki0q"]
+[ext_resource type="PackedScene" uid="uid://l3jb7v5q7myd" path="res://scenes/enemy_Abgabestress.tscn" id="23_da4wp"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="24_21wb7"]
+[ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="25_2m50d"]
+[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="26_nep3f"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bbiwm"]
-texture = ExtResource("3_81ew8")
+texture = ExtResource("2_dak2q")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
@@ -78,7 +78,7 @@ texture_region_size = Vector2i(100, 100)
 5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ah0op"]
-texture = ExtResource("4_p5mk8")
+texture = ExtResource("3_qge7i")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -171,12 +171,12 @@ texture_region_size = Vector2i(100, 100)
 7:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bmvyf"]
-texture = ExtResource("5_uw4hf")
+texture = ExtResource("4_w26n1")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o26au"]
-texture = ExtResource("6_mn3l2")
+texture = ExtResource("5_7mpvd")
 separation = Vector2i(3, 3)
 texture_region_size = Vector2i(98, 98)
 0:0/0 = 0
@@ -197,7 +197,7 @@ texture_region_size = Vector2i(98, 98)
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_17bo3"]
-texture = ExtResource("7_ebdlc")
+texture = ExtResource("6_74cch")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -223,7 +223,7 @@ texture_region_size = Vector2i(100, 100)
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1l44t"]
-texture = ExtResource("8_hd75l")
+texture = ExtResource("7_1fp73")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -293,7 +293,7 @@ texture_region_size = Vector2i(100, 100)
 9:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hmi21"]
-texture = ExtResource("9_vsdop")
+texture = ExtResource("8_a4pnm")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -389,7 +389,7 @@ texture_region_size = Vector2i(100, 100)
 7:8/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hln4j"]
-texture = ExtResource("10_hpefn")
+texture = ExtResource("9_77n1a")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -501,7 +501,7 @@ texture_region_size = Vector2i(100, 100)
 8:11/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cqm2s"]
-texture = ExtResource("11_8sw2e")
+texture = ExtResource("10_nsdy2")
 texture_region_size = Vector2i(100, 100)
 0:0/0 = 0
 1:0/0 = 0
@@ -555,12 +555,12 @@ size = Vector2(897, 57)
 size = Vector2(141, 294.5)
 
 [sub_resource type="LabelSettings" id="LabelSettings_81ew8"]
-font = ExtResource("24_p5mk8")
+font = ExtResource("26_nep3f")
 font_size = 50
 font_color = Color(0.341176, 0.294118, 1, 1)
 
 [node name="Level_6_CodeMaster" type="Node2D"]
-script = ExtResource("1_81ew8")
+script = ExtResource("1_xe0q8")
 metadata/_edit_vertical_guides_ = [45005.0, 46501.0]
 
 [node name="TileMap2" type="TileMap" parent="."]
@@ -586,88 +586,88 @@ tile_map_data = PackedByteArray("AAB6AO3/BAAFAAEAAAB6AO7/BAAFAAEAAABaAO3/BAAFAAE
 tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 
-[node name="player_CodeMaster" parent="." instance=ExtResource("11_mn3l2")]
+[node name="player_WebDesigner" parent="." instance=ExtResource("11_ihsvh")]
 position = Vector2(461, 28)
 
-[node name="Camera2D" type="Camera2D" parent="player_CodeMaster"]
+[node name="Camera2D" type="Camera2D" parent="player_WebDesigner"]
 position = Vector2(124, -194)
 position_smoothing_enabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("12_mn3l2")
+stream = ExtResource("12_aw77t")
 volume_db = -25.0
 parameters/looping = true
 
-[node name="boss_BachlorBoss" parent="." instance=ExtResource("14_mj1mk")]
+[node name="boss_BachlorBoss" parent="." instance=ExtResource("13_7rilo")]
 position = Vector2(43855, -605)
 scale = Vector2(2.5, 2.5)
 
-[node name="obstacles_Bett" parent="." instance=ExtResource("14_bielw")]
+[node name="obstacles_Bett" parent="." instance=ExtResource("14_3nvrr")]
 position = Vector2(36684, -99)
 scale = Vector2(1.5, 1.5)
 
-[node name="obstacles_Giftwolke" parent="." instance=ExtResource("15_7t25g")]
+[node name="obstacles_Giftwolke" parent="." instance=ExtResource("15_qs6hl")]
 position = Vector2(22165, -151)
 scale = Vector2(2, 2)
 
-[node name="obstacles_Giftwolke3" parent="." instance=ExtResource("15_7t25g")]
+[node name="obstacles_Giftwolke3" parent="." instance=ExtResource("15_qs6hl")]
 position = Vector2(31689, 685)
 scale = Vector2(3, 3)
 
-[node name="obstacles_Giftwolke2" parent="." instance=ExtResource("15_7t25g")]
+[node name="obstacles_Giftwolke2" parent="." instance=ExtResource("15_qs6hl")]
 position = Vector2(6512, 872)
 scale = Vector2(3, 3)
 
-[node name="obstacles_StarkeWindböhe" parent="." instance=ExtResource("16_2atg4")]
+[node name="obstacles_StarkeWindböhe" parent="." instance=ExtResource("16_3g5bo")]
 position = Vector2(709, -13)
 scale = Vector2(2, 2)
 
-[node name="obstacles_Stachelfalle" parent="." instance=ExtResource("17_uw4hf")]
+[node name="obstacles_Stachelfalle" parent="." instance=ExtResource("17_17nuv")]
 position = Vector2(27882, -99)
 
-[node name="obstacles_Serverausfall" parent="." instance=ExtResource("18_mn3l2")]
+[node name="obstacles_Serverausfall" parent="." instance=ExtResource("18_go2lg")]
 position = Vector2(40758, -18)
 scale = Vector2(1.5, 1.5)
 
-[node name="obstacles_StarkeWindböhe2" parent="." instance=ExtResource("16_2atg4")]
+[node name="obstacles_StarkeWindböhe2" parent="." instance=ExtResource("16_3g5bo")]
 position = Vector2(32375, -197)
 scale = Vector2(2, 2)
 
-[node name="CreditPoint" parent="." instance=ExtResource("17_6glye")]
+[node name="CreditPoint" parent="." instance=ExtResource("19_cp56h")]
 position = Vector2(22164, -110)
 
-[node name="CreditPoint2" parent="." instance=ExtResource("17_6glye")]
+[node name="CreditPoint2" parent="." instance=ExtResource("19_cp56h")]
 position = Vector2(30703, -5)
 
-[node name="CreditPoint3" parent="." instance=ExtResource("17_6glye")]
+[node name="CreditPoint3" parent="." instance=ExtResource("19_cp56h")]
 position = Vector2(40453, -842)
 
-[node name="enemy_TechnischesProblem" parent="." instance=ExtResource("18_2ih3u")]
+[node name="enemy_TechnischesProblem" parent="." instance=ExtResource("20_3ps6d")]
 position = Vector2(14390, -109)
 scale = Vector2(1.5, 1.5)
 
-[node name="enemy_Aufgabenberg" parent="." instance=ExtResource("19_bfhfy")]
+[node name="enemy_Aufgabenberg" parent="." instance=ExtResource("21_68nto")]
 position = Vector2(24966, 605)
 scale = Vector2(3, 3)
 
-[node name="enemy_fieseKlausuren" parent="." instance=ExtResource("20_mc6yr")]
+[node name="enemy_fieseKlausuren" parent="." instance=ExtResource("22_nki0q")]
 position = Vector2(9836, -190)
 scale = Vector2(1.25, 1.25)
 
-[node name="enemy_Abgabestress" parent="." instance=ExtResource("21_y5ysg")]
+[node name="enemy_Abgabestress" parent="." instance=ExtResource("23_da4wp")]
 position = Vector2(1616, 0)
 scale = Vector2(1.5, 1.5)
 
 [node name="killzone_floor" type="Node2D" parent="." groups=["floor"]]
 light_mask = 3
 
-[node name="Killzone" parent="killzone_floor" instance=ExtResource("26_mn3l2")]
+[node name="Killzone" parent="killzone_floor" instance=ExtResource("24_21wb7")]
 
 [node name="killzoneShape" type="CollisionShape2D" parent="killzone_floor/Killzone" groups=["enemy"]]
 position = Vector2(31563, 669)
 shape = SubResource("RectangleShape2D_ebdlc")
 
-[node name="winzone" parent="." instance=ExtResource("23_81ew8")]
+[node name="winzone" parent="." instance=ExtResource("25_2m50d")]
 collision_layer = 2
 collision_mask = 3
 
