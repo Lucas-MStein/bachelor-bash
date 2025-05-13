@@ -1,7 +1,7 @@
 extends Control
 
 #@onready var music_player = get_node("/root/MusicPlayer")  # Globale Musik-Instanz
-@onready var music_toggle = get_node("UI_Button/MusicToggleButton")             # Button für Musik an/aus
+@onready var music_toggle = get_node("/root/Ui/MusicToggleButton")         # Button für Musik an/aus
 @onready var label_node: Label = get_node("Label")  
 
 func _ready() -> void:
@@ -35,7 +35,7 @@ func _ready() -> void:
 
 func _input(event):
 	if OS.is_debug_build() and event.is_action_pressed("simulate_save"):
-		Global.simulate_save("CodeMaster", 2) # Simuliere CodeMaster auf Level 2
+		Global.simulate_save("CodeMaster", 5) # Simuliere CodeMaster auf Level 2
 		Global.load_game() # Lade den gespeicherten Spielstand
 		$Label2.text = "Simulierter Spielstand: " + Global.character + " in Level " + str(Global.level)
 

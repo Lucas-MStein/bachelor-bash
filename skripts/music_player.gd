@@ -12,6 +12,6 @@ func toggle_music():
 	music_enabled = !music_enabled
 	if player: 
 		if music_enabled:
-			player.play()
+			player.stream_paused = false
 		else:
-			player.stop()
+			player.stream_paused = true

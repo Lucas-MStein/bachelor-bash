@@ -31,3 +31,15 @@ func simulate_save(character_name: String, level_number: int):
 	level = level_number
 	save_game()
 	print("Simulierter Spielstand gespeichert: ", character, " Level: ", level)
+
+func reset_game():
+	# Delete the save file if it exists
+	if FileAccess.file_exists("user://savegame.save"):
+		var dir = DirAccess.open("user://")
+		dir.remove("savegame.save")
+	
+	# Reset variables to initial state
+	character = ""
+	level = 1
+	first_run = true
+	print("Spielstand zurückgesetzt: Kein gespeicherter Spielstand vorhanden.")

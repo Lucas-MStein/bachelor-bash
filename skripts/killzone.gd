@@ -10,19 +10,24 @@ func _on_body_entered(body: Node2D) -> void:
 		var killzone_shape = get_node("killzoneShape") as CollisionShape2D
 		
 		if player_shape and killzone_shape:
+			# Globale Positionen und Grenzen der Kollisionsformen berechnen
+			var player_rect = player_shape.shape.get_rect()
+			var killzone_rect = killzone_shape.shape.get_rect()
+			
+			var player_bottom = player_shape.global_position.y + player_rect.position.y + player_rect.size.y
+			var killzone_top = killzone_shape.global_position.y + killzone_rect.position.y
+			
 			# Prüfe, ob der Spieler von oben kommt
-			var is_from_above = body.position.y < global_position.y
+			var is_from_above = player_bottom <= killzone_top + 5.0  # Kleine Toleranz
 			
 			# Debugging: Kollisionsdetails
-			print("Spieler y:", body.position.y, " Killzone y:", global_position.y)
+			print("Spieler untere y:", player_bottom, " Killzone obere y:", killzone_top)
 			print("Von oben?", is_from_above)
 			
 			if is_from_above:
 				var parent = get_parent()
 				print("Parent ist:", parent.name, " in Gruppe:", parent.get_groups())
-				if parent.is_in_group("floor"):
-					GameManager.heart = 0
-					GameManager.damage_heart()
+				
 				# Gegner oder Boss behandeln
 				if parent.is_in_group("enemy") or parent.is_in_group("boss"):
 					if parent.is_in_group("boss"):

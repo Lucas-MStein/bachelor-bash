@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://l3jb7v5q7myd"]
 
-[ext_resource type="Texture2D" uid="uid://bjkmkbu8onlua" path="res://assets/figures/02_Enemy_Abgabestress_1.svg" id="1_2dril"]
+[ext_resource type="Texture2D" uid="uid://0de814qyhkn8" path="res://assets/figures/02_Enemy_Abgabestress_1.svg" id="1_2dril"]
 [ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_ikuey"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="2_28xcr"]
 [ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="3_w8lcs"]
