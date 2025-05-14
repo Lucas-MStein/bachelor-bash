@@ -1,0 +1,9 @@
+res://scenes/Level_1_CodeMaster.tscn
+res://ressources/enemy_CollisionShape.tres
+res://scenes/Welt_1.tscn
+res://scenes/character_select_menu.tscn
+res://main_menu.tscn
+res://scenes/UI_Button.tscn
+res://scenes/Welt_2.tscn
+res://scenes/Level_Tutorial_1.tscn
+res://scenes/game_manager.tscn

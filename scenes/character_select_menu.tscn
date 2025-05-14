@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=3 uid="uid://b2ng3cpc3xuxr"]
 
 [ext_resource type="Script" uid="uid://bwusdvkbxle81" path="res://skripts/character_select_menu.gd" id="1_v7jbk"]
-[ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_y5b6p"]
-[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="2_peq0e"]
-[ext_resource type="Texture2D" uid="uid://1mhl6i6obaux" path="res://assets/figures/01_Player_CodeMaster_stehen.svg" id="3_6ckjq"]
-[ext_resource type="Texture2D" uid="uid://cbrrb4nu4njp0" path="res://assets/figures/01_Player_ProjektManager_stehen.svg" id="4_v7jbk"]
-[ext_resource type="Texture2D" uid="uid://ba5tldm4qkssl" path="res://assets/figures/01_Player_WebDesigner_stehen.svg" id="5_olnq5"]
+[ext_resource type="Texture2D" uid="uid://cqwywxngi0bxd" path="res://assets/classroom/02_Background_Classroom_Final.png" id="1_y5b6p"]
+[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="2_peq0e"]
+[ext_resource type="Texture2D" uid="uid://chewfmb35edxx" path="res://assets/figures/01_Player_CodeMaster_stehen.svg" id="3_6ckjq"]
+[ext_resource type="Texture2D" uid="uid://cskwbb0vsu2au" path="res://assets/figures/01_Player_ProjektManager_stehen.svg" id="4_v7jbk"]
+[ext_resource type="Texture2D" uid="uid://boxsijmsdw0t0" path="res://assets/figures/01_Player_WebDesigner_stehen.svg" id="5_olnq5"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ruflx"]
 texture = ExtResource("1_y5b6p")

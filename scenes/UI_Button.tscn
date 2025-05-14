@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://c35jtwc5jeeof"]
 
-[ext_resource type="Texture2D" uid="uid://b1ckwwpep4njq" path="res://assets/classroom/01_Button_Volume_on.svg" id="1_ro3t7"]
+[ext_resource type="Texture2D" uid="uid://djo7bt076utfa" path="res://assets/classroom/01_Button_Volume_on.svg" id="1_ro3t7"]
 [ext_resource type="Script" uid="uid://dsncm4bamf23l" path="res://skripts/ui_button.gd" id="1_ua6yw"]
-[ext_resource type="Texture2D" uid="uid://ctf4a5be7hhdq" path="res://assets/classroom/01_Button_Volume_off.svg" id="2_5en4g"]
-[ext_resource type="Texture2D" uid="uid://bwtuy4j2yc1ck" path="res://assets/classroom/01_Button_Exit.png" id="3_5en4g"]
+[ext_resource type="Texture2D" uid="uid://dknnhbt3l0ofb" path="res://assets/classroom/01_Button_Volume_off.svg" id="2_5en4g"]
+[ext_resource type="Texture2D" uid="uid://bg6ypvt6bw35m" path="res://assets/classroom/01_Button_Exit.png" id="3_5en4g"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ua6yw"]
 

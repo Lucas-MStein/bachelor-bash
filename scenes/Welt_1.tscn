@@ -1,10 +1,10 @@
 [gd_scene load_steps=13 format=4 uid="uid://pvyrapn075k8"]
 
-[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="1_2d6lq"]
+[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="1_2d6lq"]
 [ext_resource type="Script" uid="uid://c20ey64vi50vp" path="res://skripts/welt.gd" id="1_vlf2x"]
-[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="3_ci4st"]
-[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/03_Elemente_Welt 1_Deko.svg" id="3_nh0ys"]
-[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/03_Elemente_Welt_1_Fenster_Türen.svg" id="4_t8401"]
+[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="3_ci4st"]
+[ext_resource type="Texture2D" uid="uid://7rrjouhi8xmb" path="res://assets/elements/03_Elemente_Welt 1_Deko.svg" id="3_nh0ys"]
+[ext_resource type="Texture2D" uid="uid://16yc6lmu03ll" path="res://assets/elements/03_Elemente_Welt_1_Fenster_Türen.svg" id="4_t8401"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lkt8x"]
 texture = ExtResource("3_ci4st")

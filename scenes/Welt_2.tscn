@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=4 uid="uid://bja30v70ja6aj"]
 
-[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="1_2d6lq"]
+[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="1_2d6lq"]
 [ext_resource type="Script" uid="uid://c20ey64vi50vp" path="res://skripts/welt.gd" id="1_vlf2x"]
-[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="3_ci4st"]
-[ext_resource type="Texture2D" uid="uid://dajgctlblkpja" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="3_mykro"]
+[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="3_ci4st"]
+[ext_resource type="Texture2D" uid="uid://cunp5od2hht06" path="res://assets/elements/03_Elemente_Welt_2_Hintergrund.svg" id="3_mykro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lkt8x"]
 texture = ExtResource("3_ci4st")
