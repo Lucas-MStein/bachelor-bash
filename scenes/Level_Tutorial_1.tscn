@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://dymbgubro10af" path="res://scenes/boss_MultipleChoiceBogen.tscn" id="14_ad3xr"]
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="15_x0c8x"]
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="16_mwiqw"]
-[ext_resource type="Texture2D" uid="uid://cttpmh4qdf8cy" path="res://assets/Sprechblase_Tür_1.svg" id="16_v5aql"]
+[ext_resource type="Texture2D" uid="uid://cttpmh4qdf8cy" path="res://assets/classroom/Sprechblase.svg" id="16_v5aql"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="17_epc6i"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]

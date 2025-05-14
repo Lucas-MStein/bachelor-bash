@@ -71,7 +71,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 1.0
+"speed": 3.0
 }]
 
 [node name="MainMenu" type="Control"]
@@ -271,8 +271,8 @@ sprite_frames = SubResource("SpriteFrames_j5v2v")
 autoplay = "default"
 frame_progress = 0.372909
 
-[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]
 [connection signal="pressed" from="Spielstand" to="." method="_on_spielstand_pressed"]
 [connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]
