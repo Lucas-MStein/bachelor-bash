@@ -86,3 +86,4 @@ func damage_heart():
 func _on_zurück_pressed() -> void:
 	Global.save_game()
 	get_tree().change_scene_to_file("res://main_menu.tscn")
+	_reset_level()

@@ -23,10 +23,11 @@ func _ready():
 
 func _select_character(charactername: String):
 	Global.character = charactername
+	Global.level = 1
+	Global.save_game()  # Spielstand speichern
 	$VBoxContainer/InfoLabel.text = "Ausgewählt: " + charactername
-	Global.save_game()
 	await get_tree().create_timer(1.5).timeout
-	get_tree().change_scene_to_file("res://main_menu.tscn")
+	queue_free()  # Menü schließen, zurück zum Hauptmenü
 
 func _on_music_toggle_pressed():
 	print("CharacterSelect: Music toggle pressed, Frame: ", Engine.get_frames_drawn())

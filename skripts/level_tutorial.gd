@@ -68,7 +68,8 @@ func _on_area_tür_body_entered(body: Node2D) -> void:
 
 func _on_area_wechsel_body_entered(body: Node2D) -> void:
 	get_tree().change_scene_to_file("res://main_menu.tscn")
-
+	GameManager._reset_level()
+	
 # exited Area
 func _on_area_controls_body_exited(body):
 	if body.is_in_group("player"):

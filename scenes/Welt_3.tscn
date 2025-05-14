@@ -724,7 +724,7 @@ offset_top = 448.0
 offset_right = 1412.0
 offset_bottom = 633.0
 text = "Willkommen in der Welt
-der Backlorarbeit"
+der Bachlorarbeit"
 label_settings = SubResource("LabelSettings_hjusk")
 horizontal_alignment = 1
 
