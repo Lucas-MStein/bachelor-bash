@@ -1,9 +1,10 @@
+Label
+AnimatedSprite2D
 Panel
 Node2D
 CollisionShape2D
 Timer
 TileMapLayer
-Label
 VBoxContainer
 AudioStreamPlayer
 AudioStreamPlayer2D
@@ -11,4 +12,3 @@ CanvasLayer
 HBoxContainer
 GridContainer
 Sprite2D
-TextureRect

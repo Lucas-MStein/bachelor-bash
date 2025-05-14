@@ -2,7 +2,10 @@ extends Node2D
 
 @onready var music_toggle = get_node("/root/Ui/MusicToggleButton")
 @onready var audio_player = $AudioStreamPlayer   
-@onready var tutorial_label: Label = $UI_Tutorial/TutorialLabel      
+@onready var tutorial_label: Label = $UI_Tutorial/Panel/TutorialLabel  
+@onready var tutorial = $UI_Tutorial/Panel
+
+#@export var is_active: bool = false
 
 func _ready() -> void:	
 	tutorial_label.text = ""  # Starttext leeren
@@ -26,31 +29,78 @@ func _on_music_enabled_changed(new_state: bool):
 	music_toggle.button_pressed = !new_state
 	print("MainMenu: Music enabled changed to ", new_state)
 
-# Signale für Area2D-Triggerzonen
+# entered Area
 func _on_area_controls_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		tutorial_label.text = "Nutze ←A  D→ zum Bewegen und SPACE zum Springen.\nDrücke ↓S zum Rutschen!"
+		tutorial_label.text = "Nutze die Pfeiltasten oder WASD um dich zu bewegen!"
+		tutorial.visible = true
 
+func _on_area_springen_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		tutorial_label.text = "Drücke SPACE zum Springen!"
+		tutorial.visible = true
+		
 func _on_area_enemies_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		tutorial_label.text = "Springe auf Gegner, um sie zu besiegen!"
+		tutorial_label.text = "Springe auf den Gegner, um ihn zu besiegen!"
+		tutorial.visible = true
 
 func _on_area_credits_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		tutorial_label.text = "Sammle Credit Points ein, um das Level zu schaffen!"
+		tutorial_label.text = "Sammle alle 3 Credit-Points, um das Level abzuschließen!"
+		tutorial.visible = true
 
+func _on_area_obstacles_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		tutorial_label.text = "Weiche dem Hindernis aus, damit du kein Leben verlierst!"
+		tutorial.visible = true
+
+func _on_area_endboss_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		tutorial_label.text = "Du musst die Endgegner zweimal angreifen, um sie zu besiegen!"
+		tutorial.visible = true
+
+func _on_area_tür_body_entered(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		tutorial_label.text = "Du hast die Tür erreicht, das Level ist geschafft!"
+		tutorial.visible = true 
+	
+
+func _on_area_wechsel_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://main_menu.tscn")
+
+# exited Area
 func _on_area_controls_body_exited(body):
 	if body.is_in_group("player"):
 		tutorial_label.text = ""
+		tutorial.visible = false
 
 func _on_area_enemies_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		tutorial_label.text = ""
+		tutorial.visible = false
 
 func _on_area_credits_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		tutorial_label.text = ""
+		tutorial.visible = false
 
+func _on_area_endboss_body_exited(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		tutorial_label.text = ""
+		tutorial.visible = false
 
-func _on_area_tür_body_entered(body: Node2D) -> void:
-	get_tree().change_scene_to_file("res://main_menu.tscn")
+func _on_area_obstacles_body_exited(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		tutorial_label.text = ""
+		tutorial.visible = false
+
+func _on_area_springen_body_exited(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		tutorial_label.text = ""
+		tutorial.visible = false
+
+func _on_area_tür_body_exited(body: Node2D) -> void:
+	if body.is_in_group("player"):
+		tutorial_label.text = ""
+		tutorial.visible = false

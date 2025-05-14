@@ -10,3 +10,4 @@ res://scenes/music_player.tscn
 res://scenes/Level_Tutorial.tscn
 res://scenes/Level_Tutorial_1.tscn
 res://skripts/level_tutorial.gd
+res://skripts/main_menu.gd
