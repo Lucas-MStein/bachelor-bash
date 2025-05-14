@@ -1,7 +1,6 @@
-[gd_scene load_steps=24 format=4 uid="uid://lng2tvf84lul"]
+[gd_scene load_steps=23 format=4 uid="uid://lng2tvf84lul"]
 
 [ext_resource type="Script" uid="uid://ddbdwah2li5b3" path="res://skripts/level_1.gd" id="1_5oxa6"]
-[ext_resource type="PackedScene" uid="uid://c35jtwc5jeeof" path="res://scenes/UI_Button.tscn" id="2_oqcwu"]
 [ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="3_hkwt4"]
 [ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/03_Elemente_Welt 1_Deko.svg" id="4_jawlk"]
 [ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/03_Elemente_Welt_1_Fenster_Türen.svg" id="5_s3wpl"]
@@ -273,8 +272,6 @@ distance = -95.6358
 [node name="Level_Tutorial_CodeMaster" type="Node2D"]
 script = ExtResource("1_5oxa6")
 metadata/_edit_vertical_guides_ = [45005.0, 10012.0]
-
-[node name="UI_Button" parent="." instance=ExtResource("2_oqcwu")]
 
 [node name="TileMap2" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4epbf")

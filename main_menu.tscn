@@ -1,9 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://c1re0cj8r6r7v"]
+[gd_scene load_steps=18 format=3 uid="uid://c1re0cj8r6r7v"]
 
 [ext_resource type="Script" uid="uid://dfcq82f7u3fdu" path="res://skripts/main_menu.gd" id="1_fu7sn"]
 [ext_resource type="FontFile" uid="uid://c3nth5fdg48ie" path="res://assets/fonts/GrapeSoda (2).ttf" id="2_fu7sn"]
 [ext_resource type="Texture2D" uid="uid://4s6m58tcqavo" path="res://assets/classroom/02_Background_Classroom_Final.png" id="2_glbon"]
 [ext_resource type="Texture2D" uid="uid://ghhxtf2vss2q" path="res://assets/classroom/01_Button_Play.png" id="3_glbon"]
+[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="5_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://b0ilal6g12bbt" path="res://assets/figures/04_Support_ChatGPT.svg" id="6_qe12f"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
 texture = ExtResource("2_glbon")
@@ -45,6 +47,32 @@ shadow_offset = Vector2(0, 3.41)
 [sub_resource type="LabelSettings" id="LabelSettings_8qtwp"]
 font = SubResource("FontVariation_jix8l")
 font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_dy7ct"]
+font = ExtResource("5_nlkkf")
+font_size = 45
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0o4t1"]
+atlas = ExtResource("6_qe12f")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0k4wn"]
+atlas = ExtResource("6_qe12f")
+region = Rect2(200, 0, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j5v2v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0o4t1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0k4wn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -200,7 +228,51 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
 text = "Weiter spielen!
 "
 
-[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
+[node name="Tutorial" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.541
+anchor_right = 0.5
+anchor_bottom = 0.541
+offset_left = -941.0
+offset_top = 296.72
+offset_right = -769.0
+offset_bottom = 461.72
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_glbon")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nlkkf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qe12f")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8qtwp")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Label" type="Label" parent="Tutorial"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -6.0
+offset_right = 150.0
+offset_bottom = 40.0
+text = "Tutorial"
+label_settings = SubResource("LabelSettings_dy7ct")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tutorial"]
+position = Vector2(78, 105)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_j5v2v")
+autoplay = "default"
+frame_progress = 0.372909
+
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Charakterauswahl" to="." method="_on_character_pressed"]
 [connection signal="pressed" from="Spielstand" to="." method="_on_spielstand_pressed"]
+[connection signal="pressed" from="Tutorial" to="." method="_on_tutorial_pressed"]
