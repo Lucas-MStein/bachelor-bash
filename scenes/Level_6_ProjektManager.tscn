@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://d7g5ek2cqnvs" path="res://assets/elements/03_Elemente_Welt_3_Fenster_Türen.svg" id="8_0vgfh"]
 [ext_resource type="Texture2D" uid="uid://dmnikgnr7xewu" path="res://assets/elements/03_Elemente_Welt_3_Hintergrund.svg" id="9_sx0r3"]
 [ext_resource type="Texture2D" uid="uid://bwqalcfg5m8oa" path="res://assets/elements/03_Elemente_Welt_3_Deko.svg" id="10_43xq8"]
-[ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="11_egypm"]
+[ext_resource type="PackedScene" uid="uid://cref0x0pci8wf" path="res://scenes/player_Projektmanager.tscn" id="11_fyhs1"]
 [ext_resource type="AudioStream" uid="uid://2pn5si5b502p" path="res://assets/music/Level6_Prio2.mp3" id="12_rcekh"]
 [ext_resource type="PackedScene" uid="uid://60fyct2j4tqk" path="res://scenes/boss_BachlorBoss.tscn" id="13_28plk"]
 [ext_resource type="PackedScene" uid="uid://nuqv8gshcuv" path="res://scenes/obstacles_Bett.tscn" id="14_wre68"]
@@ -586,10 +586,10 @@ tile_map_data = PackedByteArray("AAB6AO3/BAAFAAEAAAB6AO7/BAAFAAEAAABaAO3/BAAFAAE
 tile_set = SubResource("TileSet_4epbf")
 rendering_quadrant_size = 49
 
-[node name="player_WebDesigner" parent="." instance=ExtResource("11_egypm")]
-position = Vector2(460, 24)
+[node name="player_ProjektManager" parent="." instance=ExtResource("11_fyhs1")]
+position = Vector2(461, 28)
 
-[node name="Camera2D" type="Camera2D" parent="player_WebDesigner"]
+[node name="Camera2D" type="Camera2D" parent="player_ProjektManager"]
 position = Vector2(124, -194)
 position_smoothing_enabled = true
 
