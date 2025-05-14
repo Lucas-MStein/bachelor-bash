@@ -50,3 +50,7 @@ func _on_area_enemies_body_exited(body: Node2D) -> void:
 func _on_area_credits_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		tutorial_label.text = ""
+
+
+func _on_area_tür_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://main_menu.tscn")

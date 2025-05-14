@@ -1,6 +1,5 @@
 res://scenes/Level_1_CodeMaster.tscn
 res://ressources/enemy_CollisionShape.tres
-<<<<<<< HEAD
 res://scenes/Welt_1.tscn
 res://scenes/character_select_menu.tscn
 res://main_menu.tscn
@@ -8,13 +7,6 @@ res://scenes/UI_Button.tscn
 res://scenes/Welt_2.tscn
 res://scenes/Welt_3.tscn
 res://scenes/music_player.tscn
-=======
-res://scenes/Level_2_ProjektManager.tscn
-res://scenes/Level_3_ProjektManager.tscn
-res://scenes/Level_6_CodeMaster.tscn
-res://scenes/Level_6_ProjektManager.tscn
-res://scenes/player_WebDesginer.tscn
-res://scenes/Level_6_WebDesigner.tscn
-res://scenes/Level_3_WebDesigner.tscn
-res://scenes/Level_4_CodeMaster.tscn
->>>>>>> work-branch-CE
+res://scenes/Level_Tutorial.tscn
+res://scenes/Level_Tutorial_1.tscn
+res://skripts/level_tutorial.gd
