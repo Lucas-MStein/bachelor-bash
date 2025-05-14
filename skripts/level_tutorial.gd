@@ -104,3 +104,7 @@ func _on_area_tür_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		tutorial_label.text = ""
 		tutorial.visible = false
+
+
+func _on_zurück_pressed() -> void:
+	get_tree().change_scene_to_file("res://main_menu.tscn")

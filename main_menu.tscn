@@ -269,7 +269,7 @@ position = Vector2(78, 105)
 scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_j5v2v")
 autoplay = "default"
-frame_progress = 0.0473395
+frame_progress = 0.372909
 
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Abendteuer beginnen" to="." method="_on_start_pressed"]
