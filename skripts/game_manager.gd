@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var heart_container = $CanvasLayer/HeartsContainer
 @onready var coin_container = $CanvasLayer/CoinContainer
+@onready var zurück: Button = $CanvasLayer/Zurück
 
 var coins = 0
 var heart = 3
@@ -38,7 +39,8 @@ func update_ui_visibility() -> void:
 	if coin_container:
 		coin_container.visible = is_active
 		print("CoinContainer Sichtbarkeit:", coin_container.visible)
-		
+	zurück.visible = is_active
+	
 func _reset_level():
 	print("reset_Level aufgerufen")
 	coins = 0
@@ -80,3 +82,7 @@ func damage_heart():
 		print("Spiel wird neu geladen")
 		get_tree().reload_current_scene()
 		_reset_level()
+
+func _on_zurück_pressed() -> void:
+	Global.save_game()
+	get_tree().change_scene_to_file("res://main_menu.tscn")
