@@ -7,3 +7,6 @@ res://scenes/UI_Button.tscn
 res://scenes/Welt_2.tscn
 res://scenes/Welt_3.tscn
 res://scenes/music_player.tscn
+res://scenes/Level_Tutorial.tscn
+res://scenes/Level_Tutorial_1.tscn
+res://skripts/level_tutorial.gd
