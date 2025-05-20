@@ -8,7 +8,7 @@ extends Node2D
 #@export var is_active: bool = false
 
 func _ready() -> void:	
-	tutorial_label.text = ""  # Starttext leeren
+	tutorial_label.text = ""  
 
 	GameManager.is_active = true
 	GameManager.update_ui_visibility()
@@ -64,7 +64,6 @@ func _on_area_tür_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		tutorial_label.text = "Du hast die Tür erreicht, das Level ist geschafft!"
 		tutorial.visible = true 
-	
 
 func _on_area_wechsel_body_entered(body: Node2D) -> void:
 	get_tree().change_scene_to_file("res://main_menu.tscn")

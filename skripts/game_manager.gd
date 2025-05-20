@@ -30,7 +30,7 @@ func _ready() -> void:
 	
 func set_is_active(value):
 	is_active = value
-	update_ui_visibility()  # Sichtbarkeit aktualisieren, wenn is_active geändert wird
+	update_ui_visibility()
 
 func update_ui_visibility() -> void:
 	if heart_container:

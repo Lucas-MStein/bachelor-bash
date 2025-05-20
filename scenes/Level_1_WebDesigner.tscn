@@ -1,11 +1,11 @@
 [gd_scene load_steps=27 format=4 uid="uid://c1wsqltn8ocpx"]
 
 [ext_resource type="Script" uid="uid://ddbdwah2li5b3" path="res://skripts/level_1.gd" id="1_2yxaq"]
-[ext_resource type="Texture2D" uid="uid://n70cu2vu78im" path="res://assets/elements/01_Plattformen.svg" id="2_p0lju"]
-[ext_resource type="Texture2D" uid="uid://7rrjouhi8xmb" path="res://assets/elements/03_Elemente_Welt 1_Deko.svg" id="3_mxvih"]
-[ext_resource type="Texture2D" uid="uid://16yc6lmu03ll" path="res://assets/elements/03_Elemente_Welt_1_Fenster_Türen.svg" id="4_csig0"]
-[ext_resource type="Texture2D" uid="uid://bcyhk30y00mfe" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_7rqnr"]
-[ext_resource type="AudioStream" uid="uid://5hdd3l7ad128" path="res://assets/music/level_1.mp3" id="7_n54hd"]
+[ext_resource type="Texture2D" uid="uid://3k5f33511fcp" path="res://assets/elements/01_Plattformen.svg" id="2_p0lju"]
+[ext_resource type="Texture2D" uid="uid://ds5ii7o44iu88" path="res://assets/elements/03_Elemente_Welt 1_Deko.svg" id="3_mxvih"]
+[ext_resource type="Texture2D" uid="uid://tppiqsfqcc5j" path="res://assets/elements/03_Elemente_Welt_1_Fenster_Türen.svg" id="4_csig0"]
+[ext_resource type="Texture2D" uid="uid://bqu2sdqm6s7mp" path="res://assets/elements/02_Elemente_Hintergrund_Deko.svg" id="5_7rqnr"]
+[ext_resource type="AudioStream" uid="uid://bbmmw4wfnc5mx" path="res://assets/music/level_1.mp3" id="7_n54hd"]
 [ext_resource type="PackedScene" uid="uid://dcej4j3rl0l0p" path="res://scenes/player_WebDesginer.tscn" id="7_p0lju"]
 [ext_resource type="PackedScene" uid="uid://cwjqe6pal0pci" path="res://scenes/winzone.tscn" id="8_oxmj6"]
 [ext_resource type="PackedScene" uid="uid://cu5cjg2r2dtb5" path="res://scenes/pickup_CreditPoint.tscn" id="9_v1itj"]
@@ -16,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bc117e3x76c6y" path="res://scenes/enemy_fieseKlausuren.tscn" id="14_2werl"]
 [ext_resource type="PackedScene" uid="uid://l7fdh40emq30" path="res://scenes/enemy_Aufgabenberg.tscn" id="15_84v0x"]
 [ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="16_tivgk"]
-[ext_resource type="FontFile" uid="uid://domdgtv0586s5" path="res://assets/fonts/GrapeSoda.ttf" id="17_bkwyq"]
+[ext_resource type="FontFile" uid="uid://cu8nw6tqmh1uf" path="res://assets/fonts/GrapeSoda.ttf" id="17_bkwyq"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vdqiu"]
 

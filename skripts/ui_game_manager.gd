@@ -17,7 +17,6 @@ func _ready() -> void:
 		print("Fehler: CoinContainer nicht gefunden!")
 	
 	_reset_level()
-
 	
 func _reset_level():
 	coins = 0

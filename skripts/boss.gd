@@ -22,6 +22,6 @@ func take_hit():
 	hit_count += 1
 	animated_sprite.play("hurt")
 	if hit_count >= 2:
-		queue_free()  # Boss wird nach 2 Treffern entfernt
+		queue_free()
 	else:
 		print("Boss getroffen! Noch", 2 - hit_count, "Treffer nötig")

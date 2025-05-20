@@ -31,7 +31,7 @@ func load_game():
 		music_enabled = save_data.get("music_enabled", true)
 
 func set_Level(playerLevel: int):
-	level = playerLevel
+	level = clamp(playerLevel, 1, 6)  # Begrenzt den Level-Wert zwischen 1 und 6
 	save_game()
 
 func simulate_save(character_name: String, level_number: int):

@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://dqekiv08xjsg0"]
+
+[ext_resource type="Script" uid="uid://biatgl2qn44mu" path="res://skripts/enemy.gd" id="1_sw8lc"]
+[ext_resource type="Texture2D" uid="uid://0de814qyhkn8" path="res://assets/figures/02_Enemy_Abgabestress_1.svg" id="2_ccjwg"]
+[ext_resource type="PackedScene" uid="uid://dfpudtaxf044r" path="res://scenes/killzone.tscn" id="3_xpcbd"]
+[ext_resource type="Shape2D" uid="uid://011fnpi5fihq" path="res://ressources/enemy_CollisionShape.tres" id="4_m52h4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28xcr"]
+atlas = ExtResource("2_ccjwg")
+region = Rect2(0, 0, 140, 140)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cumfk"]
+atlas = ExtResource("2_ccjwg")
+region = Rect2(140, 0, 140, 140)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v83ml"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_28xcr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cumfk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Gegner" type="Node2D" groups=["enemy"]]
+script = ExtResource("1_sw8lc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -64)
+sprite_frames = SubResource("SpriteFrames_v83ml")
+autoplay = "default"
+frame_progress = 0.392114
+
+[node name="Killzone" parent="." instance=ExtResource("3_xpcbd")]
+
+[node name="killzoneShape" type="CollisionShape2D" parent="Killzone" groups=["enemy"]]
+position = Vector2(0, -66)
+shape = ExtResource("4_m52h4")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(0, -27)
+target_position = Vector2(88, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(0, -30)
+target_position = Vector2(-88, 0)

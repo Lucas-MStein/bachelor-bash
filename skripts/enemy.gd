@@ -8,8 +8,6 @@ var direction = -1
 @onready var ray_cast_right: RayCast2D = $RayCastRight
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
-
-
 func _process(delta):
 	if ray_cast_right.is_colliding():
 		direction = -1
