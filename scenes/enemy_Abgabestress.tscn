@@ -39,7 +39,7 @@ frame_progress = 0.392114
 [node name="Killzone" parent="." instance=ExtResource("2_28xcr")]
 
 [node name="killzoneShape" type="CollisionShape2D" parent="Killzone" groups=["enemy"]]
-position = Vector2(0, -66)
+position = Vector2(0, -60)
 shape = ExtResource("3_w8lcs")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]

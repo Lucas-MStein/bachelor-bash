@@ -36,3 +36,5 @@ res://scenes/hearts_container.tscn
 res://scenes/game_manager.tscn
 res://scenes/heart.tscn
 res://scenes/Level_Tutorial_1.tscn
+res://skripts/global.gd
+res://scenes/Level_1_CodeMaster.tscn

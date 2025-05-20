@@ -14,8 +14,9 @@ func _on_body_entered(body: Node2D) -> void:
 			var player_bottom = player_shape.global_position.y + player_rect.position.y + player_rect.size.y
 			var killzone_top = killzone_shape.global_position.y + killzone_rect.position.y
 			
-			var is_from_above = player_bottom <= killzone_top + 5.0
-			
+			var is_from_above = body.position.y < global_position.y and body.velocity.y > 0
+			#var is_from_above = player_bottom <= killzone_top + 20.0
+			#var is_from_above = body.position.y < global_position.y - sobald der Spieler gesprungen kommt auf den Gegner
 			print("Spieler untere y:", player_bottom, " Killzone obere y:", killzone_top)
 			print("Von oben?", is_from_above)
 			
