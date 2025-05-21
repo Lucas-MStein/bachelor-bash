@@ -1,6 +1,0 @@
-res://scenes/Level_1_CodeMaster.tscn
-res://ressources/enemy_CollisionShape.tres
-res://skripts/character_select_menu.gd
-res://main_menu.tscn
-res://scenes/character_select_menu.tscn
-res://scenes/pickup_CreditPoint.tscn
