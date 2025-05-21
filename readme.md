@@ -55,7 +55,12 @@ Im Zentrum stehen spielbare Charaktere, die durch verschiedene Level mit witzige
 2. Projekt herunterladen oder klonen:
    ```bash
    git clone https://github.com/Lucas-MStein/bachelor-bash.git
-   
+
+---
+
+## 🕹️ Spiel herunterladen
+
+- Hier findest du die Anwendung: https://c.1und1.de/@952877182395356905/mnZdxKJm_4DEY9QPOTQx8w
    
 ## 📄 Lizenz
 
